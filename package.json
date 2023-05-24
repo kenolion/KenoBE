@@ -1,0 +1,23 @@
+{
+  "name": "kenobe",
+  "version": "1.0.0",
+  "description": "backend for my website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "kuromoji": "^0.1.2",
+    "masterchat": "^1.1.0",
+    "youtubei.js": "^5.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.11.0"
+  }
+}
