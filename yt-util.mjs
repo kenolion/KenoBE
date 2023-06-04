@@ -1,6 +1,8 @@
-import fs from "fs";
+import {  writeFile } from "fs";
+import { exec } from "child_process";
 import { Masterchat } from "masterchat";
 import { extractWordHeatMap } from "./data-prc-util.mjs";
+
 // async funtion that intializes masterchat and listens to youtube chat
 async function listenYt(videoId, channelId, res) {
   // let mc = await Masterchat.init(videoId);
@@ -58,7 +60,7 @@ async function exrData(chatLis, wordHeatMap, videoId) {
   }
   const t1 = performance.now();
 
-  fs.writeFile(
+  writeFile(
     `./output/${videoId}.csv`,
     row,
     (err) => {
@@ -73,7 +75,7 @@ async function exrData(chatLis, wordHeatMap, videoId) {
   if (wordHeatMap) {
     const mapAsObject = Object.fromEntries(wordHeatMap.entries());
     const jsonString = JSON.stringify(mapAsObject);
-    fs.writeFile(
+    writeFile(
       `./output/${videoId}.json`,
       jsonString,
       (err) => {
@@ -110,4 +112,39 @@ function exrMsg(messageLis) {
   return str;
 }
 
-export { listenYt };
+async function cutVideo(from, to, id) {
+
+  // Check if the parameters are valid
+  if (!from || !to || !id) {
+    throw new Error("Invalid parameters");
+  }
+
+  // Check if the ffmpeg executable exists
+  if (!await fs.existsSync("/usr/bin/ffmpeg")) {
+    throw new Error("ffmpeg executable not found");
+  }
+
+  // Replace colons in 'from' and 'to' timestamps with an empty string
+  const from_fixed = from.replace(':', '');
+  const to_fixed = to.replace(':', '');
+
+  // Execute the ffmpeg command with the adjusted parameters
+  exec(
+    `ffmpeg -ss ${from} -to ${to} -i ./output/vid/${id}.mp4 -c copy ./output/vid/${from_fixed}-${to_fixed}-${id}.mp4`,
+    (error, stdout, stderr) => {
+      if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+      }
+      if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        return;
+      }
+      console.log(`stdout: ${stdout}`);
+    }
+  );
+  // Success!
+  console.log(`Successfully cut video from ${from} to ${to}`);
+}
+
+export { listenYt, cutVideo };

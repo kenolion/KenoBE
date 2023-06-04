@@ -1,18 +1,18 @@
 import express from "express";
 import { PrismaClient } from "@prisma/client";
 import cors from "cors";
-import {listenYt} from "./yt-util.mjs";
-import {initTokenizer} from "./data-prc-util.mjs"
-import { Innertube } from 'youtubei.js';
+import { listenYt } from "./yt-util.mjs";
+import { initTokenizer } from "./data-prc-util.mjs";
+import { Innertube } from "youtubei.js";
 
 // variables
 const prisma = new PrismaClient();
 const app = express();
 const port = 4000;
-let masterChat = null;
+const ytChatObj = {};
 const yt = await Innertube.create(/* options */);
-
-
+//dlVideo(yt,'b6eqXTcxzf8');
+//init jp dictionary tokenizer from kuromoji
 initTokenizer();
 
 app.use(cors());
@@ -21,6 +21,53 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
+
+// youtube chat API
+app.get("/listen/:channelId/:id", (req, res) => {
+  // res.setHeader("Content-Type", "application/json");
+  listenYt(req.params.id, req.params.channelId, res).then((mc) => {
+    ytChatObj[req.params.channelId] = mc;
+    mc.listen();
+    return res;
+  });
+});
+
+app.get("/get/:id", (req, res) => {
+  // res.setHeader("Content-Type", "application/json");
+  const info = yt.getBasicInfo(req.params.id).then((info) => {
+    let time = info.basic_info.start_timestamp;
+    let tim = new Date(time).valueOf();
+    console.log(tim);
+    console.log((req.query.t / 1000 - tim) / 60000);
+
+    res.json(info);
+    return res;
+  });
+});
+
+app.get("/listen/:id", (req, res) => {
+  // res.setHeader("Content-Type", "application/json");
+  listenYt(req.params.id, null, res).then((mc) => {
+    ytChatObj[req.params.channelId] = mc;
+    mc.listen();
+    return res;
+  });
+});
+
+app.put("/:id/end", (req, res) => {
+  let id = req.params.id;
+  const masterChat = ytChatObj[id];
+  masterChat?.stop();
+  return res.json({
+    success: true,
+    message: `Ended listening to ${id} live chat.`,
+  });
+});
+
+// Backend for website
 app.get("/post", (req, res) => {
   res.setHeader("Content-Type", "application/json");
 
@@ -38,53 +85,6 @@ app.get("/post", (req, res) => {
 app.post("/add", (req, res) => {
   res.setHeader("Content-Type", "application/json");
   addPost(req, res);
-});
-
-app.get("/users/:userId/books/:bookId", (req, res) => {
-  res.send(req.params);
-});
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
-
-app.get("/listen/:channelId/:id", (req, res) => {
-  // res.setHeader("Content-Type", "application/json");
-  listenYt(req.params.id, req.params.channelId, res).then((mc) => {
-    masterChat = mc;
-    masterChat.listen();
-    return res;
-  });
-});
-
-app.get("/get/:id", (req, res) => {
-  // res.setHeader("Content-Type", "application/json");
-  const info = yt.getBasicInfo(req.params.id).then((info) => {
-    let time = info.basic_info.start_timestamp
-    let tim = new Date(time).valueOf();
-    console.log(tim);
-    console.log(((req.query.t/1000)- tim) / 60000 );
-    
-    res.json(info);
-   return res; 
-  });
-});
-
-app.get("/listen/:id", (req, res) => {
-  // res.setHeader("Content-Type", "application/json");
-  listenYt(req.params.id, null, res).then((mc) => {
-    masterChat = mc;
-    masterChat.listen();
-    return res;
-  });
-});
-
-app.put("/end", (req, res) => {
-  // res.setHeader("Content-Type", "application/json");
-  //masterChat?.emit("end");
-  masterChat?.stop();
-  return res.json({ success: true, message: "Ended listening to live chat."
-  });
 });
 
 async function addPost(req, res) {
@@ -144,3 +144,7 @@ async function findPost(req, res) {
 
   res.json(postLis);
 }
+
+app.get("/users/:userId/books/:bookId", (req, res) => {
+  res.send(req.params);
+});
