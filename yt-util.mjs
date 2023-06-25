@@ -1,7 +1,8 @@
 import {  writeFile } from "fs";
 import { exec } from "child_process";
 import { Masterchat } from "masterchat";
-import { extractWordHeatMap } from "./data-prc-util.mjs";
+import { extractWordHeatMap } from "./utils/data-prc-util.mjs";
+import { VID_STATS_NM,VID_MSG_NM } from "./app-const.mjs";
 
 // async funtion that intializes masterchat and listens to youtube chat
 async function listenYt(videoId, channelId, res) {
@@ -9,7 +10,7 @@ async function listenYt(videoId, channelId, res) {
   let mc = channelId
     ? new Masterchat(videoId, channelId, { mode: "replay" })
     : await Masterchat.init(videoId);
-  let chatLis = [];
+  let chatLis = {};
   let timeStampLis = [];
   let pvsTimeStamp = 0;
   let timestampDiff = 0;
@@ -21,13 +22,16 @@ async function listenYt(videoId, channelId, res) {
       timestampDiff = chatTimestamp - pvsTimeStamp;
       if (timestampDiff > 60000000) {
         extractWordHeatMap(pvsTimeStamp, timeStampLis, wordHeatMap);
-
+        // rounds pvsTimestamp to the nearest minute
         pvsTimeStamp = chatTimestamp - (chatTimestamp % 60000000);
         timeStampLis = [];
       }
-      let message = { timeStamp: pvsTimeStamp, message: exrMsg(chat.message) };
+      let message = { timeStamp: chatTimestamp, message: exrMsg(chat.message) };
       timeStampLis.push(message);
-      chatLis.push(message);
+      if(!chatLis[pvsTimeStamp]){
+        chatLis[pvsTimeStamp] = [];
+      }
+      chatLis[pvsTimeStamp].push(message);
     });
 
     // Handle errors
@@ -53,16 +57,18 @@ async function listenYt(videoId, channelId, res) {
 }
 
 async function exrData(chatLis, wordHeatMap, videoId) {
-  let row = "";
-  for (let i in chatLis) {
-    let data = chatLis[i];
-    row += data.timeStamp + "," + data.message + "\r\n";
-  }
+  // let row = "";
+  // for (let i in chatLis) {
+  //   let data = chatLis[i];
+  //   row += data.timeStamp + "," + data.message + "\r\n";
+  // }
+  
+  // row = ;
   const t1 = performance.now();
 
   writeFile(
-    `./output/${videoId}.csv`,
-    row,
+    `./output/${videoId}${VID_MSG_NM}.json`,
+    JSON.stringify(chatLis),
     (err) => {
       if (err) throw err;
       console.log("Data written to file");
@@ -76,7 +82,7 @@ async function exrData(chatLis, wordHeatMap, videoId) {
     const mapAsObject = Object.fromEntries(wordHeatMap.entries());
     const jsonString = JSON.stringify(mapAsObject);
     writeFile(
-      `./output/${videoId}.json`,
+      `./output/${videoId}${VID_STATS_NM}.json`,
       jsonString,
       (err) => {
         if (err) throw err;

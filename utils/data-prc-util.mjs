@@ -4,38 +4,38 @@ let kuroToken = null;
 const wRegex = new RegExp(/^[w][^a-vx-z]+/gi);
 // const jRegex = new RegExp(/([:]*?<kanji>[一-龠]+[:]*)[ぁ-ゔ]*/gi);
 
-// accepts a list of messages in the same time frame and returns a heatmap for some words that occured in the given time frame
-// input: list of messages, list of words, time frame
-// output: heatmap
+/* accepts a list of messages in the same time frame and returns a heatmap for some words that occured in the given time frame
+  input: list of messages, list of words, time frame
+  output: heatmap
+*/
 async function extractWordHeatMap(timestamp, msgLis, wordHeatMap) {
   return new Promise((resolve, reject) => {
-    let timestampObj = {};
-   // const t1 = performance.now();
+    let timestampObj = { wordsObj: {}, total: 0 };
+
     if (timestamp > 0) {
       for (let message of msgLis) {
         // Convert message to lowercase and remove non-alphanumeric characters
-        setWordHeatMap(timestampObj, message.message);
+        setWordHeatMap(timestampObj.wordsObj, message.message);
       }
+      timestampObj.total = msgLis.length;
       wordHeatMap.set(timestamp, timestampObj);
     }
 
-  //  const t2 = performance.now();
-    //console.log("Time taken to extract ", timestamp, t2 - t1, "ms");
     resolve(wordHeatMap);
   });
 }
 
 async function setWordHeatMap(timestampObj, message) {
   let words = await tokenizeJapanese(message);
+  const wordLis = [];
 
   for (let word of words) {
     // If word is not in heatmap, add it with count 1
-      if (!timestampObj[word]) {
-        timestampObj[word] = 1;
-    } else {
-      // Otherwise, increment the count
-      timestampObj[word] = timestampObj[word] + 1;
+    if (wordLis.includes(word)) {
+      continue;
     }
+    wordLis.push(word);
+    timestampObj[word] = ++timestampObj[word] || 1;
   }
 }
 

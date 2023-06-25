@@ -2,8 +2,12 @@ import express from "express";
 import { PrismaClient } from "@prisma/client";
 import cors from "cors";
 import { listenYt } from "./yt-util.mjs";
-import { initTokenizer } from "./data-prc-util.mjs";
+import { initTokenizer } from "./utils/data-prc-util.mjs";
 import { Innertube } from "youtubei.js";
+import { cnvTimestampToMin } from "./utils/math-util.mjs";
+import { ChatAnalyzer } from "./chat-analyzer.mjs";
+import set from "lodash/set.js";
+import { OUT_PATH, VID_STATS_NM } from "./app-const.mjs";
 
 // variables
 const prisma = new PrismaClient();
@@ -13,7 +17,7 @@ const ytChatObj = {};
 const yt = await Innertube.create(/* options */);
 //dlVideo(yt,'b6eqXTcxzf8');
 //init jp dictionary tokenizer from kuromoji
-initTokenizer();
+await initTokenizer();
 
 app.use(cors());
 app.use(express.json());
@@ -27,9 +31,8 @@ app.listen(port, () => {
 
 // youtube chat API
 app.get("/listen/:channelId/:id", (req, res) => {
-  // res.setHeader("Content-Type", "application/json");
   listenYt(req.params.id, req.params.channelId, res).then((mc) => {
-    ytChatObj[req.params.channelId] = mc;
+    set(ytChatObj, req.params.id + ".mc", mc);
     mc.listen();
     return res;
   });
@@ -37,21 +40,28 @@ app.get("/listen/:channelId/:id", (req, res) => {
 
 app.get("/get/:id", (req, res) => {
   // res.setHeader("Content-Type", "application/json");
-  const info = yt.getBasicInfo(req.params.id).then((info) => {
+  let id = req.params.id;
+  if (!ytChatObj[id]) {
+    ytChatObj[id] = {};
+  }
+  if (ytChatObj[id] && ytChatObj[id].timestamp) {
+    res.json(cnvTimestampToMin(ytChatObj[id].timestamp, req.query.t));
+    return;
+  }
+  yt.getBasicInfo(id).then((info) => {
     let time = info.basic_info.start_timestamp;
     let tim = new Date(time).valueOf();
-    console.log(tim);
-    console.log((req.query.t / 1000 - tim) / 60000);
+    ytChatObj[id].timestamp = tim;
+    console.log(cnvTimestampToMin(tim, req.query.t));
 
     res.json(info);
-    return res;
   });
 });
 
 app.get("/listen/:id", (req, res) => {
   // res.setHeader("Content-Type", "application/json");
   listenYt(req.params.id, null, res).then((mc) => {
-    ytChatObj[req.params.channelId] = mc;
+    set(ytChatObj, req.params.id + ".mc", mc);
     mc.listen();
     return res;
   });
@@ -59,7 +69,7 @@ app.get("/listen/:id", (req, res) => {
 
 app.put("/:id/end", (req, res) => {
   let id = req.params.id;
-  const masterChat = ytChatObj[id];
+  const masterChat = ytChatObj[id].mc;
   masterChat?.stop();
   return res.json({
     success: true,
