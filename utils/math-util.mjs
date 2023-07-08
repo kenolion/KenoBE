@@ -7,6 +7,23 @@ export function cnvTimestampToMin(sTimeStamp, tTimestamp) {
   return (normTimestamp(tTimestamp) - sTimeStamp) / 60000;
 }
 
+// format timestamp
+export function fmtTimestamp(sTimeStamp, tTimestamp) {
+  let min = cnvTimestampToMin(sTimeStamp, tTimestamp);
+  let fmtHour = Math.floor(min / 60);
+  let fmtMin = min % 60;
+  let fmtSec = (fmtMin - Math.floor(fmtMin)) * 60;
+  return `${fmtHour}:${Math.floor(fmtMin)}:${Math.floor(fmtSec)}`;
+}
+
+// format's given minute to hh:mm:ss
+export function fmtMin(min) {
+  let fmtHour = Math.floor(min / 60);
+  let fmtMin = min % 60;
+  let fmtSec = (fmtMin - Math.floor(fmtMin)) * 60;
+  return `${fmtHour}:${fmtMin}:${fmtSec}`;
+}
+
 // converts microsecond timestamp to millisecond timestamp
 export function normTimestamp(tTimestamp) {
   return tTimestamp / 1000;

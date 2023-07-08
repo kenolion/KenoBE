@@ -4,10 +4,9 @@ import cors from "cors";
 import { listenYt } from "./yt-util.mjs";
 import { initTokenizer } from "./utils/data-prc-util.mjs";
 import { Innertube } from "youtubei.js";
-import { cnvTimestampToMin } from "./utils/math-util.mjs";
+import { fmtTimestamp } from "./utils/math-util.mjs";
 import { ChatAnalyzer } from "./chat-analyzer.mjs";
 import set from "lodash/set.js";
-import { OUT_PATH, VID_STATS_NM } from "./app-const.mjs";
 
 // variables
 const prisma = new PrismaClient();
@@ -45,14 +44,14 @@ app.get("/get/:id", (req, res) => {
     ytChatObj[id] = {};
   }
   if (ytChatObj[id] && ytChatObj[id].timestamp) {
-    res.json(cnvTimestampToMin(ytChatObj[id].timestamp, req.query.t));
+    res.json(fmtTimestamp(ytChatObj[id].timestamp, req.query.t));
     return;
   }
   yt.getBasicInfo(id).then((info) => {
     let time = info.basic_info.start_timestamp;
     let tim = new Date(time).valueOf();
     ytChatObj[id].timestamp = tim;
-    console.log(cnvTimestampToMin(tim, req.query.t));
+    console.log(fmtTimestamp(tim, req.query.t));
 
     res.json(info);
   });

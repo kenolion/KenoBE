@@ -1,6 +1,7 @@
 import { readFileSync } from "fs";
 import { OUT_PATH, VID_STATS_NM } from "./app-const.mjs";
 import get from "lodash/get.js";
+import { fmtMin } from "./utils/math-util.mjs";
 /*
   wordFreq = the amount of times the word occur
   wordFreqDiff = the difference in wordFreq from pvsTime and curTime(positive means a greater increase in word frequency)
@@ -84,19 +85,26 @@ export class ChatAnalyzer {
   }
 
   // caculates the percentage of the rate of change of word to the total number of words in the chat
-  #calCgePct(curDifTot, prevAmt) {
+  #calCgePct(curTime,pvsTime) {
     //let rt = (curDifTot / pvsDifTot) * 100;
     // 40 - 20 = 20 / 60
     // 40 - 1 = 39/41 * 20
     //1687260840000000 see this, the previous change should also take into account how much ratio it was
     let rt = 0;
-    if (prevAmt > 0) {
-      rt = (2 * curDifTot) / (-10 + prevAmt);
+   // if (curDifTot >= 0) {
+      rt = ((this.timeStampObjTotal[curTime].ratio /100) +
+        (get(this.timeStampObjTotal, `${pvsTime}.ratio`) / 100)
+        * get(this.wordFreqObj, `${curTime}.wordFreqDiff`)) + 1;
+
+      // rt = (2 * curDifTot) / (-10 + prevAmt);
       //rt = (curDifTot / (prevAmt - 10) / 10) * 20;
-      console.log(`(${curDifTot} / (${prevAmt} - 10) / 10) * 20`);
+      //console.log(`(${curDifTot} / (${prevAmt} - 10) / 10) * 20`);
+      console.log(`(${this.timeStampObjTotal[curTime].ratio} +
+        ${get(this.timeStampObjTotal, `${pvsTime}.ratio`)}
+        * ${get(this.wordFreqObj, `${curTime}.wordFreqDiff`)}) + 1`);
       console.log("cgePct:", rt);
       //rt = max([0, rt]);
-    }
+   // }
 
     return rt;
   }
@@ -107,8 +115,7 @@ export class ChatAnalyzer {
       this.wordFreqObj[curTime].totalOcc
     );
     this.timeStampObjTotal[curTime].cgePct = this.#calCgePct(
-      get(this.wordFreqObj, `${curTime}.wordFreqDiff`),
-      get(this.wordFreqObj, `${pvsTime}.wordFreqDiff`)
+      curTime,pvsTime
     );
   }
 
