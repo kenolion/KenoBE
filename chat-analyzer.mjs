@@ -9,21 +9,21 @@ import { fmtMin } from "./utils/math-util.mjs";
   total = total messages in that timestamp
 */
 export class ChatAnalyzer {
-  constructor(words) {
+  constructor(words, videoId) {
     this.wordLis = words;
-    //this.wordList = wordLis;
     // stores the increase in word frequency from pvsTime and curTime
     this.wordFreqObj = {};
-    // stores the
-    this.highestOccurenceObj = {};
     this.file = null;
     // loaded from file {videoid}-stats.json, contains non totaled up data
     this.timeStampMap = null;
+    this.videoId = videoId;
     this.timeStampObjTotal = {};
+    this.timeLis = [];
   }
 
   async load(videoId) {
-    let fileNm = OUT_PATH + videoId + VID_STATS_NM + ".json";
+    this.videoId = this.videoId || videoId;
+    let fileNm = OUT_PATH + this.videoId + VID_STATS_NM + ".json";
     try {
       this.file = readFileSync(fileNm);
       this.timeStampMap = JSON.parse(this.file);
@@ -41,7 +41,6 @@ export class ChatAnalyzer {
     timeStampMap = timeStampMap || this.timeStampMap;
 
     let pvsTime = "";
-    let timeLis = [];
 
     for (let curTime in timeStampMap) {
       if (pvsTime != "") {
@@ -60,51 +59,40 @@ export class ChatAnalyzer {
           this.wordFreqObj[curTime].totalOcc -
           get(this.wordFreqObj, `${pvsTime}.totalOcc`);
         this.#calTimestampObjTotal(curTime, pvsTime);
-        // change logic to total up the value
         if (this.#isClippable(pvsTime, curTime)) {
-          //
-          // console.log(curTime);
-          // console.log(this.wordFreqObj[curTime]);
-          timeLis.push(curTime);
+          this.timeLis.push(curTime);
         }
       }
 
       pvsTime = curTime;
     }
-    console.log(timeLis);
+    console.log(this.timeLis);
 
     return this.wordFreqObj;
   }
 
   // calculates the ratio of the word to the total number of words in the chat
   #calRatio(totMsg, wordTot) {
-    let rt = (wordTot / totMsg) * 100;
+    let rt = wordTot / totMsg;
     console.log("calRatio:", rt);
 
     return rt;
   }
 
   // caculates the percentage of the rate of change of word to the total number of words in the chat
-  #calCgePct(curTime,pvsTime) {
-    //let rt = (curDifTot / pvsDifTot) * 100;
-    // 40 - 20 = 20 / 60
-    // 40 - 1 = 39/41 * 20
-    //1687260840000000 see this, the previous change should also take into account how much ratio it was
+  #calCgePct(curTime, pvsTime) {
     let rt = 0;
-   // if (curDifTot >= 0) {
-      rt = ((this.timeStampObjTotal[curTime].ratio /100) +
-        (get(this.timeStampObjTotal, `${pvsTime}.ratio`) / 100)
-        * get(this.wordFreqObj, `${curTime}.wordFreqDiff`)) + 1;
 
-      // rt = (2 * curDifTot) / (-10 + prevAmt);
-      //rt = (curDifTot / (prevAmt - 10) / 10) * 20;
-      //console.log(`(${curDifTot} / (${prevAmt} - 10) / 10) * 20`);
-      console.log(`(${this.timeStampObjTotal[curTime].ratio} +
+    rt =
+      this.timeStampObjTotal[curTime].ratio +
+      get(this.timeStampObjTotal, `${pvsTime}.ratio`) *
+        get(this.wordFreqObj, `${curTime}.wordFreqDiff`) +
+      1;
+
+    console.log(`(${this.timeStampObjTotal[curTime].ratio} +
         ${get(this.timeStampObjTotal, `${pvsTime}.ratio`)}
         * ${get(this.wordFreqObj, `${curTime}.wordFreqDiff`)}) + 1`);
-      console.log("cgePct:", rt);
-      //rt = max([0, rt]);
-   // }
+    console.log("cgePct:", rt);
 
     return rt;
   }
@@ -114,18 +102,16 @@ export class ChatAnalyzer {
       this.timeStampMap[curTime].total,
       this.wordFreqObj[curTime].totalOcc
     );
-    this.timeStampObjTotal[curTime].cgePct = this.#calCgePct(
-      curTime,pvsTime
-    );
+    this.timeStampObjTotal[curTime].cgePct = this.#calCgePct(curTime, pvsTime);
   }
 
   // checks if the timestamp is clippable
-  #isClippable(pvsTime, curTime) {
+  #isClippable(curTime) {
     let score = 0;
     console.log("curTime:", curTime);
 
     score =
-      this.timeStampObjTotal[curTime].ratio * 0.5 +
+      this.timeStampObjTotal[curTime].ratio * 100 * 0.5 +
       this.timeStampObjTotal[curTime].cgePct * 0.5;
     console.log("Score:", score, "\n");
     console.log("---------\n");
