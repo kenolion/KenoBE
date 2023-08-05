@@ -1,10 +1,10 @@
 import { writeFile, existsSync } from "fs";
 import { exec } from "child_process";
 import { Masterchat } from "@kenolion/masterchat";
-import { extractWordHeatMap } from "./utils/data-prc-util.mjs";
-import { VID_STATS_NM, VID_MSG_NM } from "./src/constants/app-const.mjs";
+import { extractWordHeatMap } from "../utils/data-prc-util.mjs";
+import { VID_STATS_NM, VID_MSG_NM } from "../constants/app-const.mjs";
 import { Innertube } from "youtubei.js";
-import { OUT_PATH } from "./src/constants/app-const.mjs";
+import { OUT_PATH } from "../constants/app-const.mjs";
 
 const yt = await Innertube.create(/* options */);
 // async funtion that intializes masterchat and listens to youtube chat

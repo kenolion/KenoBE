@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
-import { OUT_PATH, VID_STATS_NM } from "./app-const.mjs";
+import { OUT_PATH, VID_STATS_NM } from "../constants/app-const.mjs";
 import get from "lodash/get.js";
-import { fmtMin } from "./utils/math-util.mjs";
+import { fmtMin } from "../utils/math-util.mjs";
 /*
   wordFreq = the amount of times the word occur
   wordFreqDiff = the difference in wordFreq from pvsTime and curTime(positive means a greater increase in word frequency)
@@ -59,7 +59,7 @@ export class ChatAnalyzer {
           this.wordFreqObj[curTime].totalOcc -
           get(this.wordFreqObj, `${pvsTime}.totalOcc`);
         this.#calTimestampObjTotal(curTime, pvsTime);
-        if (this.#isClippable(pvsTime, curTime)) {
+        if (this.#isClippable(curTime)) {
           this.timeLis.push(curTime);
         }
       }

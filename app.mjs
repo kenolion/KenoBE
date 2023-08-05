@@ -1,20 +1,16 @@
 import express from "express";
 import { PrismaClient } from "@prisma/client";
 import cors from "cors";
-import { listenYt } from "./yt-util.mjs";
-import { initTokenizer } from "./utils/data-prc-util.mjs";
-import { Innertube } from "youtubei.js";
-import { fmtTimestamp } from "./utils/math-util.mjs";
-import { ChatAnalyzer } from "./chat-analyzer.mjs";
-import set from "lodash/set.js";
+import { router } from "./src/router/yt-router.mjs";
+import { initTokenizer } from "./src/utils/data-prc-util.mjs";
 
 // variables
 const prisma = new PrismaClient();
 const app = express();
 const port = 4000;
 const ytChatObj = {};
-const yt = await Innertube.create(/* options */);
-//dlVideo(yt,'b6eqXTcxzf8');
+
+//dlVid("b6eqXTcxzf8");
 //init jp dictionary tokenizer from kuromoji
 await initTokenizer();
 
@@ -28,53 +24,7 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
-// youtube chat API
-app.get("/listen/:channelId/:id", (req, res) => {
-  listenYt(req.params.id, req.params.channelId, res).then((mc) => {
-    set(ytChatObj, req.params.id + ".mc", mc);
-    mc.listen();
-    return res;
-  });
-});
-
-app.get("/get/:id", (req, res) => {
-  // res.setHeader("Content-Type", "application/json");
-  let id = req.params.id;
-  if (!ytChatObj[id]) {
-    ytChatObj[id] = {};
-  }
-  if (ytChatObj[id] && ytChatObj[id].timestamp) {
-    res.json(fmtTimestamp(ytChatObj[id].timestamp, req.query.t));
-    return;
-  }
-  yt.getBasicInfo(id).then((info) => {
-    let time = info.basic_info.start_timestamp;
-    let tim = new Date(time).valueOf();
-    ytChatObj[id].timestamp = tim;
-    console.log(fmtTimestamp(tim, req.query.t));
-
-    res.json(info);
-  });
-});
-
-app.get("/listen/:id", (req, res) => {
-  // res.setHeader("Content-Type", "application/json");
-  listenYt(req.params.id, null, res).then((mc) => {
-    set(ytChatObj, req.params.id + ".mc", mc);
-    mc.listen();
-    return res;
-  });
-});
-
-app.put("/:id/end", (req, res) => {
-  let id = req.params.id;
-  const masterChat = ytChatObj[id].mc;
-  masterChat?.stop();
-  return res.json({
-    success: true,
-    message: `Ended listening to ${id} live chat.`,
-  });
-});
+app.route(router);
 
 // Backend for website
 app.get("/post", (req, res) => {
