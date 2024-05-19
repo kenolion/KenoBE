@@ -8,7 +8,7 @@ import { OUT_PATH } from "../constants/app-const.mjs";
 
 const yt = await Innertube.create(/* options */);
 // async funtion that intializes masterchat and listens to youtube chat
-async function listenYt(videoId, channelId, res) {
+async function listenYt(videoId, channelId, res, redisService) {
   // let mc = await Masterchat.init(videoId);
   let mc = channelId
     ? new Masterchat(videoId, channelId, { mode: "replay" })
@@ -45,9 +45,12 @@ async function listenYt(videoId, channelId, res) {
 
     // Handle end event
     mc.on("end", () => {
-      exrData(chatLis, wordHeatMap, videoId).then(() => {
+      const { statsJson, chatJson } = exrData(chatLis, wordHeatMap, videoId).then(() => {
         console.log("Data extracted");
       });
+      redisService.cacheJson(videoId + 'stat', statsJson);
+      redisService.cacheJson(videoId, chatJson);
+      // console.log("Live stream has ended");
       console.log("Live stream has ended");
     });
     console.log("listening to " + videoId + " live chat.");
@@ -68,10 +71,13 @@ async function exrData(chatLis, wordHeatMap, videoId) {
 
   // row = ;
   const t1 = performance.now();
+  const chatJson = JSON.stringify(chatLis);
 
+  const mapAsObject = Object.fromEntries(wordHeatMap.entries());
+  const statsJson = JSON.stringify(mapAsObject);
   writeFile(
     `./output/${videoId}${VID_MSG_NM}.json`,
-    JSON.stringify(chatLis),
+    chatJson,
     (err) => {
       if (err) throw err;
       console.log("Data written to file");
@@ -82,11 +88,10 @@ async function exrData(chatLis, wordHeatMap, videoId) {
     }
   );
   if (wordHeatMap) {
-    const mapAsObject = Object.fromEntries(wordHeatMap.entries());
-    const jsonString = JSON.stringify(mapAsObject);
+
     writeFile(
       `./output/${videoId}${VID_STATS_NM}.json`,
-      jsonString,
+      statsJson,
       (err) => {
         if (err) throw err;
         console.log("Data written to file");
@@ -97,9 +102,11 @@ async function exrData(chatLis, wordHeatMap, videoId) {
         wordHeatMap.clear();
       }
     );
+
   }
 
   chatLis = [];
+  return { statsJson, chatJson };
 }
 
 function exrMsg(messageLis) {

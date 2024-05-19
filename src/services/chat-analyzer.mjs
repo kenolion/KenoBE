@@ -2,6 +2,7 @@ import { readFileSync } from "fs";
 import { OUT_PATH, VID_STATS_NM } from "../constants/app-const.mjs";
 import get from "lodash/get.js";
 import { fmtMin } from "../utils/math-util.mjs";
+import { resolve } from "path";
 /*
   wordFreq = the amount of times the word occur
   wordFreqDiff = the difference in wordFreq from pvsTime and curTime(positive means a greater increase in word frequency)
@@ -27,6 +28,7 @@ export class ChatAnalyzer {
     try {
       this.file = readFileSync(fileNm);
       this.timeStampMap = JSON.parse(this.file);
+      resolve(this.timeStampMap);
     } catch (e) {
       console.log(`Failed to load ${fileNm}.json`);
       console.log(e);
