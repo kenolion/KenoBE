@@ -11,6 +11,8 @@ export default class YtRouter {
 
   // convert to use middleware and then use controller
   init(params) {
+    this.app.put("/clips/:id", (req, res) => { YtController.genClip(req, res) });
+    this.app.get("/clip/:filename", (req, res) => { YtController.getClip(req, res) });
     this.app.get("/listen/:id", (req, res, next) => { YtController.listenCh(req, res) });
     this.app.get("/get/:id", (req, res, next) => { this.redisMiddleware.cacheCheck(req, res, next) }, (req, res, next) => { YtController.getId(req, res) });
     this.app.get("/listen/:id", (req, res, next) => { YtController.listen(req, res) });

@@ -21,7 +21,7 @@
     "lodash": "^4.17.21",
     "redis": "^4.6.7",
     "redis-om": "^0.4.2",
-    "youtubei.js": "^5.1.0"
+    "youtubei.js": "^17.0.1"
   },
   "devDependencies": {
     "prisma": "^4.11.0"
