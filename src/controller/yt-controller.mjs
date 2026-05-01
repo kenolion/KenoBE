@@ -101,6 +101,7 @@ export default class YtController {
         url: `/clip/${clip.filename}`,
         format: clip.format,
         quality: clip.quality,
+        sourceType: clip.sourceType,
         from: clip.from,
         to: clip.to
       });

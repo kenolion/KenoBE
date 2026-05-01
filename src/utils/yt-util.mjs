@@ -6,6 +6,7 @@ import path from "node:path";
 import { Readable } from "stream";
 import vm from "node:vm";
 import { Masterchat } from "@kenolion/masterchat";
+import youtubedl from "youtube-dl-exec";
 import { extractWordHeatMap } from "../utils/data-prc-util.mjs";
 import { VID_STATS_NM, VID_MSG_NM } from "../constants/app-const.mjs";
 import { Innertube, Utils } from "youtubei.js";
@@ -278,8 +279,18 @@ async function decipherMediaUrl(format, cpn) {
 }
 
 async function createMediaRangeProxy(mediaSources) {
+  function proxyPathForSource(name, source) {
+    const mimeType = source.mimeType || '';
+    const extension = mimeType === 'audio/mp4'
+      ? 'm4a'
+      : mimeType.startsWith('video/') || mimeType.startsWith('audio/')
+        ? mimeType.split('/')[1]
+        : 'bin';
+    return `/${name}.${extension}`;
+  }
+
   const sourcesByPath = new Map(
-    Object.entries(mediaSources).map(([name, source]) => [`/${name}`, source])
+    Object.entries(mediaSources).map(([name, source]) => [proxyPathForSource(name, source), source])
   );
   const upstreamChunkSize = 1024 * 1024;
 
@@ -369,31 +380,62 @@ async function createMediaRangeProxy(mediaSources) {
   const { port } = server.address();
   return {
     urls: Object.fromEntries(
-      Object.keys(mediaSources).map((name) => [name, `http://127.0.0.1:${port}/${name}`])
+      Object.entries(mediaSources).map(([name, source]) => [name, `http://127.0.0.1:${port}${proxyPathForSource(name, source)}`])
     ),
     close: () => new Promise((resolve) => server.close(resolve))
   };
 }
 
 function selectMediaFormats(info, outputFormat, quality) {
-  const formats = info.streaming_data?.adaptive_formats || [];
+  const adaptiveFormats = info.streaming_data?.adaptive_formats || [];
+  const muxedFormats = info.streaming_data?.formats || [];
   const videoContainer = outputFormat === 'webm' ? 'webm' : 'mp4';
   const audioContainer = outputFormat === 'webm' ? 'webm' : 'mp4';
 
   if (outputFormat === 'mp3') {
+    const muxed = pickMediaFormat(
+      muxedFormats,
+      (fmt) =>
+        fmt.has_audio &&
+        fmt.has_video &&
+        fmt.mime_type.includes(audioContainer)
+    );
     const audio = pickMediaFormat(
-      formats,
+      adaptiveFormats,
       (fmt) => fmt.has_audio && !fmt.has_video
     );
-    if (!audio) {
+    if (!muxed && !audio) {
       throw httpError(500, 'No usable audio stream found for this video');
     }
-    return { audio };
+    return muxed ? { av: muxed } : { audio };
+  }
+
+  if (outputFormat === 'mp4') {
+    const muxed = quality && !['best', 'bestefficiency'].includes(quality)
+      ? pickMediaFormat(
+        muxedFormats,
+        (fmt) =>
+          fmt.has_video &&
+          fmt.has_audio &&
+          fmt.mime_type.includes(videoContainer) &&
+          fmt.quality_label === quality
+      )
+      : pickMediaFormat(
+        muxedFormats,
+        (fmt) =>
+          fmt.has_video &&
+          fmt.has_audio &&
+          fmt.mime_type.includes(videoContainer)
+      );
+
+    if (muxed) {
+      return { av: muxed };
+    }
   }
 
   const exactVideo = quality && !['best', 'bestefficiency'].includes(quality)
     ? pickMediaFormat(
-      formats,
+      adaptiveFormats,
       (fmt) =>
         fmt.has_video &&
         !fmt.has_audio &&
@@ -403,11 +445,11 @@ function selectMediaFormats(info, outputFormat, quality) {
     : null;
 
   const video = exactVideo || pickMediaFormat(
-    formats,
+    adaptiveFormats,
     (fmt) => fmt.has_video && !fmt.has_audio && fmt.mime_type.includes(videoContainer)
   );
   const audio = pickMediaFormat(
-    formats,
+    adaptiveFormats,
     (fmt) => fmt.has_audio && !fmt.has_video && fmt.mime_type.includes(audioContainer)
   );
 
@@ -421,28 +463,103 @@ function selectMediaFormats(info, outputFormat, quality) {
 function buildFfmpegArgs(fromSeconds, durationSeconds, outputFormat, mediaUrls, outputTarget = 'pipe:1') {
   const args = [
     '-hide_banner',
-    '-loglevel', 'error',
-    '-user_agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
-    '-headers', 'Referer: https://www.youtube.com/\r\nOrigin: https://www.youtube.com/\r\n'
+    '-loglevel', 'error'
   ];
 
-  if (outputFormat === 'mp3') {
+  if (!mediaUrls.dash) {
     args.push(
+      '-user_agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+      '-headers', 'Referer: https://www.youtube.com/\r\nOrigin: https://www.youtube.com/\r\n'
+    );
+  }
+
+  if (mediaUrls.dash) {
+    args.push(
+      '-protocol_whitelist', 'file,http,https,tcp,tls,crypto',
+      '-f', 'dash',
+      '-allowed_extensions', 'ALL',
+      '-i', mediaUrls.dash,
       '-ss', ffmpegTime(fromSeconds),
-      '-i', mediaUrls.audio,
+      '-t', ffmpegTime(durationSeconds)
+    );
+
+    if (outputFormat === 'mp3') {
+      args.push(
+        '-map', '0:a:0?',
+        '-vn',
+        '-c:a', 'libmp3lame',
+        '-b:a', '192k',
+        '-f', 'mp3'
+      );
+    } else if (outputFormat === 'webm') {
+      args.push(
+        '-map', '0:v:0?',
+        '-map', '0:a:0?',
+        '-c:v', 'libvpx-vp9',
+        '-deadline', 'realtime',
+        '-cpu-used', '6',
+        '-b:v', '0',
+        '-crf', '32',
+        '-c:a', 'libopus',
+        '-f', 'webm'
+      );
+    } else {
+      args.push(
+        '-map', '0:v:0?',
+        '-map', '0:a:0?',
+        '-c:v', 'libx264',
+        '-preset', 'veryfast',
+        '-crf', '23',
+        '-c:a', 'aac',
+        '-b:a', '128k',
+        '-movflags', 'frag_keyframe+empty_moov+default_base_moof',
+        '-f', 'mp4'
+      );
+    }
+  } else if (outputFormat === 'mp3') {
+    if (mediaUrls.av) {
+      args.push(
+        '-i', mediaUrls.av,
+        '-ss', ffmpegTime(fromSeconds),
+        '-t', ffmpegTime(durationSeconds),
+        '-map', '0:a:0',
+        '-vn',
+        '-c:a', 'libmp3lame',
+        '-b:a', '192k',
+        '-f', 'mp3'
+      );
+    } else {
+      args.push(
+        '-i', mediaUrls.audio,
+        '-ss', ffmpegTime(fromSeconds),
+        '-t', ffmpegTime(durationSeconds),
+        '-map', '0:a:0',
+        '-vn',
+        '-c:a', 'libmp3lame',
+        '-b:a', '192k',
+        '-f', 'mp3'
+      );
+    }
+  } else if (mediaUrls.av) {
+    args.push(
+      '-i', mediaUrls.av,
+      '-ss', ffmpegTime(fromSeconds),
       '-t', ffmpegTime(durationSeconds),
-      '-map', '0:a:0',
-      '-vn',
-      '-c:a', 'libmp3lame',
-      '-b:a', '192k',
-      '-f', 'mp3'
+      '-map', '0:v:0?',
+      '-map', '0:a:0?',
+      '-c:v', 'libx264',
+      '-preset', 'veryfast',
+      '-crf', '23',
+      '-c:a', 'aac',
+      '-b:a', '128k',
+      '-movflags', 'frag_keyframe+empty_moov+default_base_moof',
+      '-f', 'mp4'
     );
   } else if (outputFormat === 'webm') {
     args.push(
-      '-ss', ffmpegTime(fromSeconds),
       '-i', mediaUrls.video,
-      '-ss', ffmpegTime(fromSeconds),
       '-i', mediaUrls.audio,
+      '-ss', ffmpegTime(fromSeconds),
       '-t', ffmpegTime(durationSeconds),
       '-map', '0:v:0?',
       '-map', '1:a:0?',
@@ -456,10 +573,9 @@ function buildFfmpegArgs(fromSeconds, durationSeconds, outputFormat, mediaUrls, 
     );
   } else {
     args.push(
-      '-ss', ffmpegTime(fromSeconds),
       '-i', mediaUrls.video,
-      '-ss', ffmpegTime(fromSeconds),
       '-i', mediaUrls.audio,
+      '-ss', ffmpegTime(fromSeconds),
       '-t', ffmpegTime(durationSeconds),
       '-map', '0:v:0?',
       '-map', '1:a:0?',
@@ -477,30 +593,42 @@ function buildFfmpegArgs(fromSeconds, durationSeconds, outputFormat, mediaUrls, 
   return args;
 }
 
-async function loadClipMediaSources(id, outputFormat, quality) {
+async function loadClipMediaPlan(id, outputFormat, quality) {
   const info = await yt.getInfo(id, { client: 'ANDROID' });
   if (info.basic_info?.is_live) {
     throw httpError(400, 'Live videos are not supported by this endpoint');
   }
 
-  const mediaFormats = selectMediaFormats(info, outputFormat, quality || '360p');
+  const requestedQuality = quality || '360p';
+  const mediaFormats = selectMediaFormats(info, outputFormat, requestedQuality);
+  const avCpn = info.cpn;
+  const videoCpn = info.cpn;
+  const audioCpn = info.cpn;
+
   const mediaSources = {};
+  if (mediaFormats.av) {
+    mediaSources.av = {
+      url: await decipherMediaUrl(mediaFormats.av, avCpn),
+      contentLength: mediaFormats.av.content_length,
+      mimeType: mediaFormats.av.mime_type.split(';')[0]
+    };
+  }
   if (mediaFormats.video) {
     mediaSources.video = {
-      url: await decipherMediaUrl(mediaFormats.video, info.cpn),
+      url: await decipherMediaUrl(mediaFormats.video, videoCpn),
       contentLength: mediaFormats.video.content_length,
       mimeType: mediaFormats.video.mime_type.split(';')[0]
     };
   }
   if (mediaFormats.audio) {
     mediaSources.audio = {
-      url: await decipherMediaUrl(mediaFormats.audio, info.cpn),
+      url: await decipherMediaUrl(mediaFormats.audio, audioCpn),
       contentLength: mediaFormats.audio.content_length,
       mimeType: mediaFormats.audio.mime_type.split(';')[0]
     };
   }
 
-  return mediaSources;
+  return { info, mediaFormats, mediaSources };
 }
 
 function parseClipWindow(from, to) {
@@ -522,6 +650,42 @@ function closeProxy(mediaProxy) {
   return mediaProxy?.close().catch(() => {});
 }
 
+function usesSingleMuxedSource(mediaSources) {
+  return Boolean(mediaSources?.av) && !mediaSources?.video && !mediaSources?.audio;
+}
+
+function ytDlpFormatSelector(mediaFormats) {
+  if (mediaFormats.video && mediaFormats.audio) {
+    return `${mediaFormats.video.itag}+${mediaFormats.audio.itag}`;
+  }
+  if (mediaFormats.audio) {
+    return String(mediaFormats.audio.itag);
+  }
+  throw httpError(500, 'No usable adaptive source found for this video');
+}
+
+async function generateAdaptiveClipWithYtDlp(id, mediaFormats, fromSeconds, durationSeconds, outputFormat, filePath) {
+  const toSeconds = fromSeconds + durationSeconds;
+  const flags = {
+    format: ytDlpFormatSelector(mediaFormats),
+    output: filePath,
+    downloadSections: `*${ffmpegTime(fromSeconds)}-${ffmpegTime(toSeconds)}`,
+    forceKeyframesAtCuts: true,
+    noWarnings: true,
+    noPart: true
+  };
+
+  if (outputFormat === 'mp3') {
+    flags.extractAudio = true;
+    flags.audioFormat = 'mp3';
+    flags.audioQuality = '192K';
+  } else {
+    flags.mergeOutputFormat = outputFormat;
+  }
+
+  await youtubedl(`https://www.youtube.com/watch?v=${id}`, flags);
+}
+
 /**
  * Generates a clipped YouTube segment under OUT_PATH/vid and resolves after
  * ffmpeg has fully written the file.
@@ -532,16 +696,17 @@ function closeProxy(mediaProxy) {
  * @param {string=} quality Requested YouTube quality label.
  * @param {"mp4"|"mp3"|"webm"} outputFormat Output container/encoding.
  * @param {{ signal?: AbortSignal }=} options Optional cancellation signal.
- * @returns {Promise<{ filename: string, filePath: string, relativePath: string, format: string, quality: string, from: string, to: string }>}
+ * @returns {Promise<{ filename: string, filePath: string, relativePath: string, format: string, quality: string, from: string, to: string, sourceType: "muxed"|"adaptive" }>}
  */
 async function genClipFile(id, from, to, quality, outputFormat, options = {}) {
   const fmt = ['mp4', 'mp3', 'webm'].includes(outputFormat) ? outputFormat : 'mp4';
   const requestedQuality = quality || '360p';
   const { fromSeconds, durationSeconds } = parseClipWindow(from, to);
-  const mediaSources = await loadClipMediaSources(id, fmt, requestedQuality);
 
   const outputDir = path.join(OUT_PATH, 'vid');
   mkdirSync(outputDir, { recursive: true });
+  const { mediaFormats, mediaSources } = await loadClipMediaPlan(id, fmt, requestedQuality);
+  const sourceType = usesSingleMuxedSource(mediaSources) ? 'muxed' : 'adaptive';
 
   const timestamp = Date.now();
   const filename = [
@@ -555,8 +720,30 @@ async function genClipFile(id, from, to, quality, outputFormat, options = {}) {
   const filePath = path.join(outputDir, filename);
   const relativePath = path.join('vid', filename).replace(/\\/g, '/');
 
-  const mediaProxy = await createMediaRangeProxy(mediaSources);
-  const ff = spawn('ffmpeg', buildFfmpegArgs(fromSeconds, durationSeconds, fmt, mediaProxy.urls, filePath), {
+  if (sourceType === 'adaptive') {
+    try {
+      await generateAdaptiveClipWithYtDlp(id, mediaFormats, fromSeconds, durationSeconds, fmt, filePath);
+      return {
+        filename,
+        filePath,
+        relativePath,
+        format: fmt,
+        quality: requestedQuality,
+        from: String(from),
+        to: String(to),
+        sourceType
+      };
+    } catch (err) {
+      try { unlinkSync(filePath); } catch {}
+      throw httpError(500, err.stderr || err.message);
+    }
+  }
+
+  let mediaProxy = null;
+  let tempFiles = [];
+  let mediaUrls;
+  mediaUrls = { av: mediaSources.av.url };
+  const ff = spawn('ffmpeg', buildFfmpegArgs(fromSeconds, durationSeconds, fmt, mediaUrls, filePath), {
     stdio: ['ignore', 'ignore', 'pipe']
   });
   let stderr = '';
@@ -580,6 +767,9 @@ async function genClipFile(id, from, to, quality, outputFormat, options = {}) {
     ff.on('error', async (err) => {
       options.signal?.removeEventListener('abort', abort);
       await closeProxy(mediaProxy);
+      for (const tempFile of tempFiles) {
+        try { unlinkSync(tempFile); } catch {}
+      }
       try { unlinkSync(filePath); } catch {}
       reject(httpError(500, `ffmpeg spawn error: ${err.message}`));
     });
@@ -587,6 +777,9 @@ async function genClipFile(id, from, to, quality, outputFormat, options = {}) {
     ff.on('close', async (code) => {
       options.signal?.removeEventListener('abort', abort);
       await closeProxy(mediaProxy);
+      for (const tempFile of tempFiles) {
+        try { unlinkSync(tempFile); } catch {}
+      }
 
       if (aborted) {
         try { unlinkSync(filePath); } catch {}
@@ -602,7 +795,8 @@ async function genClipFile(id, from, to, quality, outputFormat, options = {}) {
           format: fmt,
           quality: requestedQuality,
           from: String(from),
-          to: String(to)
+          to: String(to),
+          sourceType
         });
         return;
       }
@@ -661,7 +855,7 @@ async function genClipFile(id, from, to, quality, outputFormat, options = {}) {
 async function streamVidSegment(id, from, to, quality, outputFormat, res) {
   const fmt = ['mp4', 'mp3', 'webm'].includes(outputFormat) ? outputFormat : 'mp4';
   const { fromSeconds, durationSeconds } = parseClipWindow(from, to);
-  const mediaSources = await loadClipMediaSources(id, fmt, quality || '360p');
+  const { mediaSources } = await loadClipMediaPlan(id, fmt, quality || '360p');
 
   const mimeTypes = { mp4: 'video/mp4', webm: 'video/webm', mp3: 'audio/mpeg' };
   const filename = [
@@ -673,8 +867,9 @@ async function streamVidSegment(id, from, to, quality, outputFormat, res) {
   res.setHeader('Content-Type', mimeTypes[fmt]);
   res.setHeader('Content-Disposition', `attachment; filename="${filename}.${fmt}"`);
 
-  const mediaProxy = await createMediaRangeProxy(mediaSources);
-  const ff = spawn('ffmpeg', buildFfmpegArgs(fromSeconds, durationSeconds, fmt, mediaProxy.urls), {
+  const mediaProxy = usesSingleMuxedSource(mediaSources) ? null : await createMediaRangeProxy(mediaSources);
+  const mediaUrls = mediaProxy ? mediaProxy.urls : { av: mediaSources.av.url };
+  const ff = spawn('ffmpeg', buildFfmpegArgs(fromSeconds, durationSeconds, fmt, mediaUrls), {
     stdio: ['ignore', 'pipe', 'pipe']
   });
   let stderr = '';
