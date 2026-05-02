@@ -1,0 +1,324 @@
+{
+  "communities": {
+    "0": [
+      "src_utils_clip_time_util_mjs",
+      "src_utils_yt_util_mjs",
+      "utils_clip_time_util_httperror",
+      "utils_clip_time_util_parsetimestamp",
+      "utils_yt_util_buildffmpegargs",
+      "utils_yt_util_closeproxy",
+      "utils_yt_util_createmediarangeproxy",
+      "utils_yt_util_cutvideo",
+      "utils_yt_util_deciphermediaurl",
+      "utils_yt_util_dlvid",
+      "utils_yt_util_exrdata",
+      "utils_yt_util_exrmsg",
+      "utils_yt_util_ffmpegtime",
+      "utils_yt_util_genclipfilewithmediaplan",
+      "utils_yt_util_generateadaptiveclipwithytdlp",
+      "utils_yt_util_isusablemediaformat",
+      "utils_yt_util_loadclipmediaplan",
+      "utils_yt_util_parseclipwindow",
+      "utils_yt_util_pickmediaformat",
+      "utils_yt_util_safefilepart",
+      "utils_yt_util_selectmediaformats",
+      "utils_yt_util_streamvidsegment",
+      "utils_yt_util_usessinglemuxedsource",
+      "utils_yt_util_ytdlpformatselector"
+    ],
+    "1": [
+      "AGENTS_cert_directory",
+      "AGENTS_chat_analysis",
+      "AGENTS_database_url",
+      "AGENTS_external_test_dependencies",
+      "AGENTS_mongodb",
+      "AGENTS_om_client_mjs",
+      "AGENTS_output_directory",
+      "AGENTS_prisma_generate",
+      "AGENTS_prisma_schema",
+      "AGENTS_probe_eval",
+      "AGENTS_redis",
+      "AGENTS_redis_om_entities",
+      "AGENTS_redis_service_mjs",
+      "AGENTS_security_configuration",
+      "AGENTS_services_directory",
+      "AGENTS_utils_directory",
+      "AGENTS_youtube_helpers",
+      "readme_expressjs",
+      "readme_mongodb",
+      "readme_prisma_client"
+    ],
+    "2": [
+      "middleware_redis_middleware_redismiddleware",
+      "middleware_redis_middleware_redismiddleware_cachecheck",
+      "middleware_redis_middleware_redismiddleware_constructor",
+      "middleware_redis_middleware_redismiddleware_generatecachekey",
+      "services_redis_service_redisservice",
+      "services_redis_service_redisservice_cachejson",
+      "services_redis_service_redisservice_constructor",
+      "services_redis_service_redisservice_getjson",
+      "src_middleware_redis_middleware_mjs",
+      "src_om_client_mjs",
+      "src_server_mjs",
+      "src_services_redis_service_mjs",
+      "src_utils_data_prc_util_mjs",
+      "utils_data_prc_util_extractwordheatmap",
+      "utils_data_prc_util_inittokenizer",
+      "utils_data_prc_util_setwordheatmap",
+      "utils_data_prc_util_tokenizejapanese"
+    ],
+    "3": [
+      "services_chat_analyzer_chatanalyzer",
+      "services_chat_analyzer_chatanalyzer_analyze",
+      "services_chat_analyzer_chatanalyzer_buildresult",
+      "services_chat_analyzer_chatanalyzer_calbaseline",
+      "services_chat_analyzer_chatanalyzer_calspikescore",
+      "services_chat_analyzer_chatanalyzer_constructor",
+      "services_chat_analyzer_chatanalyzer_getmatchedwords",
+      "services_chat_analyzer_chatanalyzer_getobj",
+      "services_chat_analyzer_chatanalyzer_isclippable",
+      "services_chat_analyzer_chatanalyzer_load",
+      "services_chat_analyzer_chatanalyzer_normalizewords",
+      "services_chat_analyzer_chatanalyzer_numberordefault",
+      "services_chat_analyzer_chatanalyzer_rankandapplycooldown",
+      "services_chat_analyzer_chatanalyzer_resolveoptions"
+    ],
+    "4": [
+      "controller_yt_controller_ytcontroller",
+      "controller_yt_controller_ytcontroller_analyze",
+      "controller_yt_controller_ytcontroller_endlistener",
+      "controller_yt_controller_ytcontroller_getclip",
+      "controller_yt_controller_ytcontroller_getid",
+      "controller_yt_controller_ytcontroller_listen",
+      "controller_yt_controller_ytcontroller_listench",
+      "src_utils_math_util_mjs",
+      "utils_math_util_cnvtimestamptomin",
+      "utils_math_util_fmtmin",
+      "utils_math_util_fmttimestamp",
+      "utils_math_util_normtimestamp",
+      "utils_yt_util_listenyt"
+    ],
+    "5": [
+      "controller_yt_controller_clipresponse",
+      "controller_yt_controller_ytcontroller_genclip",
+      "controller_yt_controller_ytcontroller_genclipbatch",
+      "src_utils_clip_batch_util_mjs",
+      "test_clip_batch_probe_mjs",
+      "utils_clip_batch_util_batchstatuscode",
+      "utils_clip_batch_util_buildbatchclipjobs",
+      "utils_clip_batch_util_errorresponse",
+      "utils_clip_batch_util_secondsstring",
+      "utils_clip_batch_util_validatebatchclipinput",
+      "utils_clip_batch_util_validationerror",
+      "utils_yt_util_genclipfile"
+    ],
+    "6": [
+      "AGENTS_controller_directory",
+      "AGENTS_es_module_style",
+      "AGENTS_express_api",
+      "AGENTS_middleware_directory",
+      "AGENTS_nodejs_es_module_backend",
+      "AGENTS_npm_install",
+      "AGENTS_npm_start",
+      "AGENTS_npm_test_placeholder",
+      "AGENTS_router_directory",
+      "AGENTS_server_mjs",
+      "AGENTS_src_directory",
+      "AGENTS_testing_guidelines"
+    ],
+    "7": [
+      "router_yt_router_ytrouter",
+      "router_yt_router_ytrouter_constructor",
+      "router_yt_router_ytrouter_init",
+      "src_constants_app_const_mjs",
+      "src_controller_yt_controller_mjs",
+      "src_router_yt_router_mjs",
+      "src_services_chat_analyzer_mjs",
+      "test_chat_analyzer_probe_analyze",
+      "test_chat_analyzer_probe_bucket",
+      "test_chat_analyzer_probe_mjs",
+      "test_chat_analyzer_probe_ts"
+    ],
+    "8": [
+      "middleware_common_middleware_commonmiddleware",
+      "middleware_common_middleware_commonmiddleware_constructor",
+      "middleware_common_middleware_commonmiddleware_hasrequestbody",
+      "src_middleware_common_middleware_mjs"
+    ],
+    "9": [
+      "om_chat_chat",
+      "src_om_chat_mjs"
+    ],
+    "10": [
+      "src_utils_file_util_mjs",
+      "utils_file_util_loadfile"
+    ],
+    "11": [
+      "components_database_js"
+    ],
+    "12": [
+      "test_probe_eval_mjs"
+    ]
+  },
+  "cohesion": {
+    "0": 0.17,
+    "1": 0.12,
+    "2": 0.13,
+    "3": 0.25,
+    "4": 0.19,
+    "5": 0.23,
+    "6": 0.18,
+    "7": 0.22,
+    "8": 0.5,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+  },
+  "gods": [
+    {
+      "id": "services_chat_analyzer_chatanalyzer",
+      "label": "ChatAnalyzer",
+      "degree": 14
+    },
+    {
+      "id": "controller_yt_controller_ytcontroller",
+      "label": "YtController",
+      "degree": 9
+    },
+    {
+      "id": "utils_yt_util_genclipfilewithmediaplan",
+      "label": "genClipFileWithMediaPlan()",
+      "degree": 9
+    },
+    {
+      "id": "utils_clip_time_util_httperror",
+      "label": "httpError()",
+      "degree": 7
+    },
+    {
+      "id": "utils_yt_util_loadclipmediaplan",
+      "label": "loadClipMediaPlan()",
+      "degree": 7
+    },
+    {
+      "id": "utils_yt_util_streamvidsegment",
+      "label": "streamVidSegment()",
+      "degree": 7
+    },
+    {
+      "id": "utils_yt_util_parseclipwindow",
+      "label": "parseClipWindow()",
+      "degree": 5
+    },
+    {
+      "id": "AGENTS_redis",
+      "label": "Redis",
+      "degree": 5
+    },
+    {
+      "id": "AGENTS_security_configuration",
+      "label": "Security and Configuration Tips",
+      "degree": 5
+    },
+    {
+      "id": "middleware_redis_middleware_redismiddleware",
+      "label": "RedisMiddleware",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Expressjs",
+      "target": "Express API",
+      "source_files": [
+        "readme.md",
+        "AGENTS.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Prisma Client",
+      "target": "Prisma Schema",
+      "source_files": [
+        "readme.md",
+        "AGENTS.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "mongoDB",
+      "target": "MongoDB",
+      "source_files": [
+        "readme.md",
+        "AGENTS.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "selectMediaFormats()",
+      "target": "httpError()",
+      "source_files": [
+        "src\\utils\\yt-util.mjs",
+        "src\\utils\\clip-time-util.mjs"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "loadClipMediaPlan()",
+      "target": "httpError()",
+      "source_files": [
+        "src\\utils\\yt-util.mjs",
+        "src\\utils\\clip-time-util.mjs"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `ChatAnalyzer` connect `Chat Analysis Engine` to `Routing and Tests`?",
+      "why": "High betweenness centrality (0.122) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `YtController` connect `YouTube Controller Flow` to `Clip Batch Generation`, `Routing and Tests`?",
+      "why": "High betweenness centrality (0.056) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `genClipFileWithMediaPlan()` (e.g. with `.genClipBatch()` and `httpError()`) actually correct?",
+      "why": "`genClipFileWithMediaPlan()` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 5 inferred relationships involving `httpError()` (e.g. with `selectMediaFormats()` and `loadClipMediaPlan()`) actually correct?",
+      "why": "`httpError()` has 5 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `loadClipMediaPlan()` (e.g. with `.genClipBatch()` and `httpError()`) actually correct?",
+      "why": "`loadClipMediaPlan()` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Chat`, `src Runtime Source Directory`, `Chat Analysis` to the rest of the system?",
+      "why": "12 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Infrastructure Configuration` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.12 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "0": "YouTube Media Pipeline",
+  "1": "Infrastructure Configuration",
+  "2": "Redis Cache Middleware",
+  "3": "Chat Analysis Engine",
+  "4": "YouTube Controller Flow",
+  "5": "Clip Batch Generation",
+  "6": "Project Structure",
+  "7": "Routing and Tests",
+  "8": "Request Body Middleware",
+  "9": "Chat Model",
+  "10": "File Loading Utility",
+  "11": "Database Bootstrap",
+  "12": "YouTube Probe"
+}

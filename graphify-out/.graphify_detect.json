@@ -1,0 +1,41 @@
+{
+  "files": {
+    "code": [
+      "D:\\Proj\\Backend\\components\\database.js",
+      "D:\\Proj\\Backend\\src\\server.mjs",
+      "D:\\Proj\\Backend\\src\\constants\\app-const.mjs",
+      "D:\\Proj\\Backend\\src\\controller\\yt-controller.mjs",
+      "D:\\Proj\\Backend\\src\\middleware\\common-middleware.mjs",
+      "D:\\Proj\\Backend\\src\\middleware\\redis-middleware.mjs",
+      "D:\\Proj\\Backend\\src\\om\\chat.mjs",
+      "D:\\Proj\\Backend\\src\\om\\client.mjs",
+      "D:\\Proj\\Backend\\src\\router\\yt-router.mjs",
+      "D:\\Proj\\Backend\\src\\services\\chat-analyzer.mjs",
+      "D:\\Proj\\Backend\\src\\services\\redis-service.mjs",
+      "D:\\Proj\\Backend\\src\\utils\\clip-batch-util.mjs",
+      "D:\\Proj\\Backend\\src\\utils\\clip-time-util.mjs",
+      "D:\\Proj\\Backend\\src\\utils\\data-prc-util.mjs",
+      "D:\\Proj\\Backend\\src\\utils\\file-util.mjs",
+      "D:\\Proj\\Backend\\src\\utils\\math-util.mjs",
+      "D:\\Proj\\Backend\\src\\utils\\yt-util.mjs",
+      "D:\\Proj\\Backend\\test\\chat-analyzer.probe.mjs",
+      "D:\\Proj\\Backend\\test\\clip-batch.probe.mjs",
+      "D:\\Proj\\Backend\\test\\probe-eval.mjs"
+    ],
+    "document": [
+      "D:\\Proj\\Backend\\AGENTS.md",
+      "D:\\Proj\\Backend\\readme.md"
+    ],
+    "paper": [],
+    "image": [],
+    "video": []
+  },
+  "total_files": 22,
+  "total_words": 7085,
+  "needs_graph": false,
+  "warning": "Corpus is ~7,085 words - fits in a single context window. You may not need a graph.",
+  "skipped_sensitive": [
+    "D:\\Proj\\Backend\\cert\\X509-cert-3168983018620576334.pem"
+  ],
+  "graphifyignore_patterns": 0
+}
