@@ -1,0 +1,2378 @@
+{
+  "nodes": [
+    {
+      "id": "components_database_js",
+      "label": "database.js",
+      "file_type": "code",
+      "source_file": "components\\database.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_server_mjs",
+      "label": "server.mjs",
+      "file_type": "code",
+      "source_file": "src\\server.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_constants_app_const_mjs",
+      "label": "app-const.mjs",
+      "file_type": "code",
+      "source_file": "src\\constants\\app-const.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_controller_yt_controller_mjs",
+      "label": "yt-controller.mjs",
+      "file_type": "code",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "controller_yt_controller_clipresponse",
+      "label": "clipResponse()",
+      "file_type": "code",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L25"
+    },
+    {
+      "id": "controller_yt_controller_ytcontroller",
+      "label": "YtController",
+      "file_type": "code",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L40"
+    },
+    {
+      "id": "controller_yt_controller_ytcontroller_listench",
+      "label": ".listenCh()",
+      "file_type": "code",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L41"
+    },
+    {
+      "id": "controller_yt_controller_ytcontroller_getid",
+      "label": ".getId()",
+      "file_type": "code",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L49"
+    },
+    {
+      "id": "controller_yt_controller_ytcontroller_listen",
+      "label": ".listen()",
+      "file_type": "code",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L69"
+    },
+    {
+      "id": "controller_yt_controller_ytcontroller_endlistener",
+      "label": ".endListener()",
+      "file_type": "code",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L78"
+    },
+    {
+      "id": "controller_yt_controller_ytcontroller_analyze",
+      "label": ".analyze()",
+      "file_type": "code",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L88"
+    },
+    {
+      "id": "controller_yt_controller_ytcontroller_genclip",
+      "label": ".genClip()",
+      "file_type": "code",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L116"
+    },
+    {
+      "id": "controller_yt_controller_ytcontroller_genclipbatch",
+      "label": ".genClipBatch()",
+      "file_type": "code",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L161"
+    },
+    {
+      "id": "controller_yt_controller_ytcontroller_getclip",
+      "label": ".getClip()",
+      "file_type": "code",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L235"
+    },
+    {
+      "id": "src_middleware_common_middleware_mjs",
+      "label": "common-middleware.mjs",
+      "file_type": "code",
+      "source_file": "src\\middleware\\common-middleware.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "middleware_common_middleware_commonmiddleware",
+      "label": "CommonMiddleware",
+      "file_type": "code",
+      "source_file": "src\\middleware\\common-middleware.mjs",
+      "source_location": "L3"
+    },
+    {
+      "id": "middleware_common_middleware_commonmiddleware_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src\\middleware\\common-middleware.mjs",
+      "source_location": "L4"
+    },
+    {
+      "id": "middleware_common_middleware_commonmiddleware_hasrequestbody",
+      "label": ".hasRequestBody()",
+      "file_type": "code",
+      "source_file": "src\\middleware\\common-middleware.mjs",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_middleware_redis_middleware_mjs",
+      "label": "redis-middleware.mjs",
+      "file_type": "code",
+      "source_file": "src\\middleware\\redis-middleware.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "middleware_redis_middleware_redismiddleware",
+      "label": "RedisMiddleware",
+      "file_type": "code",
+      "source_file": "src\\middleware\\redis-middleware.mjs",
+      "source_location": "L2"
+    },
+    {
+      "id": "middleware_redis_middleware_redismiddleware_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src\\middleware\\redis-middleware.mjs",
+      "source_location": "L3"
+    },
+    {
+      "id": "middleware_redis_middleware_redismiddleware_cachecheck",
+      "label": ".cacheCheck()",
+      "file_type": "code",
+      "source_file": "src\\middleware\\redis-middleware.mjs",
+      "source_location": "L8"
+    },
+    {
+      "id": "middleware_redis_middleware_redismiddleware_generatecachekey",
+      "label": ".generateCacheKey()",
+      "file_type": "code",
+      "source_file": "src\\middleware\\redis-middleware.mjs",
+      "source_location": "L36"
+    },
+    {
+      "id": "src_om_chat_mjs",
+      "label": "chat.mjs",
+      "file_type": "code",
+      "source_file": "src\\om\\chat.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "om_chat_chat",
+      "label": "Chat",
+      "file_type": "code",
+      "source_file": "src\\om\\chat.mjs",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_om_client_mjs",
+      "label": "client.mjs",
+      "file_type": "code",
+      "source_file": "src\\om\\client.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_router_yt_router_mjs",
+      "label": "yt-router.mjs",
+      "file_type": "code",
+      "source_file": "src\\router\\yt-router.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "router_yt_router_ytrouter",
+      "label": "YtRouter",
+      "file_type": "code",
+      "source_file": "src\\router\\yt-router.mjs",
+      "source_location": "L3"
+    },
+    {
+      "id": "router_yt_router_ytrouter_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src\\router\\yt-router.mjs",
+      "source_location": "L4"
+    },
+    {
+      "id": "router_yt_router_ytrouter_init",
+      "label": ".init()",
+      "file_type": "code",
+      "source_file": "src\\router\\yt-router.mjs",
+      "source_location": "L13"
+    },
+    {
+      "id": "src_services_chat_analyzer_mjs",
+      "label": "chat-analyzer.mjs",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer",
+      "label": "ChatAnalyzer",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L19"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L20"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_load",
+      "label": ".load()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L36"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_getobj",
+      "label": ".getObj()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L51"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_analyze",
+      "label": ".analyze()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L55"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_buildresult",
+      "label": ".#buildResult()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L110"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_normalizewords",
+      "label": ".#normalizeWords()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L118"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_resolveoptions",
+      "label": ".#resolveOptions()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L128"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_numberordefault",
+      "label": ".#numberOrDefault()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L169"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_getmatchedwords",
+      "label": ".#getMatchedWords()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L178"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_calbaseline",
+      "label": ".#calBaseline()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L191"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_calspikescore",
+      "label": ".#calSpikeScore()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L203"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_isclippable",
+      "label": ".#isClippable()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L207"
+    },
+    {
+      "id": "services_chat_analyzer_chatanalyzer_rankandapplycooldown",
+      "label": ".#rankAndApplyCooldown()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L215"
+    },
+    {
+      "id": "src_services_redis_service_mjs",
+      "label": "redis-service.mjs",
+      "file_type": "code",
+      "source_file": "src\\services\\redis-service.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "services_redis_service_redisservice",
+      "label": "RedisService",
+      "file_type": "code",
+      "source_file": "src\\services\\redis-service.mjs",
+      "source_location": "L3"
+    },
+    {
+      "id": "services_redis_service_redisservice_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src\\services\\redis-service.mjs",
+      "source_location": "L5"
+    },
+    {
+      "id": "services_redis_service_redisservice_cachejson",
+      "label": ".cacheJson()",
+      "file_type": "code",
+      "source_file": "src\\services\\redis-service.mjs",
+      "source_location": "L11"
+    },
+    {
+      "id": "services_redis_service_redisservice_getjson",
+      "label": ".getJson()",
+      "file_type": "code",
+      "source_file": "src\\services\\redis-service.mjs",
+      "source_location": "L16"
+    },
+    {
+      "id": "src_utils_clip_batch_util_mjs",
+      "label": "clip-batch-util.mjs",
+      "file_type": "code",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_clip_batch_util_secondsstring",
+      "label": "secondsString()",
+      "file_type": "code",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L5"
+    },
+    {
+      "id": "utils_clip_batch_util_validationerror",
+      "label": "validationError()",
+      "file_type": "code",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L9"
+    },
+    {
+      "id": "utils_clip_batch_util_errorresponse",
+      "label": "errorResponse()",
+      "file_type": "code",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L15"
+    },
+    {
+      "id": "utils_clip_batch_util_buildbatchclipjobs",
+      "label": "buildBatchClipJobs()",
+      "file_type": "code",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L25"
+    },
+    {
+      "id": "utils_clip_batch_util_validatebatchclipinput",
+      "label": "validateBatchClipInput()",
+      "file_type": "code",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L64"
+    },
+    {
+      "id": "utils_clip_batch_util_batchstatuscode",
+      "label": "batchStatusCode()",
+      "file_type": "code",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L78"
+    },
+    {
+      "id": "src_utils_clip_time_util_mjs",
+      "label": "clip-time-util.mjs",
+      "file_type": "code",
+      "source_file": "src\\utils\\clip-time-util.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_clip_time_util_httperror",
+      "label": "httpError()",
+      "file_type": "code",
+      "source_file": "src\\utils\\clip-time-util.mjs",
+      "source_location": "L3"
+    },
+    {
+      "id": "utils_clip_time_util_parsetimestamp",
+      "label": "parseTimestamp()",
+      "file_type": "code",
+      "source_file": "src\\utils\\clip-time-util.mjs",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_utils_data_prc_util_mjs",
+      "label": "data-prc-util.mjs",
+      "file_type": "code",
+      "source_file": "src\\utils\\data-prc-util.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_data_prc_util_extractwordheatmap",
+      "label": "extractWordHeatMap()",
+      "file_type": "code",
+      "source_file": "src\\utils\\data-prc-util.mjs",
+      "source_location": "L11"
+    },
+    {
+      "id": "utils_data_prc_util_setwordheatmap",
+      "label": "setWordHeatMap()",
+      "file_type": "code",
+      "source_file": "src\\utils\\data-prc-util.mjs",
+      "source_location": "L28"
+    },
+    {
+      "id": "utils_data_prc_util_tokenizejapanese",
+      "label": "tokenizeJapanese()",
+      "file_type": "code",
+      "source_file": "src\\utils\\data-prc-util.mjs",
+      "source_location": "L42"
+    },
+    {
+      "id": "utils_data_prc_util_inittokenizer",
+      "label": "initTokenizer()",
+      "file_type": "code",
+      "source_file": "src\\utils\\data-prc-util.mjs",
+      "source_location": "L66"
+    },
+    {
+      "id": "src_utils_file_util_mjs",
+      "label": "file-util.mjs",
+      "file_type": "code",
+      "source_file": "src\\utils\\file-util.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_file_util_loadfile",
+      "label": "loadFile()",
+      "file_type": "code",
+      "source_file": "src\\utils\\file-util.mjs",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_utils_math_util_mjs",
+      "label": "math-util.mjs",
+      "file_type": "code",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_math_util_cnvtimestamptomin",
+      "label": "cnvTimestampToMin()",
+      "file_type": "code",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L6"
+    },
+    {
+      "id": "utils_math_util_fmttimestamp",
+      "label": "fmtTimestamp()",
+      "file_type": "code",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L11"
+    },
+    {
+      "id": "utils_math_util_fmtmin",
+      "label": "fmtMin()",
+      "file_type": "code",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L20"
+    },
+    {
+      "id": "utils_math_util_normtimestamp",
+      "label": "normTimestamp()",
+      "file_type": "code",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L28"
+    },
+    {
+      "id": "src_utils_yt_util_mjs",
+      "label": "yt-util.mjs",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_yt_util_listenyt",
+      "label": "listenYt()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L44"
+    },
+    {
+      "id": "utils_yt_util_exrdata",
+      "label": "exrData()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L98"
+    },
+    {
+      "id": "utils_yt_util_exrmsg",
+      "label": "exrMsg()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L145"
+    },
+    {
+      "id": "utils_yt_util_dlvid",
+      "label": "dlVid()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L164"
+    },
+    {
+      "id": "utils_yt_util_cutvideo",
+      "label": "cutVideo()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L179"
+    },
+    {
+      "id": "utils_yt_util_ffmpegtime",
+      "label": "ffmpegTime()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L216"
+    },
+    {
+      "id": "utils_yt_util_safefilepart",
+      "label": "safeFilePart()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L220"
+    },
+    {
+      "id": "utils_yt_util_isusablemediaformat",
+      "label": "isUsableMediaFormat()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L224"
+    },
+    {
+      "id": "utils_yt_util_pickmediaformat",
+      "label": "pickMediaFormat()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L229"
+    },
+    {
+      "id": "utils_yt_util_deciphermediaurl",
+      "label": "decipherMediaUrl()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L238"
+    },
+    {
+      "id": "utils_yt_util_createmediarangeproxy",
+      "label": "createMediaRangeProxy()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L246"
+    },
+    {
+      "id": "utils_yt_util_selectmediaformats",
+      "label": "selectMediaFormats()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L354"
+    },
+    {
+      "id": "utils_yt_util_buildffmpegargs",
+      "label": "buildFfmpegArgs()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L428"
+    },
+    {
+      "id": "utils_yt_util_loadclipmediaplan",
+      "label": "loadClipMediaPlan()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L561"
+    },
+    {
+      "id": "utils_yt_util_parseclipwindow",
+      "label": "parseClipWindow()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L599"
+    },
+    {
+      "id": "utils_yt_util_closeproxy",
+      "label": "closeProxy()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L614"
+    },
+    {
+      "id": "utils_yt_util_usessinglemuxedsource",
+      "label": "usesSingleMuxedSource()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L618"
+    },
+    {
+      "id": "utils_yt_util_ytdlpformatselector",
+      "label": "ytDlpFormatSelector()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L622"
+    },
+    {
+      "id": "utils_yt_util_generateadaptiveclipwithytdlp",
+      "label": "generateAdaptiveClipWithYtDlp()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L632"
+    },
+    {
+      "id": "utils_yt_util_genclipfilewithmediaplan",
+      "label": "genClipFileWithMediaPlan()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L670"
+    },
+    {
+      "id": "utils_yt_util_genclipfile",
+      "label": "genClipFile()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L791"
+    },
+    {
+      "id": "utils_yt_util_streamvidsegment",
+      "label": "streamVidSegment()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L842"
+    },
+    {
+      "id": "test_chat_analyzer_probe_mjs",
+      "label": "chat-analyzer.probe.mjs",
+      "file_type": "code",
+      "source_file": "test\\chat-analyzer.probe.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "test_chat_analyzer_probe_ts",
+      "label": "ts()",
+      "file_type": "code",
+      "source_file": "test\\chat-analyzer.probe.mjs",
+      "source_location": "L5"
+    },
+    {
+      "id": "test_chat_analyzer_probe_bucket",
+      "label": "bucket()",
+      "file_type": "code",
+      "source_file": "test\\chat-analyzer.probe.mjs",
+      "source_location": "L6"
+    },
+    {
+      "id": "test_chat_analyzer_probe_analyze",
+      "label": "analyze()",
+      "file_type": "code",
+      "source_file": "test\\chat-analyzer.probe.mjs",
+      "source_location": "L8"
+    },
+    {
+      "id": "test_clip_batch_probe_mjs",
+      "label": "clip-batch.probe.mjs",
+      "file_type": "code",
+      "source_file": "test\\clip-batch.probe.mjs",
+      "source_location": "L1"
+    },
+    {
+      "id": "test_probe_eval_mjs",
+      "label": "probe-eval.mjs",
+      "file_type": "code",
+      "source_file": "test\\probe-eval.mjs",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "src_server_mjs",
+      "target": "express",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\server.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_mjs",
+      "target": "client",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\server.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_mjs",
+      "target": "cors",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\server.mjs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_mjs",
+      "target": "src_router_yt_router_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\server.mjs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_mjs",
+      "target": "src_utils_data_prc_util_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\server.mjs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_mjs",
+      "target": "src_services_redis_service_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\server.mjs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_mjs",
+      "target": "src_middleware_redis_middleware_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\server.mjs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_mjs",
+      "target": "src_om_client_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\server.mjs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_constants_app_const_mjs",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\constants\\app-const.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_constants_app_const_mjs",
+      "target": "node_url",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\constants\\app-const.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_controller_yt_controller_mjs",
+      "target": "node_fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_controller_yt_controller_mjs",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_controller_yt_controller_mjs",
+      "target": "src_utils_yt_util_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_controller_yt_controller_mjs",
+      "target": "src_utils_math_util_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_controller_yt_controller_mjs",
+      "target": "src_services_chat_analyzer_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_controller_yt_controller_mjs",
+      "target": "set_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_controller_yt_controller_mjs",
+      "target": "src_constants_app_const_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_controller_yt_controller_mjs",
+      "target": "src_utils_clip_batch_util_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_controller_yt_controller_mjs",
+      "target": "controller_yt_controller_clipresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_controller_yt_controller_mjs",
+      "target": "controller_yt_controller_ytcontroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller",
+      "target": "controller_yt_controller_ytcontroller_listench",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller",
+      "target": "controller_yt_controller_ytcontroller_getid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller",
+      "target": "controller_yt_controller_ytcontroller_listen",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller",
+      "target": "controller_yt_controller_ytcontroller_endlistener",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller",
+      "target": "controller_yt_controller_ytcontroller_analyze",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller",
+      "target": "controller_yt_controller_ytcontroller_genclip",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L116",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller",
+      "target": "controller_yt_controller_ytcontroller_genclipbatch",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L161",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller",
+      "target": "controller_yt_controller_ytcontroller_getclip",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L235",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_genclip",
+      "target": "controller_yt_controller_ytcontroller_genclipbatch",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_genclip",
+      "target": "controller_yt_controller_clipresponse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_genclipbatch",
+      "target": "controller_yt_controller_clipresponse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L209",
+      "weight": 1.0
+    },
+    {
+      "source": "src_middleware_common_middleware_mjs",
+      "target": "body_parser",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\middleware\\common-middleware.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_middleware_common_middleware_mjs",
+      "target": "method_override",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\middleware\\common-middleware.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_middleware_common_middleware_mjs",
+      "target": "middleware_common_middleware_commonmiddleware",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\middleware\\common-middleware.mjs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware_common_middleware_commonmiddleware",
+      "target": "middleware_common_middleware_commonmiddleware_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\middleware\\common-middleware.mjs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware_common_middleware_commonmiddleware",
+      "target": "middleware_common_middleware_commonmiddleware_hasrequestbody",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\middleware\\common-middleware.mjs",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_middleware_redis_middleware_mjs",
+      "target": "middleware_redis_middleware_redismiddleware",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\middleware\\redis-middleware.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware_redis_middleware_redismiddleware",
+      "target": "middleware_redis_middleware_redismiddleware_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\middleware\\redis-middleware.mjs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware_redis_middleware_redismiddleware",
+      "target": "middleware_redis_middleware_redismiddleware_cachecheck",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\middleware\\redis-middleware.mjs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware_redis_middleware_redismiddleware",
+      "target": "middleware_redis_middleware_redismiddleware_generatecachekey",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\middleware\\redis-middleware.mjs",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "middleware_redis_middleware_redismiddleware_cachecheck",
+      "target": "middleware_redis_middleware_redismiddleware_generatecachekey",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\middleware\\redis-middleware.mjs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_om_chat_mjs",
+      "target": "om_chat_chat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\om\\chat.mjs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_om_client_mjs",
+      "target": "redis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\om\\client.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_router_yt_router_mjs",
+      "target": "src_controller_yt_controller_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\router\\yt-router.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_router_yt_router_mjs",
+      "target": "router_yt_router_ytrouter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\router\\yt-router.mjs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "router_yt_router_ytrouter",
+      "target": "router_yt_router_ytrouter_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\router\\yt-router.mjs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "router_yt_router_ytrouter",
+      "target": "router_yt_router_ytrouter_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\router\\yt-router.mjs",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "router_yt_router_ytrouter_constructor",
+      "target": "router_yt_router_ytrouter_init",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\router\\yt-router.mjs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_chat_analyzer_mjs",
+      "target": "fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_chat_analyzer_mjs",
+      "target": "src_constants_app_const_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_chat_analyzer_mjs",
+      "target": "services_chat_analyzer_chatanalyzer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_load",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_getobj",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_analyze",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_buildresult",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_normalizewords",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_resolveoptions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_numberordefault",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_getmatchedwords",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L178",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_calbaseline",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L191",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_calspikescore",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L203",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_isclippable",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L207",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_rankandapplycooldown",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L215",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer_constructor",
+      "target": "services_chat_analyzer_chatanalyzer_normalizewords",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer_constructor",
+      "target": "services_chat_analyzer_chatanalyzer_resolveoptions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer_analyze",
+      "target": "services_chat_analyzer_chatanalyzer_resolveoptions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer_analyze",
+      "target": "services_chat_analyzer_chatanalyzer_buildresult",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer_analyze",
+      "target": "services_chat_analyzer_chatanalyzer_getmatchedwords",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer_analyze",
+      "target": "services_chat_analyzer_chatanalyzer_calbaseline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer_analyze",
+      "target": "services_chat_analyzer_chatanalyzer_calspikescore",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer_analyze",
+      "target": "services_chat_analyzer_chatanalyzer_isclippable",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer_analyze",
+      "target": "services_chat_analyzer_chatanalyzer_rankandapplycooldown",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "services_chat_analyzer_chatanalyzer_resolveoptions",
+      "target": "services_chat_analyzer_chatanalyzer_numberordefault",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_redis_service_mjs",
+      "target": "redis",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\redis-service.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_redis_service_mjs",
+      "target": "services_redis_service_redisservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\redis-service.mjs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "services_redis_service_redisservice",
+      "target": "services_redis_service_redisservice_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\redis-service.mjs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "services_redis_service_redisservice",
+      "target": "services_redis_service_redisservice_cachejson",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\redis-service.mjs",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "services_redis_service_redisservice",
+      "target": "services_redis_service_redisservice_getjson",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\redis-service.mjs",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_clip_batch_util_mjs",
+      "target": "src_utils_clip_time_util_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_clip_batch_util_mjs",
+      "target": "utils_clip_batch_util_secondsstring",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_clip_batch_util_mjs",
+      "target": "utils_clip_batch_util_validationerror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_clip_batch_util_mjs",
+      "target": "utils_clip_batch_util_errorresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_clip_batch_util_mjs",
+      "target": "utils_clip_batch_util_buildbatchclipjobs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_clip_batch_util_mjs",
+      "target": "utils_clip_batch_util_validatebatchclipinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_clip_batch_util_mjs",
+      "target": "utils_clip_batch_util_batchstatuscode",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_clip_time_util_mjs",
+      "target": "utils_clip_time_util_httperror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-time-util.mjs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_clip_time_util_mjs",
+      "target": "utils_clip_time_util_parsetimestamp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-time-util.mjs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_clip_time_util_parsetimestamp",
+      "target": "utils_clip_time_util_httperror",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-time-util.mjs",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_data_prc_util_mjs",
+      "target": "kuromoji",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\data-prc-util.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_data_prc_util_mjs",
+      "target": "utils_data_prc_util_extractwordheatmap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\data-prc-util.mjs",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_data_prc_util_mjs",
+      "target": "utils_data_prc_util_setwordheatmap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\data-prc-util.mjs",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_data_prc_util_mjs",
+      "target": "utils_data_prc_util_tokenizejapanese",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\data-prc-util.mjs",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_data_prc_util_mjs",
+      "target": "utils_data_prc_util_inittokenizer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\data-prc-util.mjs",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_data_prc_util_setwordheatmap",
+      "target": "utils_data_prc_util_tokenizejapanese",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\data-prc-util.mjs",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_file_util_mjs",
+      "target": "fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\file-util.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_file_util_mjs",
+      "target": "utils_file_util_loadfile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\file-util.mjs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_math_util_mjs",
+      "target": "utils_math_util_cnvtimestamptomin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_math_util_mjs",
+      "target": "utils_math_util_fmttimestamp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_math_util_mjs",
+      "target": "utils_math_util_fmtmin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_math_util_mjs",
+      "target": "utils_math_util_normtimestamp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_math_util_cnvtimestamptomin",
+      "target": "utils_math_util_normtimestamp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_math_util_fmttimestamp",
+      "target": "utils_math_util_cnvtimestamptomin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "fs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "child_process",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "http",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "node_crypto",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "node_path",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "stream",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "node_vm",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "masterchat",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "youtube_dl_exec",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "src_utils_data_prc_util_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "src_constants_app_const_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "youtubei_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "src_constants_app_const_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "src_utils_clip_time_util_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_listenyt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_exrdata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_exrmsg",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L145",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_dlvid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L164",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_cutvideo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L179",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_ffmpegtime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L216",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_safefilepart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L220",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_isusablemediaformat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L224",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_pickmediaformat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L229",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_deciphermediaurl",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L238",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_createmediarangeproxy",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L246",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_selectmediaformats",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L354",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_buildffmpegargs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L428",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_loadclipmediaplan",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L561",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_parseclipwindow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L599",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_closeproxy",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L614",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_usessinglemuxedsource",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L618",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_ytdlpformatselector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L622",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_generateadaptiveclipwithytdlp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L632",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_genclipfilewithmediaplan",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L670",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_genclipfile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L791",
+      "weight": 1.0
+    },
+    {
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_streamvidsegment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L842",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_selectmediaformats",
+      "target": "utils_yt_util_pickmediaformat",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L361",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_buildffmpegargs",
+      "target": "utils_yt_util_ffmpegtime",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L447",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_loadclipmediaplan",
+      "target": "utils_yt_util_selectmediaformats",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L568",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_loadclipmediaplan",
+      "target": "utils_yt_util_deciphermediaurl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L576",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_generateadaptiveclipwithytdlp",
+      "target": "utils_yt_util_ytdlpformatselector",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L635",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_generateadaptiveclipwithytdlp",
+      "target": "utils_yt_util_ffmpegtime",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L637",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_genclipfilewithmediaplan",
+      "target": "utils_yt_util_parseclipwindow",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L673",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_genclipfilewithmediaplan",
+      "target": "utils_yt_util_usessinglemuxedsource",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L675",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_genclipfilewithmediaplan",
+      "target": "utils_yt_util_safefilepart",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L682",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_genclipfilewithmediaplan",
+      "target": "utils_yt_util_generateadaptiveclipwithytdlp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L694",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_genclipfilewithmediaplan",
+      "target": "utils_yt_util_buildffmpegargs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L714",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_genclipfile",
+      "target": "utils_yt_util_loadclipmediaplan",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L794",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_genclipfile",
+      "target": "utils_yt_util_genclipfilewithmediaplan",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L795",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_streamvidsegment",
+      "target": "utils_yt_util_parseclipwindow",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L844",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_streamvidsegment",
+      "target": "utils_yt_util_loadclipmediaplan",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L845",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_streamvidsegment",
+      "target": "utils_yt_util_safefilepart",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L849",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_streamvidsegment",
+      "target": "utils_yt_util_usessinglemuxedsource",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L857",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_streamvidsegment",
+      "target": "utils_yt_util_createmediarangeproxy",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L857",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_streamvidsegment",
+      "target": "utils_yt_util_buildffmpegargs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L859",
+      "weight": 1.0
+    },
+    {
+      "source": "test_chat_analyzer_probe_mjs",
+      "target": "strict",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "test\\chat-analyzer.probe.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "test_chat_analyzer_probe_mjs",
+      "target": "src_services_chat_analyzer_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "test\\chat-analyzer.probe.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "test_chat_analyzer_probe_mjs",
+      "target": "test_chat_analyzer_probe_ts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test\\chat-analyzer.probe.mjs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "test_chat_analyzer_probe_mjs",
+      "target": "test_chat_analyzer_probe_bucket",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test\\chat-analyzer.probe.mjs",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "test_chat_analyzer_probe_mjs",
+      "target": "test_chat_analyzer_probe_analyze",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test\\chat-analyzer.probe.mjs",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "test_clip_batch_probe_mjs",
+      "target": "strict",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "test\\clip-batch.probe.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "test_clip_batch_probe_mjs",
+      "target": "src_utils_clip_batch_util_mjs",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "test\\clip-batch.probe.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "test_probe_eval_mjs",
+      "target": "youtubei_js",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "test\\probe-eval.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "test_probe_eval_mjs",
+      "target": "node_vm",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "test\\probe-eval.mjs",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_listench",
+      "target": "utils_yt_util_listenyt",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_getid",
+      "target": "utils_math_util_fmttimestamp",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_listen",
+      "target": "utils_yt_util_listenyt",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_genclip",
+      "target": "utils_yt_util_genclipfile",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_genclipbatch",
+      "target": "utils_clip_batch_util_validatebatchclipinput",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_genclipbatch",
+      "target": "utils_clip_batch_util_buildbatchclipjobs",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L169",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_genclipbatch",
+      "target": "utils_yt_util_loadclipmediaplan",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L182",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_genclipbatch",
+      "target": "utils_yt_util_genclipfilewithmediaplan",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L199",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_genclipbatch",
+      "target": "utils_clip_batch_util_errorresponse",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L216",
+      "weight": 1.0
+    },
+    {
+      "source": "controller_yt_controller_ytcontroller_genclipbatch",
+      "target": "utils_clip_batch_util_batchstatuscode",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L227",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_selectmediaformats",
+      "target": "utils_clip_time_util_httperror",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L373",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_loadclipmediaplan",
+      "target": "utils_clip_time_util_httperror",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L564",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_parseclipwindow",
+      "target": "utils_clip_time_util_parsetimestamp",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L600",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_parseclipwindow",
+      "target": "utils_clip_time_util_httperror",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L605",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_ytdlpformatselector",
+      "target": "utils_clip_time_util_httperror",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L629",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_yt_util_genclipfilewithmediaplan",
+      "target": "utils_clip_time_util_httperror",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L707",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

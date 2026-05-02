@@ -11,6 +11,7 @@ import { extractWordHeatMap } from "../utils/data-prc-util.mjs";
 import { VID_STATS_NM, VID_MSG_NM } from "../constants/app-const.mjs";
 import { Innertube, Utils } from "youtubei.js";
 import { OUT_PATH } from "../constants/app-const.mjs";
+import { MAX_SEGMENT_SECONDS, httpError, parseTimestamp } from "./clip-time-util.mjs";
 
 // Provide a Node.js vm-based JavaScript evaluator so youtubei.js can
 // decipher YouTube streaming URLs (required since v16+).
@@ -210,42 +211,6 @@ async function cutVideo(from, to, id) {
   );
   // Success!
   console.log(`Successfully cut video from ${from} to ${to}`);
-}
-
-const MAX_SEGMENT_SECONDS = 10 * 60;
-
-function httpError(statusCode, message) {
-  const err = new Error(message);
-  err.statusCode = statusCode;
-  return err;
-}
-
-function parseTimestamp(value, name) {
-  const raw = String(value ?? '').trim();
-  if (!raw) {
-    throw httpError(400, `"${name}" query param is required`);
-  }
-  if (!/^\d+(?::\d{1,2}){0,2}(?:\.\d+)?$/.test(raw)) {
-    throw httpError(400, `"${name}" must be SS, MM:SS, or HH:MM:SS`);
-  }
-
-  const parts = raw.split(':');
-  const partCount = parts.length;
-  const seconds = Number(parts.pop());
-  const minutes = parts.length ? Number(parts.pop()) : 0;
-  const hours = parts.length ? Number(parts.pop()) : 0;
-
-  if (
-    !Number.isFinite(seconds) ||
-    !Number.isFinite(minutes) ||
-    !Number.isFinite(hours) ||
-    (partCount > 2 && minutes >= 60) ||
-    (partCount > 1 && seconds >= 60)
-  ) {
-    throw httpError(400, `"${name}" is not a valid timestamp`);
-  }
-
-  return (hours * 3600) + (minutes * 60) + seconds;
 }
 
 function ffmpegTime(seconds) {
@@ -687,26 +652,30 @@ async function generateAdaptiveClipWithYtDlp(id, mediaFormats, fromSeconds, dura
 }
 
 /**
- * Generates a clipped YouTube segment under OUT_PATH/vid and resolves after
- * ffmpeg has fully written the file.
+ * Generates a clipped YouTube segment using a preloaded media plan.
+ *
+ * This is used by batch generation to avoid calling YouTube for the same
+ * video metadata once per clip. Callers are responsible for loading a media
+ * plan with loadClipMediaPlan using the same outputFormat and quality.
  *
  * @param {string} id YouTube video id.
  * @param {string|number} from Segment start time.
  * @param {string|number} to Segment end time, must be greater than from.
  * @param {string=} quality Requested YouTube quality label.
  * @param {"mp4"|"mp3"|"webm"} outputFormat Output container/encoding.
+ * @param {{ mediaFormats: object, mediaSources: object }} mediaPlan Preloaded media plan.
  * @param {{ signal?: AbortSignal }=} options Optional cancellation signal.
  * @returns {Promise<{ filename: string, filePath: string, relativePath: string, format: string, quality: string, from: string, to: string, sourceType: "muxed"|"adaptive" }>}
  */
-async function genClipFile(id, from, to, quality, outputFormat, options = {}) {
+async function genClipFileWithMediaPlan(id, from, to, quality, outputFormat, mediaPlan, options = {}) {
   const fmt = ['mp4', 'mp3', 'webm'].includes(outputFormat) ? outputFormat : 'mp4';
   const requestedQuality = quality || '360p';
   const { fromSeconds, durationSeconds } = parseClipWindow(from, to);
+  const { mediaFormats, mediaSources } = mediaPlan;
+  const sourceType = usesSingleMuxedSource(mediaSources) ? 'muxed' : 'adaptive';
 
   const outputDir = path.join(OUT_PATH, 'vid');
   mkdirSync(outputDir, { recursive: true });
-  const { mediaFormats, mediaSources } = await loadClipMediaPlan(id, fmt, requestedQuality);
-  const sourceType = usesSingleMuxedSource(mediaSources) ? 'muxed' : 'adaptive';
 
   const timestamp = Date.now();
   const filename = [
@@ -741,8 +710,7 @@ async function genClipFile(id, from, to, quality, outputFormat, options = {}) {
 
   let mediaProxy = null;
   let tempFiles = [];
-  let mediaUrls;
-  mediaUrls = { av: mediaSources.av.url };
+  const mediaUrls = { av: mediaSources.av.url };
   const ff = spawn('ffmpeg', buildFfmpegArgs(fromSeconds, durationSeconds, fmt, mediaUrls, filePath), {
     stdio: ['ignore', 'ignore', 'pipe']
   });
@@ -806,6 +774,25 @@ async function genClipFile(id, from, to, quality, outputFormat, options = {}) {
       reject(httpError(500, message));
     });
   });
+}
+
+/**
+ * Generates a clipped YouTube segment under OUT_PATH/vid and resolves after
+ * ffmpeg has fully written the file.
+ *
+ * @param {string} id YouTube video id.
+ * @param {string|number} from Segment start time.
+ * @param {string|number} to Segment end time, must be greater than from.
+ * @param {string=} quality Requested YouTube quality label.
+ * @param {"mp4"|"mp3"|"webm"} outputFormat Output container/encoding.
+ * @param {{ signal?: AbortSignal }=} options Optional cancellation signal.
+ * @returns {Promise<{ filename: string, filePath: string, relativePath: string, format: string, quality: string, from: string, to: string, sourceType: "muxed"|"adaptive" }>}
+ */
+async function genClipFile(id, from, to, quality, outputFormat, options = {}) {
+  const fmt = ['mp4', 'mp3', 'webm'].includes(outputFormat) ? outputFormat : 'mp4';
+  const requestedQuality = quality || '360p';
+  const mediaPlan = await loadClipMediaPlan(id, fmt, requestedQuality);
+  return genClipFileWithMediaPlan(id, from, to, requestedQuality, fmt, mediaPlan, options);
 }
 
 /**
@@ -921,4 +908,15 @@ async function streamVidSegment(id, from, to, quality, outputFormat, res) {
   });
 }
 
-export { listenYt, cutVideo, yt, dlVid, streamVidSegment, genClipFile };
+export {
+  listenYt,
+  cutVideo,
+  yt,
+  dlVid,
+  streamVidSegment,
+  genClipFile,
+  genClipFileWithMediaPlan,
+  loadClipMediaPlan,
+  parseTimestamp,
+  MAX_SEGMENT_SECONDS
+};

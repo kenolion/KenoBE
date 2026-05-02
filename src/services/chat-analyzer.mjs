@@ -1,37 +1,52 @@
 import { readFileSync } from "fs";
 import { OUT_PATH, VID_STATS_NM } from "../constants/app-const.mjs";
-import get from "lodash/get.js";
-import { fmtMin } from "../utils/math-util.mjs";
-import { resolve } from "path";
+import { fmtTimestamp } from "../utils/math-util.mjs";
+
+const DEFAULT_OPTIONS = {
+  sensitivity: 2,
+  baselineWindow: 5,
+  minKeywordHits: 3,
+  minKeywordRatio: 0.02,
+  cooldownMinutes: 1,
+  limit: 20,
+};
+
 /*
-  wordFreq = the amount of times the word occur
-  wordFreqDiff = the difference in wordFreq from pvsTime and curTime(positive means a greater increase in word frequency)
-  totalOcc = the total amount of times the list of words occur in the whole video
-  total = total messages in that timestamp
+  keywordHits = the amount of target keyword hits in the timestamp bucket
+  keywordRatio = keywordHits divided by total messages in the timestamp bucket
+  baselineHits = rolling average of keyword hits before the current timestamp
+  spikeScore = normalized lift over the rolling baseline
 */
 export class ChatAnalyzer {
-  constructor(words, videoId) {
-    this.wordLis = words;
-    // stores the increase in word frequency from pvsTime and curTime
-    this.wordFreqObj = {};
+  constructor(words = [], videoId = null, options = {}) {
+    if (videoId && typeof videoId === "object") {
+      options = videoId;
+      videoId = null;
+    }
+
+    this.wordLis = this.#normalizeWords(words);
+    this.options = this.#resolveOptions(options);
     this.file = null;
     // loaded from file {videoid}-stats.json, contains non totaled up data
     this.timeStampMap = null;
     this.videoId = videoId;
-    this.timeStampObjTotal = {};
-    this.timeLis = [];
+    this.videoStartTimestamp = null;
+    this.analysis = {};
+    this.clips = [];
   }
 
   async load(videoId) {
     this.videoId = this.videoId || videoId;
-    let fileNm = OUT_PATH + this.videoId + VID_STATS_NM + ".json";
+    const fileNm = OUT_PATH + this.videoId + VID_STATS_NM + ".json";
+
     try {
       this.file = readFileSync(fileNm);
       this.timeStampMap = JSON.parse(this.file);
-      resolve(this.timeStampMap);
+      return this.timeStampMap;
     } catch (e) {
-      console.log(`Failed to load ${fileNm}.json`);
+      console.log(`Failed to load ${fileNm}`);
       console.log(e);
+      throw e;
     }
   }
 
@@ -39,84 +54,199 @@ export class ChatAnalyzer {
     return this.timeStampMap;
   }
 
-  analyze(regex, timeStampMap) {
+  setVideoStartTimestamp(timestamp) {
+    const parsedTimestamp = Number(timestamp);
+    this.videoStartTimestamp = Number.isFinite(parsedTimestamp) ? parsedTimestamp : null;
+  }
+
+  analyze(regex, timeStampMap, options = {}) {
     timeStampMap = timeStampMap || this.timeStampMap;
+    this.options = this.#resolveOptions(options);
+    this.analysis = {};
+    this.clips = [];
 
-    let pvsTime = "";
+    if (!timeStampMap) {
+      return this.#buildResult();
+    }
 
-    for (let curTime in timeStampMap) {
-      if (pvsTime != "") {
-        this.wordFreqObj[curTime] = {};
-        this.timeStampObjTotal[curTime] = {};
-        this.wordFreqObj[curTime].totalOcc = 0;
-        for (let tsKey in this.wordLis) {
-          let word = this.wordLis[tsKey];
-          let curWordsObj = timeStampMap[curTime].wordsObj;
-          let pvsWordsObj = timeStampMap[pvsTime].wordsObj;
-          curWordsObj[word] = curWordsObj[word] ?? 0;
-          pvsWordsObj[word] = pvsWordsObj[word] ?? 0;
-          this.wordFreqObj[curTime].totalOcc += curWordsObj[word];
-        }
-        this.wordFreqObj[curTime].wordFreqDiff =
-          this.wordFreqObj[curTime].totalOcc -
-          get(this.wordFreqObj, `${pvsTime}.totalOcc`);
-        this.#calTimestampObjTotal(curTime, pvsTime);
-        if (this.#isClippable(curTime)) {
-          this.timeLis.push(curTime);
-        }
+    const entries = Object.entries(timeStampMap).sort(
+      ([a], [b]) => Number(a) - Number(b)
+    );
+    const history = [];
+
+    for (const [timestamp, timestampObj] of entries) {
+      const totalMessages = Number(timestampObj.total) || 0;
+      const matchedWords = this.#getMatchedWords(timestampObj.wordsObj || {});
+      const keywordHits = Object.values(matchedWords).reduce(
+        (total, count) => total + count,
+        0
+      );
+      const keywordRatio =
+        totalMessages > 0 ? keywordHits / totalMessages : 0;
+      const baselineHits = this.#calBaseline(history);
+      const spikeScore = this.#calSpikeScore(keywordHits, baselineHits);
+      const isClippable = this.#isClippable({
+        keywordHits,
+        keywordRatio,
+        spikeScore,
+      });
+
+      const timestampAnalysis = {
+        timestamp: this.#formatTimestamp(timestamp),
+        keywordHits,
+        totalMessages,
+        keywordRatio,
+        baselineHits,
+        spikeScore,
+        matchedWords,
+        isClippable,
+      };
+      Object.defineProperty(timestampAnalysis, "rawTimestamp", {
+        value: timestamp,
+        enumerable: false,
+      });
+
+      this.analysis[timestamp] = timestampAnalysis;
+      if (isClippable) {
+        this.clips.push(timestampAnalysis);
       }
 
-      pvsTime = curTime;
+      history.push(keywordHits);
     }
-    console.log(this.timeLis);
 
-    return this.wordFreqObj;
+    this.clips = this.#rankAndApplyCooldown(this.clips);
+    return this.#buildResult();
   }
 
-  // calculates the ratio of the word to the total number of words in the chat
-  #calRatio(totMsg, wordTot) {
-    let rt = wordTot / totMsg;
-    console.log("calRatio:", rt);
-
-    return rt;
+  #buildResult() {
+    return {
+      options: this.options,
+      analysis: this.analysis,
+      clips: this.clips,
+    };
   }
 
-  // caculates the percentage of the rate of change of word to the total number of words in the chat
-  #calCgePct(curTime, pvsTime) {
-    let rt = 0;
+  #normalizeWords(words) {
+    if (!Array.isArray(words)) {
+      return [];
+    }
 
-    rt =
-      this.timeStampObjTotal[curTime].ratio +
-      get(this.timeStampObjTotal, `${pvsTime}.ratio`) *
-        get(this.wordFreqObj, `${curTime}.wordFreqDiff`) +
-      1;
-
-    console.log(`(${this.timeStampObjTotal[curTime].ratio} +
-        ${get(this.timeStampObjTotal, `${pvsTime}.ratio`)}
-        * ${get(this.wordFreqObj, `${curTime}.wordFreqDiff`)}) + 1`);
-    console.log("cgePct:", rt);
-
-    return rt;
+    return words
+      .map((word) => String(word).trim())
+      .filter((word) => word.length > 0);
   }
 
-  #calTimestampObjTotal(curTime, pvsTime) {
-    this.timeStampObjTotal[curTime].ratio = this.#calRatio(
-      this.timeStampMap[curTime].total,
-      this.wordFreqObj[curTime].totalOcc
+  #resolveOptions(options = {}) {
+    const resolved = { ...DEFAULT_OPTIONS, ...this.options, ...options };
+
+    return {
+      sensitivity: this.#numberOrDefault(
+        resolved.sensitivity,
+        DEFAULT_OPTIONS.sensitivity,
+        0
+      ),
+      baselineWindow: Math.floor(
+        this.#numberOrDefault(
+          resolved.baselineWindow,
+          DEFAULT_OPTIONS.baselineWindow,
+          1
+        )
+      ),
+      minKeywordHits: Math.floor(
+        this.#numberOrDefault(
+          resolved.minKeywordHits,
+          DEFAULT_OPTIONS.minKeywordHits,
+          1
+        )
+      ),
+      minKeywordRatio: this.#numberOrDefault(
+        resolved.minKeywordRatio,
+        DEFAULT_OPTIONS.minKeywordRatio,
+        0
+      ),
+      cooldownMinutes: Math.floor(
+        this.#numberOrDefault(
+          resolved.cooldownMinutes,
+          DEFAULT_OPTIONS.cooldownMinutes,
+          0
+        )
+      ),
+      limit: Math.floor(
+        this.#numberOrDefault(resolved.limit, DEFAULT_OPTIONS.limit, 1)
+      ),
+    };
+  }
+
+  #numberOrDefault(value, defaultValue, min) {
+    const num = Number(value);
+    if (!Number.isFinite(num)) {
+      return defaultValue;
+    }
+
+    return Math.max(num, min);
+  }
+
+  #getMatchedWords(wordsObj) {
+    const matchedWords = {};
+
+    for (const word of this.wordLis) {
+      const count = Number(wordsObj[word]) || 0;
+      if (count > 0) {
+        matchedWords[word] = count;
+      }
+    }
+
+    return matchedWords;
+  }
+
+  #calBaseline(history) {
+    const windowHits = history.slice(-this.options.baselineWindow);
+    if (windowHits.length === 0) {
+      return 0;
+    }
+
+    return (
+      windowHits.reduce((total, keywordHits) => total + keywordHits, 0) /
+      windowHits.length
     );
-    this.timeStampObjTotal[curTime].cgePct = this.#calCgePct(curTime, pvsTime);
   }
 
-  // checks if the timestamp is clippable
-  #isClippable(curTime) {
-    let score = 0;
-    console.log("curTime:", curTime);
+  #calSpikeScore(keywordHits, baselineHits) {
+    return (keywordHits - baselineHits) / Math.sqrt(baselineHits + 1);
+  }
 
-    score =
-      this.timeStampObjTotal[curTime].ratio * 100 * 0.5 +
-      this.timeStampObjTotal[curTime].cgePct * 0.5;
-    console.log("Score:", score, "\n");
-    console.log("---------\n");
-    return score > 25;
+  #isClippable({ keywordHits, keywordRatio, spikeScore }) {
+    return (
+      keywordHits >= this.options.minKeywordHits &&
+      keywordRatio >= this.options.minKeywordRatio &&
+      spikeScore >= this.options.sensitivity
+    );
+  }
+
+  #rankAndApplyCooldown(clips) {
+    const selected = [];
+    const cooldownMs = this.options.cooldownMinutes * 60 * 1000 * 1000;
+    const rankedClips = [...clips].sort((a, b) => b.spikeScore - a.spikeScore);
+
+    for (const clip of rankedClips) {
+      const timestamp = Number(clip.rawTimestamp ?? clip.timestamp);
+      const isInCooldown = selected.some((selectedClip) => {
+        return Math.abs(Number(selectedClip.rawTimestamp ?? selectedClip.timestamp) - timestamp) <= cooldownMs;
+      });
+
+      if (!isInCooldown) {
+        selected.push(clip);
+      }
+
+      if (selected.length >= this.options.limit) {
+        break;
+      }
+    }
+
+    return selected;
+  }
+
+  #formatTimestamp(timestamp) {
+    return fmtTimestamp(this.videoStartTimestamp ?? 0, timestamp);
   }
 }
