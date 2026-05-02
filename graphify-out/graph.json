@@ -58,7 +58,7 @@
       "source_file": "components\\database.js",
       "source_location": "L1",
       "id": "components_database_js",
-      "community": 11,
+      "community": 12,
       "norm_label": "database.js"
     },
     {
@@ -76,7 +76,7 @@
       "source_file": "src\\constants\\app-const.mjs",
       "source_location": "L1",
       "id": "src_constants_app_const_mjs",
-      "community": 7,
+      "community": 4,
       "norm_label": "app-const.mjs"
     },
     {
@@ -85,14 +85,14 @@
       "source_file": "src\\controller\\yt-controller.mjs",
       "source_location": "L1",
       "id": "src_controller_yt_controller_mjs",
-      "community": 7,
+      "community": 4,
       "norm_label": "yt-controller.mjs"
     },
     {
       "label": "clipResponse()",
       "file_type": "code",
       "source_file": "src\\controller\\yt-controller.mjs",
-      "source_location": "L25",
+      "source_location": "L26",
       "id": "controller_yt_controller_clipresponse",
       "community": 5,
       "norm_label": "clipresponse()"
@@ -101,25 +101,25 @@
       "label": "YtController",
       "file_type": "code",
       "source_file": "src\\controller\\yt-controller.mjs",
-      "source_location": "L40",
+      "source_location": "L41",
       "id": "controller_yt_controller_ytcontroller",
-      "community": 4,
+      "community": 7,
       "norm_label": "ytcontroller"
     },
     {
       "label": ".listenCh()",
       "file_type": "code",
       "source_file": "src\\controller\\yt-controller.mjs",
-      "source_location": "L41",
+      "source_location": "L42",
       "id": "controller_yt_controller_ytcontroller_listench",
-      "community": 4,
+      "community": 7,
       "norm_label": ".listench()"
     },
     {
       "label": ".getId()",
       "file_type": "code",
       "source_file": "src\\controller\\yt-controller.mjs",
-      "source_location": "L49",
+      "source_location": "L50",
       "id": "controller_yt_controller_ytcontroller_getid",
       "community": 4,
       "norm_label": ".getid()"
@@ -128,34 +128,34 @@
       "label": ".listen()",
       "file_type": "code",
       "source_file": "src\\controller\\yt-controller.mjs",
-      "source_location": "L69",
+      "source_location": "L70",
       "id": "controller_yt_controller_ytcontroller_listen",
-      "community": 4,
+      "community": 7,
       "norm_label": ".listen()"
     },
     {
       "label": ".endListener()",
       "file_type": "code",
       "source_file": "src\\controller\\yt-controller.mjs",
-      "source_location": "L78",
+      "source_location": "L79",
       "id": "controller_yt_controller_ytcontroller_endlistener",
-      "community": 4,
+      "community": 7,
       "norm_label": ".endlistener()"
     },
     {
       "label": ".analyze()",
       "file_type": "code",
       "source_file": "src\\controller\\yt-controller.mjs",
-      "source_location": "L88",
+      "source_location": "L89",
       "id": "controller_yt_controller_ytcontroller_analyze",
-      "community": 4,
+      "community": 7,
       "norm_label": ".analyze()"
     },
     {
       "label": ".genClip()",
       "file_type": "code",
       "source_file": "src\\controller\\yt-controller.mjs",
-      "source_location": "L116",
+      "source_location": "L147",
       "id": "controller_yt_controller_ytcontroller_genclip",
       "community": 5,
       "norm_label": ".genclip()"
@@ -164,7 +164,7 @@
       "label": ".genClipBatch()",
       "file_type": "code",
       "source_file": "src\\controller\\yt-controller.mjs",
-      "source_location": "L161",
+      "source_location": "L237",
       "id": "controller_yt_controller_ytcontroller_genclipbatch",
       "community": 5,
       "norm_label": ".genclipbatch()"
@@ -173,9 +173,9 @@
       "label": ".getClip()",
       "file_type": "code",
       "source_file": "src\\controller\\yt-controller.mjs",
-      "source_location": "L235",
+      "source_location": "L312",
       "id": "controller_yt_controller_ytcontroller_getclip",
-      "community": 4,
+      "community": 7,
       "norm_label": ".getclip()"
     },
     {
@@ -184,7 +184,7 @@
       "source_file": "src\\middleware\\common-middleware.mjs",
       "source_location": "L1",
       "id": "src_middleware_common_middleware_mjs",
-      "community": 8,
+      "community": 9,
       "norm_label": "common-middleware.mjs"
     },
     {
@@ -193,7 +193,7 @@
       "source_file": "src\\middleware\\common-middleware.mjs",
       "source_location": "L3",
       "id": "middleware_common_middleware_commonmiddleware",
-      "community": 8,
+      "community": 9,
       "norm_label": "commonmiddleware"
     },
     {
@@ -202,7 +202,7 @@
       "source_file": "src\\middleware\\common-middleware.mjs",
       "source_location": "L4",
       "id": "middleware_common_middleware_commonmiddleware_constructor",
-      "community": 8,
+      "community": 9,
       "norm_label": ".constructor()"
     },
     {
@@ -211,7 +211,7 @@
       "source_file": "src\\middleware\\common-middleware.mjs",
       "source_location": "L11",
       "id": "middleware_common_middleware_commonmiddleware_hasrequestbody",
-      "community": 8,
+      "community": 9,
       "norm_label": ".hasrequestbody()"
     },
     {
@@ -265,7 +265,7 @@
       "source_file": "src\\om\\chat.mjs",
       "source_location": "L1",
       "id": "src_om_chat_mjs",
-      "community": 9,
+      "community": 10,
       "norm_label": "chat.mjs"
     },
     {
@@ -274,7 +274,7 @@
       "source_file": "src\\om\\chat.mjs",
       "source_location": "L6",
       "id": "om_chat_chat",
-      "community": 9,
+      "community": 10,
       "norm_label": "chat"
     },
     {
@@ -292,7 +292,7 @@
       "source_file": "src\\router\\yt-router.mjs",
       "source_location": "L1",
       "id": "src_router_yt_router_mjs",
-      "community": 7,
+      "community": 2,
       "norm_label": "yt-router.mjs"
     },
     {
@@ -301,7 +301,7 @@
       "source_file": "src\\router\\yt-router.mjs",
       "source_location": "L3",
       "id": "router_yt_router_ytrouter",
-      "community": 7,
+      "community": 2,
       "norm_label": "ytrouter"
     },
     {
@@ -310,7 +310,7 @@
       "source_file": "src\\router\\yt-router.mjs",
       "source_location": "L4",
       "id": "router_yt_router_ytrouter_constructor",
-      "community": 7,
+      "community": 2,
       "norm_label": ".constructor()"
     },
     {
@@ -319,7 +319,7 @@
       "source_file": "src\\router\\yt-router.mjs",
       "source_location": "L13",
       "id": "router_yt_router_ytrouter_init",
-      "community": 7,
+      "community": 2,
       "norm_label": ".init()"
     },
     {
@@ -328,14 +328,14 @@
       "source_file": "src\\services\\chat-analyzer.mjs",
       "source_location": "L1",
       "id": "src_services_chat_analyzer_mjs",
-      "community": 7,
+      "community": 4,
       "norm_label": "chat-analyzer.mjs"
     },
     {
       "label": "ChatAnalyzer",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L19",
+      "source_location": "L20",
       "id": "services_chat_analyzer_chatanalyzer",
       "community": 3,
       "norm_label": "chatanalyzer"
@@ -344,7 +344,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L20",
+      "source_location": "L21",
       "id": "services_chat_analyzer_chatanalyzer_constructor",
       "community": 3,
       "norm_label": ".constructor()"
@@ -353,7 +353,7 @@
       "label": ".load()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L36",
+      "source_location": "L38",
       "id": "services_chat_analyzer_chatanalyzer_load",
       "community": 3,
       "norm_label": ".load()"
@@ -362,16 +362,25 @@
       "label": ".getObj()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L51",
+      "source_location": "L53",
       "id": "services_chat_analyzer_chatanalyzer_getobj",
       "community": 3,
       "norm_label": ".getobj()"
     },
     {
+      "label": ".setVideoStartTimestamp()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L57",
+      "id": "services_chat_analyzer_chatanalyzer_setvideostarttimestamp",
+      "community": 3,
+      "norm_label": ".setvideostarttimestamp()"
+    },
+    {
       "label": ".analyze()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L55",
+      "source_location": "L62",
       "id": "services_chat_analyzer_chatanalyzer_analyze",
       "community": 3,
       "norm_label": ".analyze()"
@@ -380,7 +389,7 @@
       "label": ".#buildResult()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L110",
+      "source_location": "L121",
       "id": "services_chat_analyzer_chatanalyzer_buildresult",
       "community": 3,
       "norm_label": ".#buildresult()"
@@ -389,7 +398,7 @@
       "label": ".#normalizeWords()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L118",
+      "source_location": "L129",
       "id": "services_chat_analyzer_chatanalyzer_normalizewords",
       "community": 3,
       "norm_label": ".#normalizewords()"
@@ -398,7 +407,7 @@
       "label": ".#resolveOptions()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L128",
+      "source_location": "L139",
       "id": "services_chat_analyzer_chatanalyzer_resolveoptions",
       "community": 3,
       "norm_label": ".#resolveoptions()"
@@ -407,7 +416,7 @@
       "label": ".#numberOrDefault()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L169",
+      "source_location": "L180",
       "id": "services_chat_analyzer_chatanalyzer_numberordefault",
       "community": 3,
       "norm_label": ".#numberordefault()"
@@ -416,7 +425,7 @@
       "label": ".#getMatchedWords()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L178",
+      "source_location": "L189",
       "id": "services_chat_analyzer_chatanalyzer_getmatchedwords",
       "community": 3,
       "norm_label": ".#getmatchedwords()"
@@ -425,7 +434,7 @@
       "label": ".#calBaseline()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L191",
+      "source_location": "L202",
       "id": "services_chat_analyzer_chatanalyzer_calbaseline",
       "community": 3,
       "norm_label": ".#calbaseline()"
@@ -434,7 +443,7 @@
       "label": ".#calSpikeScore()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L203",
+      "source_location": "L214",
       "id": "services_chat_analyzer_chatanalyzer_calspikescore",
       "community": 3,
       "norm_label": ".#calspikescore()"
@@ -443,7 +452,7 @@
       "label": ".#isClippable()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L207",
+      "source_location": "L218",
       "id": "services_chat_analyzer_chatanalyzer_isclippable",
       "community": 3,
       "norm_label": ".#isclippable()"
@@ -452,10 +461,19 @@
       "label": ".#rankAndApplyCooldown()",
       "file_type": "code",
       "source_file": "src\\services\\chat-analyzer.mjs",
-      "source_location": "L215",
+      "source_location": "L226",
       "id": "services_chat_analyzer_chatanalyzer_rankandapplycooldown",
       "community": 3,
       "norm_label": ".#rankandapplycooldown()"
+    },
+    {
+      "label": ".#formatTimestamp()",
+      "file_type": "code",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L249",
+      "id": "services_chat_analyzer_chatanalyzer_formattimestamp",
+      "community": 3,
+      "norm_label": ".#formattimestamp()"
     },
     {
       "label": "redis-service.mjs",
@@ -515,7 +533,7 @@
       "label": "secondsString()",
       "file_type": "code",
       "source_file": "src\\utils\\clip-batch-util.mjs",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "utils_clip_batch_util_secondsstring",
       "community": 5,
       "norm_label": "secondsstring()"
@@ -524,7 +542,7 @@
       "label": "validationError()",
       "file_type": "code",
       "source_file": "src\\utils\\clip-batch-util.mjs",
-      "source_location": "L9",
+      "source_location": "L10",
       "id": "utils_clip_batch_util_validationerror",
       "community": 5,
       "norm_label": "validationerror()"
@@ -533,16 +551,25 @@
       "label": "errorResponse()",
       "file_type": "code",
       "source_file": "src\\utils\\clip-batch-util.mjs",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "utils_clip_batch_util_errorresponse",
       "community": 5,
       "norm_label": "errorresponse()"
     },
     {
+      "label": "normalizeBatchClipOffset()",
+      "file_type": "code",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L26",
+      "id": "utils_clip_batch_util_normalizebatchclipoffset",
+      "community": 5,
+      "norm_label": "normalizebatchclipoffset()"
+    },
+    {
       "label": "buildBatchClipJobs()",
       "file_type": "code",
       "source_file": "src\\utils\\clip-batch-util.mjs",
-      "source_location": "L25",
+      "source_location": "L39",
       "id": "utils_clip_batch_util_buildbatchclipjobs",
       "community": 5,
       "norm_label": "buildbatchclipjobs()"
@@ -551,7 +578,7 @@
       "label": "validateBatchClipInput()",
       "file_type": "code",
       "source_file": "src\\utils\\clip-batch-util.mjs",
-      "source_location": "L64",
+      "source_location": "L81",
       "id": "utils_clip_batch_util_validatebatchclipinput",
       "community": 5,
       "norm_label": "validatebatchclipinput()"
@@ -560,7 +587,7 @@
       "label": "batchStatusCode()",
       "file_type": "code",
       "source_file": "src\\utils\\clip-batch-util.mjs",
-      "source_location": "L78",
+      "source_location": "L95",
       "id": "utils_clip_batch_util_batchstatuscode",
       "community": 5,
       "norm_label": "batchstatuscode()"
@@ -598,7 +625,7 @@
       "source_file": "src\\utils\\data-prc-util.mjs",
       "source_location": "L1",
       "id": "src_utils_data_prc_util_mjs",
-      "community": 2,
+      "community": 8,
       "norm_label": "data-prc-util.mjs"
     },
     {
@@ -607,7 +634,7 @@
       "source_file": "src\\utils\\data-prc-util.mjs",
       "source_location": "L11",
       "id": "utils_data_prc_util_extractwordheatmap",
-      "community": 2,
+      "community": 8,
       "norm_label": "extractwordheatmap()"
     },
     {
@@ -616,7 +643,7 @@
       "source_file": "src\\utils\\data-prc-util.mjs",
       "source_location": "L28",
       "id": "utils_data_prc_util_setwordheatmap",
-      "community": 2,
+      "community": 8,
       "norm_label": "setwordheatmap()"
     },
     {
@@ -625,7 +652,7 @@
       "source_file": "src\\utils\\data-prc-util.mjs",
       "source_location": "L42",
       "id": "utils_data_prc_util_tokenizejapanese",
-      "community": 2,
+      "community": 8,
       "norm_label": "tokenizejapanese()"
     },
     {
@@ -634,7 +661,7 @@
       "source_file": "src\\utils\\data-prc-util.mjs",
       "source_location": "L66",
       "id": "utils_data_prc_util_inittokenizer",
-      "community": 2,
+      "community": 8,
       "norm_label": "inittokenizer()"
     },
     {
@@ -643,7 +670,7 @@
       "source_file": "src\\utils\\file-util.mjs",
       "source_location": "L1",
       "id": "src_utils_file_util_mjs",
-      "community": 10,
+      "community": 11,
       "norm_label": "file-util.mjs"
     },
     {
@@ -652,7 +679,7 @@
       "source_file": "src\\utils\\file-util.mjs",
       "source_location": "L3",
       "id": "utils_file_util_loadfile",
-      "community": 10,
+      "community": 11,
       "norm_label": "loadfile()"
     },
     {
@@ -686,7 +713,7 @@
       "label": "fmtMin()",
       "file_type": "code",
       "source_file": "src\\utils\\math-util.mjs",
-      "source_location": "L20",
+      "source_location": "L17",
       "id": "utils_math_util_fmtmin",
       "community": 4,
       "norm_label": "fmtmin()"
@@ -695,10 +722,19 @@
       "label": "normTimestamp()",
       "file_type": "code",
       "source_file": "src\\utils\\math-util.mjs",
-      "source_location": "L28",
+      "source_location": "L26",
       "id": "utils_math_util_normtimestamp",
       "community": 4,
       "norm_label": "normtimestamp()"
+    },
+    {
+      "label": "padTime()",
+      "file_type": "code",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L30",
+      "id": "utils_math_util_padtime",
+      "community": 4,
+      "norm_label": "padtime()"
     },
     {
       "label": "yt-util.mjs",
@@ -715,7 +751,7 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L44",
       "id": "utils_yt_util_listenyt",
-      "community": 4,
+      "community": 7,
       "norm_label": "listenyt()"
     },
     {
@@ -895,7 +931,7 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L791",
       "id": "utils_yt_util_genclipfile",
-      "community": 5,
+      "community": 0,
       "norm_label": "genclipfile()"
     },
     {
@@ -913,7 +949,7 @@
       "source_file": "test\\chat-analyzer.probe.mjs",
       "source_location": "L1",
       "id": "test_chat_analyzer_probe_mjs",
-      "community": 7,
+      "community": 4,
       "norm_label": "chat-analyzer.probe.mjs"
     },
     {
@@ -922,25 +958,34 @@
       "source_file": "test\\chat-analyzer.probe.mjs",
       "source_location": "L5",
       "id": "test_chat_analyzer_probe_ts",
-      "community": 7,
+      "community": 4,
       "norm_label": "ts()"
+    },
+    {
+      "label": "tsFromStart()",
+      "file_type": "code",
+      "source_file": "test\\chat-analyzer.probe.mjs",
+      "source_location": "L6",
+      "id": "test_chat_analyzer_probe_tsfromstart",
+      "community": 4,
+      "norm_label": "tsfromstart()"
     },
     {
       "label": "bucket()",
       "file_type": "code",
       "source_file": "test\\chat-analyzer.probe.mjs",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "test_chat_analyzer_probe_bucket",
-      "community": 7,
+      "community": 4,
       "norm_label": "bucket()"
     },
     {
       "label": "analyze()",
       "file_type": "code",
       "source_file": "test\\chat-analyzer.probe.mjs",
-      "source_location": "L8",
+      "source_location": "L9",
       "id": "test_chat_analyzer_probe_analyze",
-      "community": 7,
+      "community": 4,
       "norm_label": "analyze()"
     },
     {
@@ -958,7 +1003,7 @@
       "source_file": "test\\probe-eval.mjs",
       "source_location": "L1",
       "id": "test_probe_eval_mjs",
-      "community": 12,
+      "community": 13,
       "norm_label": "probe-eval.mjs"
     },
     {
@@ -970,9 +1015,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_nodejs_es_module_backend",
       "community": 6,
-      "norm_label": "node.js es module backend"
+      "norm_label": "node.js es module backend",
+      "id": "AGENTS_nodejs_es_module_backend"
     },
     {
       "label": "Express API",
@@ -983,9 +1028,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_express_api",
       "community": 6,
-      "norm_label": "express api"
+      "norm_label": "express api",
+      "id": "AGENTS_express_api"
     },
     {
       "label": "src Runtime Source Directory",
@@ -996,9 +1041,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_src_directory",
       "community": 6,
-      "norm_label": "src runtime source directory"
+      "norm_label": "src runtime source directory",
+      "id": "AGENTS_src_directory"
     },
     {
       "label": "server.mjs",
@@ -1009,9 +1054,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_server_mjs",
       "community": 6,
-      "norm_label": "server.mjs"
+      "norm_label": "server.mjs",
+      "id": "AGENTS_server_mjs"
     },
     {
       "label": "router Directory",
@@ -1022,9 +1067,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_router_directory",
       "community": 6,
-      "norm_label": "router directory"
+      "norm_label": "router directory",
+      "id": "AGENTS_router_directory"
     },
     {
       "label": "controller Directory",
@@ -1035,9 +1080,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_controller_directory",
       "community": 6,
-      "norm_label": "controller directory"
+      "norm_label": "controller directory",
+      "id": "AGENTS_controller_directory"
     },
     {
       "label": "services Directory",
@@ -1048,9 +1093,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_services_directory",
       "community": 1,
-      "norm_label": "services directory"
+      "norm_label": "services directory",
+      "id": "AGENTS_services_directory"
     },
     {
       "label": "Redis",
@@ -1061,9 +1106,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_redis",
       "community": 1,
-      "norm_label": "redis"
+      "norm_label": "redis",
+      "id": "AGENTS_redis"
     },
     {
       "label": "Chat Analysis",
@@ -1074,9 +1119,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_chat_analysis",
       "community": 1,
-      "norm_label": "chat analysis"
+      "norm_label": "chat analysis",
+      "id": "AGENTS_chat_analysis"
     },
     {
       "label": "middleware Directory",
@@ -1087,9 +1132,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_middleware_directory",
       "community": 6,
-      "norm_label": "middleware directory"
+      "norm_label": "middleware directory",
+      "id": "AGENTS_middleware_directory"
     },
     {
       "label": "utils Directory",
@@ -1100,9 +1145,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_utils_directory",
       "community": 1,
-      "norm_label": "utils directory"
+      "norm_label": "utils directory",
+      "id": "AGENTS_utils_directory"
     },
     {
       "label": "YouTube Helpers",
@@ -1113,9 +1158,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_youtube_helpers",
       "community": 1,
-      "norm_label": "youtube helpers"
+      "norm_label": "youtube helpers",
+      "id": "AGENTS_youtube_helpers"
     },
     {
       "label": "Prisma Schema",
@@ -1126,9 +1171,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_prisma_schema",
       "community": 1,
-      "norm_label": "prisma schema"
+      "norm_label": "prisma schema",
+      "id": "AGENTS_prisma_schema"
     },
     {
       "label": "MongoDB",
@@ -1139,9 +1184,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_mongodb",
       "community": 1,
-      "norm_label": "mongodb"
+      "norm_label": "mongodb",
+      "id": "AGENTS_mongodb"
     },
     {
       "label": "Redis OM Entities",
@@ -1152,9 +1197,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_redis_om_entities",
       "community": 1,
-      "norm_label": "redis om entities"
+      "norm_label": "redis om entities",
+      "id": "AGENTS_redis_om_entities"
     },
     {
       "label": "output Directory",
@@ -1166,9 +1211,9 @@
       "author": null,
       "contributor": null,
       "rationale": "Generated or runtime media output belongs here and must stay untracked to avoid committing downloaded or generated media.",
-      "id": "AGENTS_output_directory",
       "community": 1,
-      "norm_label": "output directory"
+      "norm_label": "output directory",
+      "id": "AGENTS_output_directory"
     },
     {
       "label": "cert Directory",
@@ -1180,9 +1225,9 @@
       "author": null,
       "contributor": null,
       "rationale": "Certificates are stored here, but private keys and new secrets must not be added.",
-      "id": "AGENTS_cert_directory",
       "community": 1,
-      "norm_label": "cert directory"
+      "norm_label": "cert directory",
+      "id": "AGENTS_cert_directory"
     },
     {
       "label": "npm install",
@@ -1193,9 +1238,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_npm_install",
       "community": 6,
-      "norm_label": "npm install"
+      "norm_label": "npm install",
+      "id": "AGENTS_npm_install"
     },
     {
       "label": "npm start",
@@ -1206,9 +1251,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_npm_start",
       "community": 6,
-      "norm_label": "npm start"
+      "norm_label": "npm start",
+      "id": "AGENTS_npm_start"
     },
     {
       "label": "npx prisma generate",
@@ -1219,9 +1264,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_prisma_generate",
       "community": 1,
-      "norm_label": "npx prisma generate"
+      "norm_label": "npx prisma generate",
+      "id": "AGENTS_prisma_generate"
     },
     {
       "label": "node test/probe-eval.mjs",
@@ -1232,9 +1277,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_probe_eval",
       "community": 1,
-      "norm_label": "node test/probe-eval.mjs"
+      "norm_label": "node test/probe-eval.mjs",
+      "id": "AGENTS_probe_eval"
     },
     {
       "label": "npm test Placeholder",
@@ -1246,9 +1291,9 @@
       "author": null,
       "contributor": null,
       "rationale": "npm test currently exits with an error, so a real test script should be added before relying on it in CI.",
-      "id": "AGENTS_npm_test_placeholder",
       "community": 6,
-      "norm_label": "npm test placeholder"
+      "norm_label": "npm test placeholder",
+      "id": "AGENTS_npm_test_placeholder"
     },
     {
       "label": "JavaScript ES Module Style",
@@ -1259,9 +1304,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_es_module_style",
       "community": 6,
-      "norm_label": "javascript es module style"
+      "norm_label": "javascript es module style",
+      "id": "AGENTS_es_module_style"
     },
     {
       "label": "Testing Guidelines",
@@ -1272,9 +1317,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_testing_guidelines",
       "community": 6,
-      "norm_label": "testing guidelines"
+      "norm_label": "testing guidelines",
+      "id": "AGENTS_testing_guidelines"
     },
     {
       "label": "External Test Dependencies",
@@ -1285,9 +1330,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_external_test_dependencies",
       "community": 1,
-      "norm_label": "external test dependencies"
+      "norm_label": "external test dependencies",
+      "id": "AGENTS_external_test_dependencies"
     },
     {
       "label": "Security and Configuration Tips",
@@ -1298,9 +1343,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_security_configuration",
       "community": 1,
-      "norm_label": "security and configuration tips"
+      "norm_label": "security and configuration tips",
+      "id": "AGENTS_security_configuration"
     },
     {
       "label": "DATABASE_URL",
@@ -1311,9 +1356,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_database_url",
       "community": 1,
-      "norm_label": "database_url"
+      "norm_label": "database_url",
+      "id": "AGENTS_database_url"
     },
     {
       "label": "redis-service.mjs",
@@ -1324,9 +1369,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_redis_service_mjs",
       "community": 1,
-      "norm_label": "redis-service.mjs"
+      "norm_label": "redis-service.mjs",
+      "id": "AGENTS_redis_service_mjs"
     },
     {
       "label": "om/client.mjs",
@@ -1337,9 +1382,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "AGENTS_om_client_mjs",
       "community": 1,
-      "norm_label": "om/client.mjs"
+      "norm_label": "om/client.mjs",
+      "id": "AGENTS_om_client_mjs"
     },
     {
       "label": "Prisma Client",
@@ -1350,9 +1395,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_prisma_client",
       "community": 1,
-      "norm_label": "prisma client"
+      "norm_label": "prisma client",
+      "id": "readme_prisma_client"
     },
     {
       "label": "mongoDB",
@@ -1363,9 +1408,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_mongodb",
       "community": 1,
-      "norm_label": "mongodb"
+      "norm_label": "mongodb",
+      "id": "readme_mongodb"
     },
     {
       "label": "Expressjs",
@@ -1376,9 +1421,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_expressjs",
       "community": 1,
-      "norm_label": "expressjs"
+      "norm_label": "expressjs",
+      "id": "readme_expressjs"
     }
   ],
   "links": [
@@ -1390,9 +1435,9 @@
       "weight": 1.0,
       "_src": "src_server_mjs",
       "_tgt": "src_router_yt_router_mjs",
+      "confidence_score": 1.0,
       "source": "src_server_mjs",
-      "target": "src_router_yt_router_mjs",
-      "confidence_score": 1.0
+      "target": "src_router_yt_router_mjs"
     },
     {
       "relation": "imports_from",
@@ -1402,9 +1447,9 @@
       "weight": 1.0,
       "_src": "src_server_mjs",
       "_tgt": "src_utils_data_prc_util_mjs",
+      "confidence_score": 1.0,
       "source": "src_server_mjs",
-      "target": "src_utils_data_prc_util_mjs",
-      "confidence_score": 1.0
+      "target": "src_utils_data_prc_util_mjs"
     },
     {
       "relation": "imports_from",
@@ -1414,9 +1459,9 @@
       "weight": 1.0,
       "_src": "src_server_mjs",
       "_tgt": "src_services_redis_service_mjs",
+      "confidence_score": 1.0,
       "source": "src_server_mjs",
-      "target": "src_services_redis_service_mjs",
-      "confidence_score": 1.0
+      "target": "src_services_redis_service_mjs"
     },
     {
       "relation": "imports_from",
@@ -1426,9 +1471,9 @@
       "weight": 1.0,
       "_src": "src_server_mjs",
       "_tgt": "src_middleware_redis_middleware_mjs",
+      "confidence_score": 1.0,
       "source": "src_server_mjs",
-      "target": "src_middleware_redis_middleware_mjs",
-      "confidence_score": 1.0
+      "target": "src_middleware_redis_middleware_mjs"
     },
     {
       "relation": "imports_from",
@@ -1438,9 +1483,9 @@
       "weight": 1.0,
       "_src": "src_server_mjs",
       "_tgt": "src_om_client_mjs",
+      "confidence_score": 1.0,
       "source": "src_server_mjs",
-      "target": "src_om_client_mjs",
-      "confidence_score": 1.0
+      "target": "src_om_client_mjs"
     },
     {
       "relation": "imports_from",
@@ -1448,11 +1493,11 @@
       "source_file": "src\\controller\\yt-controller.mjs",
       "source_location": "L14",
       "weight": 1.0,
-      "_src": "src_controller_yt_controller_mjs",
-      "_tgt": "src_constants_app_const_mjs",
+      "_src": "src_constants_app_const_mjs",
+      "_tgt": "src_controller_yt_controller_mjs",
+      "confidence_score": 1.0,
       "source": "src_constants_app_const_mjs",
-      "target": "src_controller_yt_controller_mjs",
-      "confidence_score": 1.0
+      "target": "src_controller_yt_controller_mjs"
     },
     {
       "relation": "imports_from",
@@ -1460,11 +1505,11 @@
       "source_file": "src\\services\\chat-analyzer.mjs",
       "source_location": "L2",
       "weight": 1.0,
-      "_src": "src_services_chat_analyzer_mjs",
-      "_tgt": "src_constants_app_const_mjs",
+      "_src": "src_constants_app_const_mjs",
+      "_tgt": "src_services_chat_analyzer_mjs",
+      "confidence_score": 1.0,
       "source": "src_constants_app_const_mjs",
-      "target": "src_services_chat_analyzer_mjs",
-      "confidence_score": 1.0
+      "target": "src_services_chat_analyzer_mjs"
     },
     {
       "relation": "imports_from",
@@ -1472,11 +1517,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L13",
       "weight": 1.0,
-      "_src": "src_utils_yt_util_mjs",
-      "_tgt": "src_constants_app_const_mjs",
+      "_src": "src_constants_app_const_mjs",
+      "_tgt": "src_utils_yt_util_mjs",
+      "confidence_score": 1.0,
       "source": "src_constants_app_const_mjs",
-      "target": "src_utils_yt_util_mjs",
-      "confidence_score": 1.0
+      "target": "src_utils_yt_util_mjs"
     },
     {
       "relation": "imports_from",
@@ -1486,9 +1531,9 @@
       "weight": 1.0,
       "_src": "src_controller_yt_controller_mjs",
       "_tgt": "src_utils_yt_util_mjs",
+      "confidence_score": 1.0,
       "source": "src_controller_yt_controller_mjs",
-      "target": "src_utils_yt_util_mjs",
-      "confidence_score": 1.0
+      "target": "src_utils_yt_util_mjs"
     },
     {
       "relation": "imports_from",
@@ -1498,9 +1543,9 @@
       "weight": 1.0,
       "_src": "src_controller_yt_controller_mjs",
       "_tgt": "src_utils_math_util_mjs",
+      "confidence_score": 1.0,
       "source": "src_controller_yt_controller_mjs",
-      "target": "src_utils_math_util_mjs",
-      "confidence_score": 1.0
+      "target": "src_utils_math_util_mjs"
     },
     {
       "relation": "imports_from",
@@ -1510,9 +1555,9 @@
       "weight": 1.0,
       "_src": "src_controller_yt_controller_mjs",
       "_tgt": "src_services_chat_analyzer_mjs",
+      "confidence_score": 1.0,
       "source": "src_controller_yt_controller_mjs",
-      "target": "src_services_chat_analyzer_mjs",
-      "confidence_score": 1.0
+      "target": "src_services_chat_analyzer_mjs"
     },
     {
       "relation": "imports_from",
@@ -1522,9 +1567,9 @@
       "weight": 1.0,
       "_src": "src_controller_yt_controller_mjs",
       "_tgt": "src_utils_clip_batch_util_mjs",
+      "confidence_score": 1.0,
       "source": "src_controller_yt_controller_mjs",
-      "target": "src_utils_clip_batch_util_mjs",
-      "confidence_score": 1.0
+      "target": "src_utils_clip_batch_util_mjs"
     },
     {
       "relation": "contains",
@@ -1534,9 +1579,9 @@
       "weight": 1.0,
       "_src": "src_controller_yt_controller_mjs",
       "_tgt": "controller_yt_controller_clipresponse",
+      "confidence_score": 1.0,
       "source": "src_controller_yt_controller_mjs",
-      "target": "controller_yt_controller_clipresponse",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_clipresponse"
     },
     {
       "relation": "contains",
@@ -1546,9 +1591,9 @@
       "weight": 1.0,
       "_src": "src_controller_yt_controller_mjs",
       "_tgt": "controller_yt_controller_ytcontroller",
+      "confidence_score": 1.0,
       "source": "src_controller_yt_controller_mjs",
-      "target": "controller_yt_controller_ytcontroller",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller"
     },
     {
       "relation": "imports_from",
@@ -1556,11 +1601,11 @@
       "source_file": "src\\router\\yt-router.mjs",
       "source_location": "L1",
       "weight": 1.0,
-      "_src": "src_router_yt_router_mjs",
-      "_tgt": "src_controller_yt_controller_mjs",
+      "_src": "src_controller_yt_controller_mjs",
+      "_tgt": "src_router_yt_router_mjs",
+      "confidence_score": 1.0,
       "source": "src_controller_yt_controller_mjs",
-      "target": "src_router_yt_router_mjs",
-      "confidence_score": 1.0
+      "target": "src_router_yt_router_mjs"
     },
     {
       "relation": "calls",
@@ -1568,11 +1613,11 @@
       "source_file": "src\\controller\\yt-controller.mjs",
       "source_location": "L151",
       "weight": 1.0,
-      "_src": "controller_yt_controller_ytcontroller_genclip",
-      "_tgt": "controller_yt_controller_clipresponse",
+      "_src": "controller_yt_controller_clipresponse",
+      "_tgt": "controller_yt_controller_ytcontroller_genclip",
+      "confidence_score": 1.0,
       "source": "controller_yt_controller_clipresponse",
-      "target": "controller_yt_controller_ytcontroller_genclip",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller_genclip"
     },
     {
       "relation": "calls",
@@ -1580,11 +1625,11 @@
       "source_file": "src\\controller\\yt-controller.mjs",
       "source_location": "L209",
       "weight": 1.0,
-      "_src": "controller_yt_controller_ytcontroller_genclipbatch",
-      "_tgt": "controller_yt_controller_clipresponse",
+      "_src": "controller_yt_controller_clipresponse",
+      "_tgt": "controller_yt_controller_ytcontroller_genclipbatch",
+      "confidence_score": 1.0,
       "source": "controller_yt_controller_clipresponse",
-      "target": "controller_yt_controller_ytcontroller_genclipbatch",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller_genclipbatch"
     },
     {
       "relation": "method",
@@ -1594,9 +1639,9 @@
       "weight": 1.0,
       "_src": "controller_yt_controller_ytcontroller",
       "_tgt": "controller_yt_controller_ytcontroller_listench",
+      "confidence_score": 1.0,
       "source": "controller_yt_controller_ytcontroller",
-      "target": "controller_yt_controller_ytcontroller_listench",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller_listench"
     },
     {
       "relation": "method",
@@ -1606,9 +1651,9 @@
       "weight": 1.0,
       "_src": "controller_yt_controller_ytcontroller",
       "_tgt": "controller_yt_controller_ytcontroller_getid",
+      "confidence_score": 1.0,
       "source": "controller_yt_controller_ytcontroller",
-      "target": "controller_yt_controller_ytcontroller_getid",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller_getid"
     },
     {
       "relation": "method",
@@ -1618,9 +1663,9 @@
       "weight": 1.0,
       "_src": "controller_yt_controller_ytcontroller",
       "_tgt": "controller_yt_controller_ytcontroller_listen",
+      "confidence_score": 1.0,
       "source": "controller_yt_controller_ytcontroller",
-      "target": "controller_yt_controller_ytcontroller_listen",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller_listen"
     },
     {
       "relation": "method",
@@ -1630,9 +1675,9 @@
       "weight": 1.0,
       "_src": "controller_yt_controller_ytcontroller",
       "_tgt": "controller_yt_controller_ytcontroller_endlistener",
+      "confidence_score": 1.0,
       "source": "controller_yt_controller_ytcontroller",
-      "target": "controller_yt_controller_ytcontroller_endlistener",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller_endlistener"
     },
     {
       "relation": "method",
@@ -1642,9 +1687,9 @@
       "weight": 1.0,
       "_src": "controller_yt_controller_ytcontroller",
       "_tgt": "controller_yt_controller_ytcontroller_analyze",
+      "confidence_score": 1.0,
       "source": "controller_yt_controller_ytcontroller",
-      "target": "controller_yt_controller_ytcontroller_analyze",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller_analyze"
     },
     {
       "relation": "method",
@@ -1654,9 +1699,9 @@
       "weight": 1.0,
       "_src": "controller_yt_controller_ytcontroller",
       "_tgt": "controller_yt_controller_ytcontroller_genclip",
+      "confidence_score": 1.0,
       "source": "controller_yt_controller_ytcontroller",
-      "target": "controller_yt_controller_ytcontroller_genclip",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller_genclip"
     },
     {
       "relation": "method",
@@ -1666,9 +1711,9 @@
       "weight": 1.0,
       "_src": "controller_yt_controller_ytcontroller",
       "_tgt": "controller_yt_controller_ytcontroller_genclipbatch",
+      "confidence_score": 1.0,
       "source": "controller_yt_controller_ytcontroller",
-      "target": "controller_yt_controller_ytcontroller_genclipbatch",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller_genclipbatch"
     },
     {
       "relation": "method",
@@ -1678,9 +1723,9 @@
       "weight": 1.0,
       "_src": "controller_yt_controller_ytcontroller",
       "_tgt": "controller_yt_controller_ytcontroller_getclip",
+      "confidence_score": 1.0,
       "source": "controller_yt_controller_ytcontroller",
-      "target": "controller_yt_controller_ytcontroller_getclip",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller_getclip"
     },
     {
       "relation": "calls",
@@ -1693,6 +1738,18 @@
       "_tgt": "utils_yt_util_listenyt",
       "source": "controller_yt_controller_ytcontroller_listench",
       "target": "utils_yt_util_listenyt"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_src": "controller_yt_controller_ytcontroller_getid",
+      "_tgt": "utils_math_util_cnvtimestamptomin",
+      "source": "controller_yt_controller_ytcontroller_getid",
+      "target": "utils_math_util_cnvtimestamptomin"
     },
     {
       "relation": "calls",
@@ -1726,9 +1783,21 @@
       "weight": 1.0,
       "_src": "controller_yt_controller_ytcontroller_genclip",
       "_tgt": "controller_yt_controller_ytcontroller_genclipbatch",
+      "confidence_score": 1.0,
       "source": "controller_yt_controller_ytcontroller_genclip",
-      "target": "controller_yt_controller_ytcontroller_genclipbatch",
-      "confidence_score": 1.0
+      "target": "controller_yt_controller_ytcontroller_genclipbatch"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\controller\\yt-controller.mjs",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_src": "controller_yt_controller_ytcontroller_genclip",
+      "_tgt": "utils_clip_batch_util_normalizebatchclipoffset",
+      "source": "controller_yt_controller_ytcontroller_genclip",
+      "target": "utils_clip_batch_util_normalizebatchclipoffset"
     },
     {
       "relation": "calls",
@@ -1822,9 +1891,9 @@
       "weight": 1.0,
       "_src": "src_middleware_common_middleware_mjs",
       "_tgt": "middleware_common_middleware_commonmiddleware",
+      "confidence_score": 1.0,
       "source": "src_middleware_common_middleware_mjs",
-      "target": "middleware_common_middleware_commonmiddleware",
-      "confidence_score": 1.0
+      "target": "middleware_common_middleware_commonmiddleware"
     },
     {
       "relation": "method",
@@ -1834,9 +1903,9 @@
       "weight": 1.0,
       "_src": "middleware_common_middleware_commonmiddleware",
       "_tgt": "middleware_common_middleware_commonmiddleware_constructor",
+      "confidence_score": 1.0,
       "source": "middleware_common_middleware_commonmiddleware",
-      "target": "middleware_common_middleware_commonmiddleware_constructor",
-      "confidence_score": 1.0
+      "target": "middleware_common_middleware_commonmiddleware_constructor"
     },
     {
       "relation": "method",
@@ -1846,9 +1915,9 @@
       "weight": 1.0,
       "_src": "middleware_common_middleware_commonmiddleware",
       "_tgt": "middleware_common_middleware_commonmiddleware_hasrequestbody",
+      "confidence_score": 1.0,
       "source": "middleware_common_middleware_commonmiddleware",
-      "target": "middleware_common_middleware_commonmiddleware_hasrequestbody",
-      "confidence_score": 1.0
+      "target": "middleware_common_middleware_commonmiddleware_hasrequestbody"
     },
     {
       "relation": "contains",
@@ -1858,9 +1927,9 @@
       "weight": 1.0,
       "_src": "src_middleware_redis_middleware_mjs",
       "_tgt": "middleware_redis_middleware_redismiddleware",
+      "confidence_score": 1.0,
       "source": "src_middleware_redis_middleware_mjs",
-      "target": "middleware_redis_middleware_redismiddleware",
-      "confidence_score": 1.0
+      "target": "middleware_redis_middleware_redismiddleware"
     },
     {
       "relation": "method",
@@ -1870,9 +1939,9 @@
       "weight": 1.0,
       "_src": "middleware_redis_middleware_redismiddleware",
       "_tgt": "middleware_redis_middleware_redismiddleware_constructor",
+      "confidence_score": 1.0,
       "source": "middleware_redis_middleware_redismiddleware",
-      "target": "middleware_redis_middleware_redismiddleware_constructor",
-      "confidence_score": 1.0
+      "target": "middleware_redis_middleware_redismiddleware_constructor"
     },
     {
       "relation": "method",
@@ -1882,9 +1951,9 @@
       "weight": 1.0,
       "_src": "middleware_redis_middleware_redismiddleware",
       "_tgt": "middleware_redis_middleware_redismiddleware_cachecheck",
+      "confidence_score": 1.0,
       "source": "middleware_redis_middleware_redismiddleware",
-      "target": "middleware_redis_middleware_redismiddleware_cachecheck",
-      "confidence_score": 1.0
+      "target": "middleware_redis_middleware_redismiddleware_cachecheck"
     },
     {
       "relation": "method",
@@ -1894,9 +1963,9 @@
       "weight": 1.0,
       "_src": "middleware_redis_middleware_redismiddleware",
       "_tgt": "middleware_redis_middleware_redismiddleware_generatecachekey",
+      "confidence_score": 1.0,
       "source": "middleware_redis_middleware_redismiddleware",
-      "target": "middleware_redis_middleware_redismiddleware_generatecachekey",
-      "confidence_score": 1.0
+      "target": "middleware_redis_middleware_redismiddleware_generatecachekey"
     },
     {
       "relation": "calls",
@@ -1906,9 +1975,9 @@
       "weight": 1.0,
       "_src": "middleware_redis_middleware_redismiddleware_cachecheck",
       "_tgt": "middleware_redis_middleware_redismiddleware_generatecachekey",
+      "confidence_score": 1.0,
       "source": "middleware_redis_middleware_redismiddleware_cachecheck",
-      "target": "middleware_redis_middleware_redismiddleware_generatecachekey",
-      "confidence_score": 1.0
+      "target": "middleware_redis_middleware_redismiddleware_generatecachekey"
     },
     {
       "relation": "contains",
@@ -1918,9 +1987,9 @@
       "weight": 1.0,
       "_src": "src_om_chat_mjs",
       "_tgt": "om_chat_chat",
+      "confidence_score": 1.0,
       "source": "src_om_chat_mjs",
-      "target": "om_chat_chat",
-      "confidence_score": 1.0
+      "target": "om_chat_chat"
     },
     {
       "relation": "contains",
@@ -1930,9 +1999,9 @@
       "weight": 1.0,
       "_src": "src_router_yt_router_mjs",
       "_tgt": "router_yt_router_ytrouter",
+      "confidence_score": 1.0,
       "source": "src_router_yt_router_mjs",
-      "target": "router_yt_router_ytrouter",
-      "confidence_score": 1.0
+      "target": "router_yt_router_ytrouter"
     },
     {
       "relation": "method",
@@ -1942,9 +2011,9 @@
       "weight": 1.0,
       "_src": "router_yt_router_ytrouter",
       "_tgt": "router_yt_router_ytrouter_constructor",
+      "confidence_score": 1.0,
       "source": "router_yt_router_ytrouter",
-      "target": "router_yt_router_ytrouter_constructor",
-      "confidence_score": 1.0
+      "target": "router_yt_router_ytrouter_constructor"
     },
     {
       "relation": "method",
@@ -1954,9 +2023,9 @@
       "weight": 1.0,
       "_src": "router_yt_router_ytrouter",
       "_tgt": "router_yt_router_ytrouter_init",
+      "confidence_score": 1.0,
       "source": "router_yt_router_ytrouter",
-      "target": "router_yt_router_ytrouter_init",
-      "confidence_score": 1.0
+      "target": "router_yt_router_ytrouter_init"
     },
     {
       "relation": "calls",
@@ -1966,9 +2035,21 @@
       "weight": 1.0,
       "_src": "router_yt_router_ytrouter_constructor",
       "_tgt": "router_yt_router_ytrouter_init",
+      "confidence_score": 1.0,
       "source": "router_yt_router_ytrouter_constructor",
-      "target": "router_yt_router_ytrouter_init",
-      "confidence_score": 1.0
+      "target": "router_yt_router_ytrouter_init"
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "src_services_chat_analyzer_mjs",
+      "_tgt": "src_utils_math_util_mjs",
+      "confidence_score": 1.0,
+      "source": "src_services_chat_analyzer_mjs",
+      "target": "src_utils_math_util_mjs"
     },
     {
       "relation": "contains",
@@ -1978,9 +2059,9 @@
       "weight": 1.0,
       "_src": "src_services_chat_analyzer_mjs",
       "_tgt": "services_chat_analyzer_chatanalyzer",
+      "confidence_score": 1.0,
       "source": "src_services_chat_analyzer_mjs",
-      "target": "services_chat_analyzer_chatanalyzer",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer"
     },
     {
       "relation": "imports_from",
@@ -1988,11 +2069,11 @@
       "source_file": "test\\chat-analyzer.probe.mjs",
       "source_location": "L2",
       "weight": 1.0,
-      "_src": "test_chat_analyzer_probe_mjs",
-      "_tgt": "src_services_chat_analyzer_mjs",
+      "_src": "src_services_chat_analyzer_mjs",
+      "_tgt": "test_chat_analyzer_probe_mjs",
+      "confidence_score": 1.0,
       "source": "src_services_chat_analyzer_mjs",
-      "target": "test_chat_analyzer_probe_mjs",
-      "confidence_score": 1.0
+      "target": "test_chat_analyzer_probe_mjs"
     },
     {
       "relation": "method",
@@ -2002,9 +2083,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_constructor",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_constructor",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_constructor"
     },
     {
       "relation": "method",
@@ -2014,9 +2095,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_load",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_load",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_load"
     },
     {
       "relation": "method",
@@ -2026,9 +2107,21 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_getobj",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_getobj",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_getobj"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_src": "services_chat_analyzer_chatanalyzer",
+      "_tgt": "services_chat_analyzer_chatanalyzer_setvideostarttimestamp",
+      "confidence_score": 1.0,
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_setvideostarttimestamp"
     },
     {
       "relation": "method",
@@ -2038,9 +2131,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_analyze",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_analyze",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_analyze"
     },
     {
       "relation": "method",
@@ -2050,9 +2143,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_buildresult",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_buildresult",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_buildresult"
     },
     {
       "relation": "method",
@@ -2062,9 +2155,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_normalizewords",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_normalizewords",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_normalizewords"
     },
     {
       "relation": "method",
@@ -2074,9 +2167,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_resolveoptions",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_resolveoptions",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_resolveoptions"
     },
     {
       "relation": "method",
@@ -2086,9 +2179,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_numberordefault",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_numberordefault",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_numberordefault"
     },
     {
       "relation": "method",
@@ -2098,9 +2191,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_getmatchedwords",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_getmatchedwords",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_getmatchedwords"
     },
     {
       "relation": "method",
@@ -2110,9 +2203,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_calbaseline",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_calbaseline",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_calbaseline"
     },
     {
       "relation": "method",
@@ -2122,9 +2215,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_calspikescore",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_calspikescore",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_calspikescore"
     },
     {
       "relation": "method",
@@ -2134,9 +2227,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_isclippable",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_isclippable",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_isclippable"
     },
     {
       "relation": "method",
@@ -2146,9 +2239,21 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer",
       "_tgt": "services_chat_analyzer_chatanalyzer_rankandapplycooldown",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer",
-      "target": "services_chat_analyzer_chatanalyzer_rankandapplycooldown",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_rankandapplycooldown"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L249",
+      "weight": 1.0,
+      "_src": "services_chat_analyzer_chatanalyzer",
+      "_tgt": "services_chat_analyzer_chatanalyzer_formattimestamp",
+      "confidence_score": 1.0,
+      "source": "services_chat_analyzer_chatanalyzer",
+      "target": "services_chat_analyzer_chatanalyzer_formattimestamp"
     },
     {
       "relation": "calls",
@@ -2158,9 +2263,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer_constructor",
       "_tgt": "services_chat_analyzer_chatanalyzer_normalizewords",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer_constructor",
-      "target": "services_chat_analyzer_chatanalyzer_normalizewords",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_normalizewords"
     },
     {
       "relation": "calls",
@@ -2170,9 +2275,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer_constructor",
       "_tgt": "services_chat_analyzer_chatanalyzer_resolveoptions",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer_constructor",
-      "target": "services_chat_analyzer_chatanalyzer_resolveoptions",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_resolveoptions"
     },
     {
       "relation": "calls",
@@ -2182,9 +2287,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer_analyze",
       "_tgt": "services_chat_analyzer_chatanalyzer_resolveoptions",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer_analyze",
-      "target": "services_chat_analyzer_chatanalyzer_resolveoptions",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_resolveoptions"
     },
     {
       "relation": "calls",
@@ -2194,9 +2299,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer_analyze",
       "_tgt": "services_chat_analyzer_chatanalyzer_buildresult",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer_analyze",
-      "target": "services_chat_analyzer_chatanalyzer_buildresult",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_buildresult"
     },
     {
       "relation": "calls",
@@ -2206,9 +2311,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer_analyze",
       "_tgt": "services_chat_analyzer_chatanalyzer_getmatchedwords",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer_analyze",
-      "target": "services_chat_analyzer_chatanalyzer_getmatchedwords",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_getmatchedwords"
     },
     {
       "relation": "calls",
@@ -2218,9 +2323,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer_analyze",
       "_tgt": "services_chat_analyzer_chatanalyzer_calbaseline",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer_analyze",
-      "target": "services_chat_analyzer_chatanalyzer_calbaseline",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_calbaseline"
     },
     {
       "relation": "calls",
@@ -2230,9 +2335,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer_analyze",
       "_tgt": "services_chat_analyzer_chatanalyzer_calspikescore",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer_analyze",
-      "target": "services_chat_analyzer_chatanalyzer_calspikescore",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_calspikescore"
     },
     {
       "relation": "calls",
@@ -2242,9 +2347,21 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer_analyze",
       "_tgt": "services_chat_analyzer_chatanalyzer_isclippable",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer_analyze",
-      "target": "services_chat_analyzer_chatanalyzer_isclippable",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_isclippable"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_src": "services_chat_analyzer_chatanalyzer_analyze",
+      "_tgt": "services_chat_analyzer_chatanalyzer_formattimestamp",
+      "confidence_score": 1.0,
+      "source": "services_chat_analyzer_chatanalyzer_analyze",
+      "target": "services_chat_analyzer_chatanalyzer_formattimestamp"
     },
     {
       "relation": "calls",
@@ -2254,9 +2371,9 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer_analyze",
       "_tgt": "services_chat_analyzer_chatanalyzer_rankandapplycooldown",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer_analyze",
-      "target": "services_chat_analyzer_chatanalyzer_rankandapplycooldown",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_rankandapplycooldown"
     },
     {
       "relation": "calls",
@@ -2266,9 +2383,21 @@
       "weight": 1.0,
       "_src": "services_chat_analyzer_chatanalyzer_resolveoptions",
       "_tgt": "services_chat_analyzer_chatanalyzer_numberordefault",
+      "confidence_score": 1.0,
       "source": "services_chat_analyzer_chatanalyzer_resolveoptions",
-      "target": "services_chat_analyzer_chatanalyzer_numberordefault",
-      "confidence_score": 1.0
+      "target": "services_chat_analyzer_chatanalyzer_numberordefault"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\services\\chat-analyzer.mjs",
+      "source_location": "L250",
+      "weight": 1.0,
+      "_src": "services_chat_analyzer_chatanalyzer_formattimestamp",
+      "_tgt": "utils_math_util_fmttimestamp",
+      "source": "services_chat_analyzer_chatanalyzer_formattimestamp",
+      "target": "utils_math_util_fmttimestamp"
     },
     {
       "relation": "contains",
@@ -2278,9 +2407,9 @@
       "weight": 1.0,
       "_src": "src_services_redis_service_mjs",
       "_tgt": "services_redis_service_redisservice",
+      "confidence_score": 1.0,
       "source": "src_services_redis_service_mjs",
-      "target": "services_redis_service_redisservice",
-      "confidence_score": 1.0
+      "target": "services_redis_service_redisservice"
     },
     {
       "relation": "method",
@@ -2290,9 +2419,9 @@
       "weight": 1.0,
       "_src": "services_redis_service_redisservice",
       "_tgt": "services_redis_service_redisservice_constructor",
+      "confidence_score": 1.0,
       "source": "services_redis_service_redisservice",
-      "target": "services_redis_service_redisservice_constructor",
-      "confidence_score": 1.0
+      "target": "services_redis_service_redisservice_constructor"
     },
     {
       "relation": "method",
@@ -2302,9 +2431,9 @@
       "weight": 1.0,
       "_src": "services_redis_service_redisservice",
       "_tgt": "services_redis_service_redisservice_cachejson",
+      "confidence_score": 1.0,
       "source": "services_redis_service_redisservice",
-      "target": "services_redis_service_redisservice_cachejson",
-      "confidence_score": 1.0
+      "target": "services_redis_service_redisservice_cachejson"
     },
     {
       "relation": "method",
@@ -2314,9 +2443,9 @@
       "weight": 1.0,
       "_src": "services_redis_service_redisservice",
       "_tgt": "services_redis_service_redisservice_getjson",
+      "confidence_score": 1.0,
       "source": "services_redis_service_redisservice",
-      "target": "services_redis_service_redisservice_getjson",
-      "confidence_score": 1.0
+      "target": "services_redis_service_redisservice_getjson"
     },
     {
       "relation": "imports_from",
@@ -2326,9 +2455,9 @@
       "weight": 1.0,
       "_src": "src_utils_clip_batch_util_mjs",
       "_tgt": "src_utils_clip_time_util_mjs",
+      "confidence_score": 1.0,
       "source": "src_utils_clip_batch_util_mjs",
-      "target": "src_utils_clip_time_util_mjs",
-      "confidence_score": 1.0
+      "target": "src_utils_clip_time_util_mjs"
     },
     {
       "relation": "contains",
@@ -2338,9 +2467,9 @@
       "weight": 1.0,
       "_src": "src_utils_clip_batch_util_mjs",
       "_tgt": "utils_clip_batch_util_secondsstring",
+      "confidence_score": 1.0,
       "source": "src_utils_clip_batch_util_mjs",
-      "target": "utils_clip_batch_util_secondsstring",
-      "confidence_score": 1.0
+      "target": "utils_clip_batch_util_secondsstring"
     },
     {
       "relation": "contains",
@@ -2350,9 +2479,9 @@
       "weight": 1.0,
       "_src": "src_utils_clip_batch_util_mjs",
       "_tgt": "utils_clip_batch_util_validationerror",
+      "confidence_score": 1.0,
       "source": "src_utils_clip_batch_util_mjs",
-      "target": "utils_clip_batch_util_validationerror",
-      "confidence_score": 1.0
+      "target": "utils_clip_batch_util_validationerror"
     },
     {
       "relation": "contains",
@@ -2362,9 +2491,21 @@
       "weight": 1.0,
       "_src": "src_utils_clip_batch_util_mjs",
       "_tgt": "utils_clip_batch_util_errorresponse",
+      "confidence_score": 1.0,
       "source": "src_utils_clip_batch_util_mjs",
-      "target": "utils_clip_batch_util_errorresponse",
-      "confidence_score": 1.0
+      "target": "utils_clip_batch_util_errorresponse"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_src": "src_utils_clip_batch_util_mjs",
+      "_tgt": "utils_clip_batch_util_normalizebatchclipoffset",
+      "confidence_score": 1.0,
+      "source": "src_utils_clip_batch_util_mjs",
+      "target": "utils_clip_batch_util_normalizebatchclipoffset"
     },
     {
       "relation": "contains",
@@ -2374,9 +2515,9 @@
       "weight": 1.0,
       "_src": "src_utils_clip_batch_util_mjs",
       "_tgt": "utils_clip_batch_util_buildbatchclipjobs",
+      "confidence_score": 1.0,
       "source": "src_utils_clip_batch_util_mjs",
-      "target": "utils_clip_batch_util_buildbatchclipjobs",
-      "confidence_score": 1.0
+      "target": "utils_clip_batch_util_buildbatchclipjobs"
     },
     {
       "relation": "contains",
@@ -2386,9 +2527,9 @@
       "weight": 1.0,
       "_src": "src_utils_clip_batch_util_mjs",
       "_tgt": "utils_clip_batch_util_validatebatchclipinput",
+      "confidence_score": 1.0,
       "source": "src_utils_clip_batch_util_mjs",
-      "target": "utils_clip_batch_util_validatebatchclipinput",
-      "confidence_score": 1.0
+      "target": "utils_clip_batch_util_validatebatchclipinput"
     },
     {
       "relation": "contains",
@@ -2398,9 +2539,9 @@
       "weight": 1.0,
       "_src": "src_utils_clip_batch_util_mjs",
       "_tgt": "utils_clip_batch_util_batchstatuscode",
+      "confidence_score": 1.0,
       "source": "src_utils_clip_batch_util_mjs",
-      "target": "utils_clip_batch_util_batchstatuscode",
-      "confidence_score": 1.0
+      "target": "utils_clip_batch_util_batchstatuscode"
     },
     {
       "relation": "imports_from",
@@ -2408,11 +2549,35 @@
       "source_file": "test\\clip-batch.probe.mjs",
       "source_location": "L2",
       "weight": 1.0,
-      "_src": "test_clip_batch_probe_mjs",
-      "_tgt": "src_utils_clip_batch_util_mjs",
+      "_src": "src_utils_clip_batch_util_mjs",
+      "_tgt": "test_clip_batch_probe_mjs",
+      "confidence_score": 1.0,
       "source": "src_utils_clip_batch_util_mjs",
-      "target": "test_clip_batch_probe_mjs",
-      "confidence_score": 1.0
+      "target": "test_clip_batch_probe_mjs"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_src": "utils_clip_batch_util_validationerror",
+      "_tgt": "utils_clip_batch_util_normalizebatchclipoffset",
+      "confidence_score": 1.0,
+      "source": "utils_clip_batch_util_validationerror",
+      "target": "utils_clip_batch_util_normalizebatchclipoffset"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\clip-batch-util.mjs",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_src": "utils_clip_batch_util_normalizebatchclipoffset",
+      "_tgt": "utils_clip_batch_util_buildbatchclipjobs",
+      "confidence_score": 1.0,
+      "source": "utils_clip_batch_util_normalizebatchclipoffset",
+      "target": "utils_clip_batch_util_buildbatchclipjobs"
     },
     {
       "relation": "contains",
@@ -2422,9 +2587,9 @@
       "weight": 1.0,
       "_src": "src_utils_clip_time_util_mjs",
       "_tgt": "utils_clip_time_util_httperror",
+      "confidence_score": 1.0,
       "source": "src_utils_clip_time_util_mjs",
-      "target": "utils_clip_time_util_httperror",
-      "confidence_score": 1.0
+      "target": "utils_clip_time_util_httperror"
     },
     {
       "relation": "contains",
@@ -2434,9 +2599,9 @@
       "weight": 1.0,
       "_src": "src_utils_clip_time_util_mjs",
       "_tgt": "utils_clip_time_util_parsetimestamp",
+      "confidence_score": 1.0,
       "source": "src_utils_clip_time_util_mjs",
-      "target": "utils_clip_time_util_parsetimestamp",
-      "confidence_score": 1.0
+      "target": "utils_clip_time_util_parsetimestamp"
     },
     {
       "relation": "imports_from",
@@ -2444,11 +2609,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L14",
       "weight": 1.0,
-      "_src": "src_utils_yt_util_mjs",
-      "_tgt": "src_utils_clip_time_util_mjs",
+      "_src": "src_utils_clip_time_util_mjs",
+      "_tgt": "src_utils_yt_util_mjs",
+      "confidence_score": 1.0,
       "source": "src_utils_clip_time_util_mjs",
-      "target": "src_utils_yt_util_mjs",
-      "confidence_score": 1.0
+      "target": "src_utils_yt_util_mjs"
     },
     {
       "relation": "calls",
@@ -2456,11 +2621,11 @@
       "source_file": "src\\utils\\clip-time-util.mjs",
       "source_location": "L12",
       "weight": 1.0,
-      "_src": "utils_clip_time_util_parsetimestamp",
-      "_tgt": "utils_clip_time_util_httperror",
+      "_src": "utils_clip_time_util_httperror",
+      "_tgt": "utils_clip_time_util_parsetimestamp",
+      "confidence_score": 1.0,
       "source": "utils_clip_time_util_httperror",
-      "target": "utils_clip_time_util_parsetimestamp",
-      "confidence_score": 1.0
+      "target": "utils_clip_time_util_parsetimestamp"
     },
     {
       "relation": "calls",
@@ -2469,8 +2634,8 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L373",
       "weight": 1.0,
-      "_src": "utils_yt_util_selectmediaformats",
-      "_tgt": "utils_clip_time_util_httperror",
+      "_src": "utils_clip_time_util_httperror",
+      "_tgt": "utils_yt_util_selectmediaformats",
       "source": "utils_clip_time_util_httperror",
       "target": "utils_yt_util_selectmediaformats"
     },
@@ -2481,8 +2646,8 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L564",
       "weight": 1.0,
-      "_src": "utils_yt_util_loadclipmediaplan",
-      "_tgt": "utils_clip_time_util_httperror",
+      "_src": "utils_clip_time_util_httperror",
+      "_tgt": "utils_yt_util_loadclipmediaplan",
       "source": "utils_clip_time_util_httperror",
       "target": "utils_yt_util_loadclipmediaplan"
     },
@@ -2493,8 +2658,8 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L605",
       "weight": 1.0,
-      "_src": "utils_yt_util_parseclipwindow",
-      "_tgt": "utils_clip_time_util_httperror",
+      "_src": "utils_clip_time_util_httperror",
+      "_tgt": "utils_yt_util_parseclipwindow",
       "source": "utils_clip_time_util_httperror",
       "target": "utils_yt_util_parseclipwindow"
     },
@@ -2505,8 +2670,8 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L629",
       "weight": 1.0,
-      "_src": "utils_yt_util_ytdlpformatselector",
-      "_tgt": "utils_clip_time_util_httperror",
+      "_src": "utils_clip_time_util_httperror",
+      "_tgt": "utils_yt_util_ytdlpformatselector",
       "source": "utils_clip_time_util_httperror",
       "target": "utils_yt_util_ytdlpformatselector"
     },
@@ -2517,8 +2682,8 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L707",
       "weight": 1.0,
-      "_src": "utils_yt_util_genclipfilewithmediaplan",
-      "_tgt": "utils_clip_time_util_httperror",
+      "_src": "utils_clip_time_util_httperror",
+      "_tgt": "utils_yt_util_genclipfilewithmediaplan",
       "source": "utils_clip_time_util_httperror",
       "target": "utils_yt_util_genclipfilewithmediaplan"
     },
@@ -2529,8 +2694,8 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L600",
       "weight": 1.0,
-      "_src": "utils_yt_util_parseclipwindow",
-      "_tgt": "utils_clip_time_util_parsetimestamp",
+      "_src": "utils_clip_time_util_parsetimestamp",
+      "_tgt": "utils_yt_util_parseclipwindow",
       "source": "utils_clip_time_util_parsetimestamp",
       "target": "utils_yt_util_parseclipwindow"
     },
@@ -2542,9 +2707,9 @@
       "weight": 1.0,
       "_src": "src_utils_data_prc_util_mjs",
       "_tgt": "utils_data_prc_util_extractwordheatmap",
+      "confidence_score": 1.0,
       "source": "src_utils_data_prc_util_mjs",
-      "target": "utils_data_prc_util_extractwordheatmap",
-      "confidence_score": 1.0
+      "target": "utils_data_prc_util_extractwordheatmap"
     },
     {
       "relation": "contains",
@@ -2554,9 +2719,9 @@
       "weight": 1.0,
       "_src": "src_utils_data_prc_util_mjs",
       "_tgt": "utils_data_prc_util_setwordheatmap",
+      "confidence_score": 1.0,
       "source": "src_utils_data_prc_util_mjs",
-      "target": "utils_data_prc_util_setwordheatmap",
-      "confidence_score": 1.0
+      "target": "utils_data_prc_util_setwordheatmap"
     },
     {
       "relation": "contains",
@@ -2566,9 +2731,9 @@
       "weight": 1.0,
       "_src": "src_utils_data_prc_util_mjs",
       "_tgt": "utils_data_prc_util_tokenizejapanese",
+      "confidence_score": 1.0,
       "source": "src_utils_data_prc_util_mjs",
-      "target": "utils_data_prc_util_tokenizejapanese",
-      "confidence_score": 1.0
+      "target": "utils_data_prc_util_tokenizejapanese"
     },
     {
       "relation": "contains",
@@ -2578,9 +2743,9 @@
       "weight": 1.0,
       "_src": "src_utils_data_prc_util_mjs",
       "_tgt": "utils_data_prc_util_inittokenizer",
+      "confidence_score": 1.0,
       "source": "src_utils_data_prc_util_mjs",
-      "target": "utils_data_prc_util_inittokenizer",
-      "confidence_score": 1.0
+      "target": "utils_data_prc_util_inittokenizer"
     },
     {
       "relation": "imports_from",
@@ -2588,11 +2753,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L10",
       "weight": 1.0,
-      "_src": "src_utils_yt_util_mjs",
-      "_tgt": "src_utils_data_prc_util_mjs",
+      "_src": "src_utils_data_prc_util_mjs",
+      "_tgt": "src_utils_yt_util_mjs",
+      "confidence_score": 1.0,
       "source": "src_utils_data_prc_util_mjs",
-      "target": "src_utils_yt_util_mjs",
-      "confidence_score": 1.0
+      "target": "src_utils_yt_util_mjs"
     },
     {
       "relation": "calls",
@@ -2602,9 +2767,9 @@
       "weight": 1.0,
       "_src": "utils_data_prc_util_setwordheatmap",
       "_tgt": "utils_data_prc_util_tokenizejapanese",
+      "confidence_score": 1.0,
       "source": "utils_data_prc_util_setwordheatmap",
-      "target": "utils_data_prc_util_tokenizejapanese",
-      "confidence_score": 1.0
+      "target": "utils_data_prc_util_tokenizejapanese"
     },
     {
       "relation": "contains",
@@ -2614,9 +2779,9 @@
       "weight": 1.0,
       "_src": "src_utils_file_util_mjs",
       "_tgt": "utils_file_util_loadfile",
+      "confidence_score": 1.0,
       "source": "src_utils_file_util_mjs",
-      "target": "utils_file_util_loadfile",
-      "confidence_score": 1.0
+      "target": "utils_file_util_loadfile"
     },
     {
       "relation": "contains",
@@ -2626,9 +2791,9 @@
       "weight": 1.0,
       "_src": "src_utils_math_util_mjs",
       "_tgt": "utils_math_util_cnvtimestamptomin",
+      "confidence_score": 1.0,
       "source": "src_utils_math_util_mjs",
-      "target": "utils_math_util_cnvtimestamptomin",
-      "confidence_score": 1.0
+      "target": "utils_math_util_cnvtimestamptomin"
     },
     {
       "relation": "contains",
@@ -2638,9 +2803,9 @@
       "weight": 1.0,
       "_src": "src_utils_math_util_mjs",
       "_tgt": "utils_math_util_fmttimestamp",
+      "confidence_score": 1.0,
       "source": "src_utils_math_util_mjs",
-      "target": "utils_math_util_fmttimestamp",
-      "confidence_score": 1.0
+      "target": "utils_math_util_fmttimestamp"
     },
     {
       "relation": "contains",
@@ -2650,9 +2815,9 @@
       "weight": 1.0,
       "_src": "src_utils_math_util_mjs",
       "_tgt": "utils_math_util_fmtmin",
+      "confidence_score": 1.0,
       "source": "src_utils_math_util_mjs",
-      "target": "utils_math_util_fmtmin",
-      "confidence_score": 1.0
+      "target": "utils_math_util_fmtmin"
     },
     {
       "relation": "contains",
@@ -2662,9 +2827,21 @@
       "weight": 1.0,
       "_src": "src_utils_math_util_mjs",
       "_tgt": "utils_math_util_normtimestamp",
+      "confidence_score": 1.0,
       "source": "src_utils_math_util_mjs",
-      "target": "utils_math_util_normtimestamp",
-      "confidence_score": 1.0
+      "target": "utils_math_util_normtimestamp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_src": "src_utils_math_util_mjs",
+      "_tgt": "utils_math_util_padtime",
+      "confidence_score": 1.0,
+      "source": "src_utils_math_util_mjs",
+      "target": "utils_math_util_padtime"
     },
     {
       "relation": "calls",
@@ -2674,9 +2851,9 @@
       "weight": 1.0,
       "_src": "utils_math_util_cnvtimestamptomin",
       "_tgt": "utils_math_util_normtimestamp",
+      "confidence_score": 1.0,
       "source": "utils_math_util_cnvtimestamptomin",
-      "target": "utils_math_util_normtimestamp",
-      "confidence_score": 1.0
+      "target": "utils_math_util_normtimestamp"
     },
     {
       "relation": "calls",
@@ -2684,11 +2861,35 @@
       "source_file": "src\\utils\\math-util.mjs",
       "source_location": "L12",
       "weight": 1.0,
-      "_src": "utils_math_util_fmttimestamp",
-      "_tgt": "utils_math_util_cnvtimestamptomin",
+      "_src": "utils_math_util_cnvtimestamptomin",
+      "_tgt": "utils_math_util_fmttimestamp",
+      "confidence_score": 1.0,
       "source": "utils_math_util_cnvtimestamptomin",
-      "target": "utils_math_util_fmttimestamp",
-      "confidence_score": 1.0
+      "target": "utils_math_util_fmttimestamp"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "utils_math_util_fmttimestamp",
+      "_tgt": "utils_math_util_fmtmin",
+      "confidence_score": 1.0,
+      "source": "utils_math_util_fmttimestamp",
+      "target": "utils_math_util_fmtmin"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\math-util.mjs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_src": "utils_math_util_fmtmin",
+      "_tgt": "utils_math_util_padtime",
+      "confidence_score": 1.0,
+      "source": "utils_math_util_fmtmin",
+      "target": "utils_math_util_padtime"
     },
     {
       "relation": "contains",
@@ -2698,9 +2899,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_listenyt",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_listenyt",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_listenyt"
     },
     {
       "relation": "contains",
@@ -2710,9 +2911,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_exrdata",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_exrdata",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_exrdata"
     },
     {
       "relation": "contains",
@@ -2722,9 +2923,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_exrmsg",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_exrmsg",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_exrmsg"
     },
     {
       "relation": "contains",
@@ -2734,9 +2935,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_dlvid",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_dlvid",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_dlvid"
     },
     {
       "relation": "contains",
@@ -2746,9 +2947,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_cutvideo",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_cutvideo",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_cutvideo"
     },
     {
       "relation": "contains",
@@ -2758,9 +2959,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_ffmpegtime",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_ffmpegtime",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_ffmpegtime"
     },
     {
       "relation": "contains",
@@ -2770,9 +2971,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_safefilepart",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_safefilepart",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_safefilepart"
     },
     {
       "relation": "contains",
@@ -2782,9 +2983,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_isusablemediaformat",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_isusablemediaformat",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_isusablemediaformat"
     },
     {
       "relation": "contains",
@@ -2794,9 +2995,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_pickmediaformat",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_pickmediaformat",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_pickmediaformat"
     },
     {
       "relation": "contains",
@@ -2806,9 +3007,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_deciphermediaurl",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_deciphermediaurl",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_deciphermediaurl"
     },
     {
       "relation": "contains",
@@ -2818,9 +3019,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_createmediarangeproxy",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_createmediarangeproxy",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_createmediarangeproxy"
     },
     {
       "relation": "contains",
@@ -2830,9 +3031,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_selectmediaformats",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_selectmediaformats",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_selectmediaformats"
     },
     {
       "relation": "contains",
@@ -2842,9 +3043,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_buildffmpegargs",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_buildffmpegargs",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_buildffmpegargs"
     },
     {
       "relation": "contains",
@@ -2854,9 +3055,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_loadclipmediaplan",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_loadclipmediaplan",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_loadclipmediaplan"
     },
     {
       "relation": "contains",
@@ -2866,9 +3067,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_parseclipwindow",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_parseclipwindow",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_parseclipwindow"
     },
     {
       "relation": "contains",
@@ -2878,9 +3079,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_closeproxy",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_closeproxy",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_closeproxy"
     },
     {
       "relation": "contains",
@@ -2890,9 +3091,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_usessinglemuxedsource",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_usessinglemuxedsource",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_usessinglemuxedsource"
     },
     {
       "relation": "contains",
@@ -2902,9 +3103,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_ytdlpformatselector",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_ytdlpformatselector",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_ytdlpformatselector"
     },
     {
       "relation": "contains",
@@ -2914,9 +3115,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_generateadaptiveclipwithytdlp",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_generateadaptiveclipwithytdlp",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_generateadaptiveclipwithytdlp"
     },
     {
       "relation": "contains",
@@ -2926,9 +3127,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_genclipfilewithmediaplan",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_genclipfilewithmediaplan",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_genclipfilewithmediaplan"
     },
     {
       "relation": "contains",
@@ -2938,9 +3139,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_genclipfile",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_genclipfile",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_genclipfile"
     },
     {
       "relation": "contains",
@@ -2950,9 +3151,9 @@
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
       "_tgt": "utils_yt_util_streamvidsegment",
+      "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_streamvidsegment",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_streamvidsegment"
     },
     {
       "relation": "calls",
@@ -2960,11 +3161,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L447",
       "weight": 1.0,
-      "_src": "utils_yt_util_buildffmpegargs",
-      "_tgt": "utils_yt_util_ffmpegtime",
+      "_src": "utils_yt_util_ffmpegtime",
+      "_tgt": "utils_yt_util_buildffmpegargs",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_ffmpegtime",
-      "target": "utils_yt_util_buildffmpegargs",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_buildffmpegargs"
     },
     {
       "relation": "calls",
@@ -2972,11 +3173,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L637",
       "weight": 1.0,
-      "_src": "utils_yt_util_generateadaptiveclipwithytdlp",
-      "_tgt": "utils_yt_util_ffmpegtime",
+      "_src": "utils_yt_util_ffmpegtime",
+      "_tgt": "utils_yt_util_generateadaptiveclipwithytdlp",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_ffmpegtime",
-      "target": "utils_yt_util_generateadaptiveclipwithytdlp",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_generateadaptiveclipwithytdlp"
     },
     {
       "relation": "calls",
@@ -2984,11 +3185,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L682",
       "weight": 1.0,
-      "_src": "utils_yt_util_genclipfilewithmediaplan",
-      "_tgt": "utils_yt_util_safefilepart",
+      "_src": "utils_yt_util_safefilepart",
+      "_tgt": "utils_yt_util_genclipfilewithmediaplan",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_safefilepart",
-      "target": "utils_yt_util_genclipfilewithmediaplan",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_genclipfilewithmediaplan"
     },
     {
       "relation": "calls",
@@ -2996,11 +3197,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L849",
       "weight": 1.0,
-      "_src": "utils_yt_util_streamvidsegment",
-      "_tgt": "utils_yt_util_safefilepart",
+      "_src": "utils_yt_util_safefilepart",
+      "_tgt": "utils_yt_util_streamvidsegment",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_safefilepart",
-      "target": "utils_yt_util_streamvidsegment",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_streamvidsegment"
     },
     {
       "relation": "calls",
@@ -3008,11 +3209,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L361",
       "weight": 1.0,
-      "_src": "utils_yt_util_selectmediaformats",
-      "_tgt": "utils_yt_util_pickmediaformat",
+      "_src": "utils_yt_util_pickmediaformat",
+      "_tgt": "utils_yt_util_selectmediaformats",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_pickmediaformat",
-      "target": "utils_yt_util_selectmediaformats",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_selectmediaformats"
     },
     {
       "relation": "calls",
@@ -3020,11 +3221,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L576",
       "weight": 1.0,
-      "_src": "utils_yt_util_loadclipmediaplan",
-      "_tgt": "utils_yt_util_deciphermediaurl",
+      "_src": "utils_yt_util_deciphermediaurl",
+      "_tgt": "utils_yt_util_loadclipmediaplan",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_deciphermediaurl",
-      "target": "utils_yt_util_loadclipmediaplan",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_loadclipmediaplan"
     },
     {
       "relation": "calls",
@@ -3032,11 +3233,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L857",
       "weight": 1.0,
-      "_src": "utils_yt_util_streamvidsegment",
-      "_tgt": "utils_yt_util_createmediarangeproxy",
+      "_src": "utils_yt_util_createmediarangeproxy",
+      "_tgt": "utils_yt_util_streamvidsegment",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_createmediarangeproxy",
-      "target": "utils_yt_util_streamvidsegment",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_streamvidsegment"
     },
     {
       "relation": "calls",
@@ -3044,11 +3245,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L568",
       "weight": 1.0,
-      "_src": "utils_yt_util_loadclipmediaplan",
-      "_tgt": "utils_yt_util_selectmediaformats",
+      "_src": "utils_yt_util_selectmediaformats",
+      "_tgt": "utils_yt_util_loadclipmediaplan",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_selectmediaformats",
-      "target": "utils_yt_util_loadclipmediaplan",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_loadclipmediaplan"
     },
     {
       "relation": "calls",
@@ -3056,11 +3257,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L714",
       "weight": 1.0,
-      "_src": "utils_yt_util_genclipfilewithmediaplan",
-      "_tgt": "utils_yt_util_buildffmpegargs",
+      "_src": "utils_yt_util_buildffmpegargs",
+      "_tgt": "utils_yt_util_genclipfilewithmediaplan",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_buildffmpegargs",
-      "target": "utils_yt_util_genclipfilewithmediaplan",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_genclipfilewithmediaplan"
     },
     {
       "relation": "calls",
@@ -3068,11 +3269,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L859",
       "weight": 1.0,
-      "_src": "utils_yt_util_streamvidsegment",
-      "_tgt": "utils_yt_util_buildffmpegargs",
+      "_src": "utils_yt_util_buildffmpegargs",
+      "_tgt": "utils_yt_util_streamvidsegment",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_buildffmpegargs",
-      "target": "utils_yt_util_streamvidsegment",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_streamvidsegment"
     },
     {
       "relation": "calls",
@@ -3080,11 +3281,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L794",
       "weight": 1.0,
-      "_src": "utils_yt_util_genclipfile",
-      "_tgt": "utils_yt_util_loadclipmediaplan",
+      "_src": "utils_yt_util_loadclipmediaplan",
+      "_tgt": "utils_yt_util_genclipfile",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_loadclipmediaplan",
-      "target": "utils_yt_util_genclipfile",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_genclipfile"
     },
     {
       "relation": "calls",
@@ -3092,11 +3293,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L845",
       "weight": 1.0,
-      "_src": "utils_yt_util_streamvidsegment",
-      "_tgt": "utils_yt_util_loadclipmediaplan",
+      "_src": "utils_yt_util_loadclipmediaplan",
+      "_tgt": "utils_yt_util_streamvidsegment",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_loadclipmediaplan",
-      "target": "utils_yt_util_streamvidsegment",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_streamvidsegment"
     },
     {
       "relation": "calls",
@@ -3104,11 +3305,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L673",
       "weight": 1.0,
-      "_src": "utils_yt_util_genclipfilewithmediaplan",
-      "_tgt": "utils_yt_util_parseclipwindow",
+      "_src": "utils_yt_util_parseclipwindow",
+      "_tgt": "utils_yt_util_genclipfilewithmediaplan",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_parseclipwindow",
-      "target": "utils_yt_util_genclipfilewithmediaplan",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_genclipfilewithmediaplan"
     },
     {
       "relation": "calls",
@@ -3116,11 +3317,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L844",
       "weight": 1.0,
-      "_src": "utils_yt_util_streamvidsegment",
-      "_tgt": "utils_yt_util_parseclipwindow",
+      "_src": "utils_yt_util_parseclipwindow",
+      "_tgt": "utils_yt_util_streamvidsegment",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_parseclipwindow",
-      "target": "utils_yt_util_streamvidsegment",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_streamvidsegment"
     },
     {
       "relation": "calls",
@@ -3128,11 +3329,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L675",
       "weight": 1.0,
-      "_src": "utils_yt_util_genclipfilewithmediaplan",
-      "_tgt": "utils_yt_util_usessinglemuxedsource",
+      "_src": "utils_yt_util_usessinglemuxedsource",
+      "_tgt": "utils_yt_util_genclipfilewithmediaplan",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_usessinglemuxedsource",
-      "target": "utils_yt_util_genclipfilewithmediaplan",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_genclipfilewithmediaplan"
     },
     {
       "relation": "calls",
@@ -3140,11 +3341,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L857",
       "weight": 1.0,
-      "_src": "utils_yt_util_streamvidsegment",
-      "_tgt": "utils_yt_util_usessinglemuxedsource",
+      "_src": "utils_yt_util_usessinglemuxedsource",
+      "_tgt": "utils_yt_util_streamvidsegment",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_usessinglemuxedsource",
-      "target": "utils_yt_util_streamvidsegment",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_streamvidsegment"
     },
     {
       "relation": "calls",
@@ -3152,11 +3353,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L635",
       "weight": 1.0,
-      "_src": "utils_yt_util_generateadaptiveclipwithytdlp",
-      "_tgt": "utils_yt_util_ytdlpformatselector",
+      "_src": "utils_yt_util_ytdlpformatselector",
+      "_tgt": "utils_yt_util_generateadaptiveclipwithytdlp",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_ytdlpformatselector",
-      "target": "utils_yt_util_generateadaptiveclipwithytdlp",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_generateadaptiveclipwithytdlp"
     },
     {
       "relation": "calls",
@@ -3164,11 +3365,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L694",
       "weight": 1.0,
-      "_src": "utils_yt_util_genclipfilewithmediaplan",
-      "_tgt": "utils_yt_util_generateadaptiveclipwithytdlp",
+      "_src": "utils_yt_util_generateadaptiveclipwithytdlp",
+      "_tgt": "utils_yt_util_genclipfilewithmediaplan",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_generateadaptiveclipwithytdlp",
-      "target": "utils_yt_util_genclipfilewithmediaplan",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_genclipfilewithmediaplan"
     },
     {
       "relation": "calls",
@@ -3176,11 +3377,11 @@
       "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L795",
       "weight": 1.0,
-      "_src": "utils_yt_util_genclipfile",
-      "_tgt": "utils_yt_util_genclipfilewithmediaplan",
+      "_src": "utils_yt_util_genclipfilewithmediaplan",
+      "_tgt": "utils_yt_util_genclipfile",
+      "confidence_score": 1.0,
       "source": "utils_yt_util_genclipfilewithmediaplan",
-      "target": "utils_yt_util_genclipfile",
-      "confidence_score": 1.0
+      "target": "utils_yt_util_genclipfile"
     },
     {
       "relation": "contains",
@@ -3190,9 +3391,21 @@
       "weight": 1.0,
       "_src": "test_chat_analyzer_probe_mjs",
       "_tgt": "test_chat_analyzer_probe_ts",
+      "confidence_score": 1.0,
       "source": "test_chat_analyzer_probe_mjs",
-      "target": "test_chat_analyzer_probe_ts",
-      "confidence_score": 1.0
+      "target": "test_chat_analyzer_probe_ts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test\\chat-analyzer.probe.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "test_chat_analyzer_probe_mjs",
+      "_tgt": "test_chat_analyzer_probe_tsfromstart",
+      "confidence_score": 1.0,
+      "source": "test_chat_analyzer_probe_mjs",
+      "target": "test_chat_analyzer_probe_tsfromstart"
     },
     {
       "relation": "contains",
@@ -3202,9 +3415,9 @@
       "weight": 1.0,
       "_src": "test_chat_analyzer_probe_mjs",
       "_tgt": "test_chat_analyzer_probe_bucket",
+      "confidence_score": 1.0,
       "source": "test_chat_analyzer_probe_mjs",
-      "target": "test_chat_analyzer_probe_bucket",
-      "confidence_score": 1.0
+      "target": "test_chat_analyzer_probe_bucket"
     },
     {
       "relation": "contains",
@@ -3214,9 +3427,9 @@
       "weight": 1.0,
       "_src": "test_chat_analyzer_probe_mjs",
       "_tgt": "test_chat_analyzer_probe_analyze",
+      "confidence_score": 1.0,
       "source": "test_chat_analyzer_probe_mjs",
-      "target": "test_chat_analyzer_probe_analyze",
-      "confidence_score": 1.0
+      "target": "test_chat_analyzer_probe_analyze"
     },
     {
       "relation": "implements",
@@ -3237,8 +3450,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_npm_install",
-      "_tgt": "AGENTS_nodejs_es_module_backend",
+      "_src": "AGENTS_nodejs_es_module_backend",
+      "_tgt": "AGENTS_npm_install",
       "source": "AGENTS_nodejs_es_module_backend",
       "target": "AGENTS_npm_install"
     },
@@ -3249,8 +3462,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_es_module_style",
-      "_tgt": "AGENTS_nodejs_es_module_backend",
+      "_src": "AGENTS_nodejs_es_module_backend",
+      "_tgt": "AGENTS_es_module_style",
       "source": "AGENTS_nodejs_es_module_backend",
       "target": "AGENTS_es_module_style"
     },
@@ -3261,8 +3474,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_router_directory",
-      "_tgt": "AGENTS_express_api",
+      "_src": "AGENTS_express_api",
+      "_tgt": "AGENTS_router_directory",
       "source": "AGENTS_express_api",
       "target": "AGENTS_router_directory"
     },
@@ -3273,8 +3486,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_controller_directory",
-      "_tgt": "AGENTS_express_api",
+      "_src": "AGENTS_express_api",
+      "_tgt": "AGENTS_controller_directory",
       "source": "AGENTS_express_api",
       "target": "AGENTS_controller_directory"
     },
@@ -3285,8 +3498,8 @@
       "source_file": "readme.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "readme_expressjs",
-      "_tgt": "AGENTS_express_api",
+      "_src": "AGENTS_express_api",
+      "_tgt": "readme_expressjs",
       "source": "AGENTS_express_api",
       "target": "readme_expressjs"
     },
@@ -3333,8 +3546,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_npm_start",
-      "_tgt": "AGENTS_server_mjs",
+      "_src": "AGENTS_server_mjs",
+      "_tgt": "AGENTS_npm_start",
       "source": "AGENTS_server_mjs",
       "target": "AGENTS_npm_start"
     },
@@ -3345,8 +3558,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_testing_guidelines",
-      "_tgt": "AGENTS_controller_directory",
+      "_src": "AGENTS_controller_directory",
+      "_tgt": "AGENTS_testing_guidelines",
       "source": "AGENTS_controller_directory",
       "target": "AGENTS_testing_guidelines"
     },
@@ -3381,8 +3594,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_redis_om_entities",
-      "_tgt": "AGENTS_redis",
+      "_src": "AGENTS_redis",
+      "_tgt": "AGENTS_redis_om_entities",
       "source": "AGENTS_redis",
       "target": "AGENTS_redis_om_entities"
     },
@@ -3393,8 +3606,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_external_test_dependencies",
-      "_tgt": "AGENTS_redis",
+      "_src": "AGENTS_redis",
+      "_tgt": "AGENTS_external_test_dependencies",
       "source": "AGENTS_redis",
       "target": "AGENTS_external_test_dependencies"
     },
@@ -3405,8 +3618,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_om_client_mjs",
-      "_tgt": "AGENTS_redis",
+      "_src": "AGENTS_redis",
+      "_tgt": "AGENTS_om_client_mjs",
       "source": "AGENTS_redis",
       "target": "AGENTS_om_client_mjs"
     },
@@ -3417,8 +3630,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_redis_service_mjs",
-      "_tgt": "AGENTS_redis",
+      "_src": "AGENTS_redis",
+      "_tgt": "AGENTS_redis_service_mjs",
       "source": "AGENTS_redis",
       "target": "AGENTS_redis_service_mjs"
     },
@@ -3429,8 +3642,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_testing_guidelines",
-      "_tgt": "AGENTS_middleware_directory",
+      "_src": "AGENTS_middleware_directory",
+      "_tgt": "AGENTS_testing_guidelines",
       "source": "AGENTS_middleware_directory",
       "target": "AGENTS_testing_guidelines"
     },
@@ -3453,8 +3666,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_testing_guidelines",
-      "_tgt": "AGENTS_utils_directory",
+      "_src": "AGENTS_utils_directory",
+      "_tgt": "AGENTS_testing_guidelines",
       "source": "AGENTS_utils_directory",
       "target": "AGENTS_testing_guidelines"
     },
@@ -3465,8 +3678,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_probe_eval",
-      "_tgt": "AGENTS_youtube_helpers",
+      "_src": "AGENTS_youtube_helpers",
+      "_tgt": "AGENTS_probe_eval",
       "source": "AGENTS_youtube_helpers",
       "target": "AGENTS_probe_eval"
     },
@@ -3477,8 +3690,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_external_test_dependencies",
-      "_tgt": "AGENTS_youtube_helpers",
+      "_src": "AGENTS_youtube_helpers",
+      "_tgt": "AGENTS_external_test_dependencies",
       "source": "AGENTS_youtube_helpers",
       "target": "AGENTS_external_test_dependencies"
     },
@@ -3501,8 +3714,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_prisma_generate",
-      "_tgt": "AGENTS_prisma_schema",
+      "_src": "AGENTS_prisma_schema",
+      "_tgt": "AGENTS_prisma_generate",
       "source": "AGENTS_prisma_schema",
       "target": "AGENTS_prisma_generate"
     },
@@ -3513,8 +3726,8 @@
       "source_file": "readme.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "readme_prisma_client",
-      "_tgt": "AGENTS_prisma_schema",
+      "_src": "AGENTS_prisma_schema",
+      "_tgt": "readme_prisma_client",
       "source": "AGENTS_prisma_schema",
       "target": "readme_prisma_client"
     },
@@ -3525,8 +3738,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_external_test_dependencies",
-      "_tgt": "AGENTS_mongodb",
+      "_src": "AGENTS_mongodb",
+      "_tgt": "AGENTS_external_test_dependencies",
       "source": "AGENTS_mongodb",
       "target": "AGENTS_external_test_dependencies"
     },
@@ -3537,8 +3750,8 @@
       "source_file": "AGENTS.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "AGENTS_database_url",
-      "_tgt": "AGENTS_mongodb",
+      "_src": "AGENTS_mongodb",
+      "_tgt": "AGENTS_database_url",
       "source": "AGENTS_mongodb",
       "target": "AGENTS_database_url"
     },
@@ -3549,8 +3762,8 @@
       "source_file": "readme.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "readme_mongodb",
-      "_tgt": "AGENTS_mongodb",
+      "_src": "AGENTS_mongodb",
+      "_tgt": "readme_mongodb",
       "source": "AGENTS_mongodb",
       "target": "readme_mongodb"
     },
@@ -3645,8 +3858,8 @@
       "source_file": "readme.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "readme_expressjs",
-      "_tgt": "readme_mongodb",
+      "_src": "readme_mongodb",
+      "_tgt": "readme_expressjs",
       "source": "readme_mongodb",
       "target": "readme_expressjs"
     }
