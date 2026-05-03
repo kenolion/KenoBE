@@ -749,7 +749,7 @@
       "label": "listenYt()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L44",
+      "source_location": "L42",
       "id": "utils_yt_util_listenyt",
       "community": 7,
       "norm_label": "listenyt()"
@@ -758,7 +758,7 @@
       "label": "exrData()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L98",
+      "source_location": "L96",
       "id": "utils_yt_util_exrdata",
       "community": 0,
       "norm_label": "exrdata()"
@@ -767,7 +767,7 @@
       "label": "exrMsg()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L145",
+      "source_location": "L143",
       "id": "utils_yt_util_exrmsg",
       "community": 0,
       "norm_label": "exrmsg()"
@@ -776,7 +776,7 @@
       "label": "dlVid()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L164",
+      "source_location": "L162",
       "id": "utils_yt_util_dlvid",
       "community": 0,
       "norm_label": "dlvid()"
@@ -785,7 +785,7 @@
       "label": "cutVideo()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L179",
+      "source_location": "L177",
       "id": "utils_yt_util_cutvideo",
       "community": 0,
       "norm_label": "cutvideo()"
@@ -794,7 +794,7 @@
       "label": "ffmpegTime()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L216",
+      "source_location": "L214",
       "id": "utils_yt_util_ffmpegtime",
       "community": 0,
       "norm_label": "ffmpegtime()"
@@ -803,7 +803,7 @@
       "label": "safeFilePart()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L220",
+      "source_location": "L218",
       "id": "utils_yt_util_safefilepart",
       "community": 0,
       "norm_label": "safefilepart()"
@@ -812,7 +812,7 @@
       "label": "isUsableMediaFormat()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L224",
+      "source_location": "L222",
       "id": "utils_yt_util_isusablemediaformat",
       "community": 0,
       "norm_label": "isusablemediaformat()"
@@ -821,52 +821,25 @@
       "label": "pickMediaFormat()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L229",
+      "source_location": "L226",
       "id": "utils_yt_util_pickmediaformat",
       "community": 0,
       "norm_label": "pickmediaformat()"
     },
     {
-      "label": "decipherMediaUrl()",
-      "file_type": "code",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L238",
-      "id": "utils_yt_util_deciphermediaurl",
-      "community": 0,
-      "norm_label": "deciphermediaurl()"
-    },
-    {
-      "label": "createMediaRangeProxy()",
-      "file_type": "code",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L246",
-      "id": "utils_yt_util_createmediarangeproxy",
-      "community": 0,
-      "norm_label": "createmediarangeproxy()"
-    },
-    {
       "label": "selectMediaFormats()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L354",
+      "source_location": "L235",
       "id": "utils_yt_util_selectmediaformats",
       "community": 0,
       "norm_label": "selectmediaformats()"
     },
     {
-      "label": "buildFfmpegArgs()",
-      "file_type": "code",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L428",
-      "id": "utils_yt_util_buildffmpegargs",
-      "community": 0,
-      "norm_label": "buildffmpegargs()"
-    },
-    {
       "label": "loadClipMediaPlan()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L561",
+      "source_location": "L278",
       "id": "utils_yt_util_loadclipmediaplan",
       "community": 0,
       "norm_label": "loadclipmediaplan()"
@@ -875,34 +848,16 @@
       "label": "parseClipWindow()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L599",
+      "source_location": "L290",
       "id": "utils_yt_util_parseclipwindow",
       "community": 0,
       "norm_label": "parseclipwindow()"
     },
     {
-      "label": "closeProxy()",
-      "file_type": "code",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L614",
-      "id": "utils_yt_util_closeproxy",
-      "community": 0,
-      "norm_label": "closeproxy()"
-    },
-    {
-      "label": "usesSingleMuxedSource()",
-      "file_type": "code",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L618",
-      "id": "utils_yt_util_usessinglemuxedsource",
-      "community": 0,
-      "norm_label": "usessinglemuxedsource()"
-    },
-    {
       "label": "ytDlpFormatSelector()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L622",
+      "source_location": "L305",
       "id": "utils_yt_util_ytdlpformatselector",
       "community": 0,
       "norm_label": "ytdlpformatselector()"
@@ -911,7 +866,7 @@
       "label": "generateAdaptiveClipWithYtDlp()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L632",
+      "source_location": "L315",
       "id": "utils_yt_util_generateadaptiveclipwithytdlp",
       "community": 0,
       "norm_label": "generateadaptiveclipwithytdlp()"
@@ -920,7 +875,7 @@
       "label": "genClipFileWithMediaPlan()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L670",
+      "source_location": "L375",
       "id": "utils_yt_util_genclipfilewithmediaplan",
       "community": 0,
       "norm_label": "genclipfilewithmediaplan()"
@@ -929,19 +884,10 @@
       "label": "genClipFile()",
       "file_type": "code",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L791",
+      "source_location": "L434",
       "id": "utils_yt_util_genclipfile",
-      "community": 0,
+      "community": 5,
       "norm_label": "genclipfile()"
-    },
-    {
-      "label": "streamVidSegment()",
-      "file_type": "code",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L842",
-      "id": "utils_yt_util_streamvidsegment",
-      "community": 0,
-      "norm_label": "streamvidsegment()"
     },
     {
       "label": "chat-analyzer.probe.mjs",
@@ -1005,6 +951,60 @@
       "id": "test_probe_eval_mjs",
       "community": 13,
       "norm_label": "probe-eval.mjs"
+    },
+    {
+      "label": "decipherMediaUrl()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L238",
+      "community": 0,
+      "norm_label": "deciphermediaurl()",
+      "id": "utils_yt_util_deciphermediaurl"
+    },
+    {
+      "label": "createMediaRangeProxy()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L246",
+      "community": 0,
+      "norm_label": "createmediarangeproxy()",
+      "id": "utils_yt_util_createmediarangeproxy"
+    },
+    {
+      "label": "buildFfmpegArgs()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L428",
+      "community": 0,
+      "norm_label": "buildffmpegargs()",
+      "id": "utils_yt_util_buildffmpegargs"
+    },
+    {
+      "label": "closeProxy()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L614",
+      "community": 0,
+      "norm_label": "closeproxy()",
+      "id": "utils_yt_util_closeproxy"
+    },
+    {
+      "label": "usesSingleMuxedSource()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L618",
+      "community": 0,
+      "norm_label": "usessinglemuxedsource()",
+      "id": "utils_yt_util_usessinglemuxedsource"
+    },
+    {
+      "label": "streamVidSegment()",
+      "file_type": "code",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L842",
+      "community": 0,
+      "norm_label": "streamvidsegment()",
+      "id": "utils_yt_util_streamvidsegment"
     },
     {
       "label": "Node.js ES Module Backend",
@@ -2680,6 +2680,18 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L351",
+      "weight": 1.0,
+      "_src": "utils_yt_util_generateadaptiveclipwithytdlp",
+      "_tgt": "utils_clip_time_util_httperror",
+      "source": "utils_clip_time_util_httperror",
+      "target": "utils_yt_util_generateadaptiveclipwithytdlp"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L707",
       "weight": 1.0,
       "_src": "utils_clip_time_util_httperror",
@@ -3003,30 +3015,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L238",
-      "weight": 1.0,
-      "_src": "src_utils_yt_util_mjs",
-      "_tgt": "utils_yt_util_deciphermediaurl",
-      "confidence_score": 1.0,
-      "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_deciphermediaurl"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L246",
-      "weight": 1.0,
-      "_src": "src_utils_yt_util_mjs",
-      "_tgt": "utils_yt_util_createmediarangeproxy",
-      "confidence_score": 1.0,
-      "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_createmediarangeproxy"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L354",
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
@@ -3034,18 +3022,6 @@
       "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
       "target": "utils_yt_util_selectmediaformats"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L428",
-      "weight": 1.0,
-      "_src": "src_utils_yt_util_mjs",
-      "_tgt": "utils_yt_util_buildffmpegargs",
-      "confidence_score": 1.0,
-      "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_buildffmpegargs"
     },
     {
       "relation": "contains",
@@ -3070,30 +3046,6 @@
       "confidence_score": 1.0,
       "source": "src_utils_yt_util_mjs",
       "target": "utils_yt_util_parseclipwindow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L614",
-      "weight": 1.0,
-      "_src": "src_utils_yt_util_mjs",
-      "_tgt": "utils_yt_util_closeproxy",
-      "confidence_score": 1.0,
-      "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_closeproxy"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L618",
-      "weight": 1.0,
-      "_src": "src_utils_yt_util_mjs",
-      "_tgt": "utils_yt_util_usessinglemuxedsource",
-      "confidence_score": 1.0,
-      "source": "src_utils_yt_util_mjs",
-      "target": "utils_yt_util_usessinglemuxedsource"
     },
     {
       "relation": "contains",
@@ -3147,6 +3099,66 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L238",
+      "weight": 1.0,
+      "_src": "src_utils_yt_util_mjs",
+      "_tgt": "utils_yt_util_deciphermediaurl",
+      "confidence_score": 1.0,
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_deciphermediaurl"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L246",
+      "weight": 1.0,
+      "_src": "src_utils_yt_util_mjs",
+      "_tgt": "utils_yt_util_createmediarangeproxy",
+      "confidence_score": 1.0,
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_createmediarangeproxy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L428",
+      "weight": 1.0,
+      "_src": "src_utils_yt_util_mjs",
+      "_tgt": "utils_yt_util_buildffmpegargs",
+      "confidence_score": 1.0,
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_buildffmpegargs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L614",
+      "weight": 1.0,
+      "_src": "src_utils_yt_util_mjs",
+      "_tgt": "utils_yt_util_closeproxy",
+      "confidence_score": 1.0,
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_closeproxy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L618",
+      "weight": 1.0,
+      "_src": "src_utils_yt_util_mjs",
+      "_tgt": "utils_yt_util_usessinglemuxedsource",
+      "confidence_score": 1.0,
+      "source": "src_utils_yt_util_mjs",
+      "target": "utils_yt_util_usessinglemuxedsource"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L842",
       "weight": 1.0,
       "_src": "src_utils_yt_util_mjs",
@@ -3159,18 +3171,6 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L447",
-      "weight": 1.0,
-      "_src": "utils_yt_util_ffmpegtime",
-      "_tgt": "utils_yt_util_buildffmpegargs",
-      "confidence_score": 1.0,
-      "source": "utils_yt_util_ffmpegtime",
-      "target": "utils_yt_util_buildffmpegargs"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L637",
       "weight": 1.0,
       "_src": "utils_yt_util_ffmpegtime",
@@ -3178,6 +3178,18 @@
       "confidence_score": 1.0,
       "source": "utils_yt_util_ffmpegtime",
       "target": "utils_yt_util_generateadaptiveclipwithytdlp"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L447",
+      "weight": 1.0,
+      "_src": "utils_yt_util_ffmpegtime",
+      "_tgt": "utils_yt_util_buildffmpegargs",
+      "confidence_score": 1.0,
+      "source": "utils_yt_util_ffmpegtime",
+      "target": "utils_yt_util_buildffmpegargs"
     },
     {
       "relation": "calls",
@@ -3219,30 +3231,6 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L576",
-      "weight": 1.0,
-      "_src": "utils_yt_util_deciphermediaurl",
-      "_tgt": "utils_yt_util_loadclipmediaplan",
-      "confidence_score": 1.0,
-      "source": "utils_yt_util_deciphermediaurl",
-      "target": "utils_yt_util_loadclipmediaplan"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L857",
-      "weight": 1.0,
-      "_src": "utils_yt_util_createmediarangeproxy",
-      "_tgt": "utils_yt_util_streamvidsegment",
-      "confidence_score": 1.0,
-      "source": "utils_yt_util_createmediarangeproxy",
-      "target": "utils_yt_util_streamvidsegment"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L568",
       "weight": 1.0,
       "_src": "utils_yt_util_selectmediaformats",
@@ -3255,30 +3243,6 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L714",
-      "weight": 1.0,
-      "_src": "utils_yt_util_buildffmpegargs",
-      "_tgt": "utils_yt_util_genclipfilewithmediaplan",
-      "confidence_score": 1.0,
-      "source": "utils_yt_util_buildffmpegargs",
-      "target": "utils_yt_util_genclipfilewithmediaplan"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L859",
-      "weight": 1.0,
-      "_src": "utils_yt_util_buildffmpegargs",
-      "_tgt": "utils_yt_util_streamvidsegment",
-      "confidence_score": 1.0,
-      "source": "utils_yt_util_buildffmpegargs",
-      "target": "utils_yt_util_streamvidsegment"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L794",
       "weight": 1.0,
       "_src": "utils_yt_util_loadclipmediaplan",
@@ -3286,6 +3250,18 @@
       "confidence_score": 1.0,
       "source": "utils_yt_util_loadclipmediaplan",
       "target": "utils_yt_util_genclipfile"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L576",
+      "weight": 1.0,
+      "_src": "utils_yt_util_deciphermediaurl",
+      "_tgt": "utils_yt_util_loadclipmediaplan",
+      "confidence_score": 1.0,
+      "source": "utils_yt_util_loadclipmediaplan",
+      "target": "utils_yt_util_deciphermediaurl"
     },
     {
       "relation": "calls",
@@ -3327,30 +3303,6 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L675",
-      "weight": 1.0,
-      "_src": "utils_yt_util_usessinglemuxedsource",
-      "_tgt": "utils_yt_util_genclipfilewithmediaplan",
-      "confidence_score": 1.0,
-      "source": "utils_yt_util_usessinglemuxedsource",
-      "target": "utils_yt_util_genclipfilewithmediaplan"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
-      "source_location": "L857",
-      "weight": 1.0,
-      "_src": "utils_yt_util_usessinglemuxedsource",
-      "_tgt": "utils_yt_util_streamvidsegment",
-      "confidence_score": 1.0,
-      "source": "utils_yt_util_usessinglemuxedsource",
-      "target": "utils_yt_util_streamvidsegment"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "src\\utils\\yt-util.mjs",
       "source_location": "L635",
       "weight": 1.0,
       "_src": "utils_yt_util_ytdlpformatselector",
@@ -3382,6 +3334,30 @@
       "confidence_score": 1.0,
       "source": "utils_yt_util_genclipfilewithmediaplan",
       "target": "utils_yt_util_genclipfile"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L714",
+      "weight": 1.0,
+      "_src": "utils_yt_util_buildffmpegargs",
+      "_tgt": "utils_yt_util_genclipfilewithmediaplan",
+      "confidence_score": 1.0,
+      "source": "utils_yt_util_genclipfilewithmediaplan",
+      "target": "utils_yt_util_buildffmpegargs"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L675",
+      "weight": 1.0,
+      "_src": "utils_yt_util_usessinglemuxedsource",
+      "_tgt": "utils_yt_util_genclipfilewithmediaplan",
+      "confidence_score": 1.0,
+      "source": "utils_yt_util_genclipfilewithmediaplan",
+      "target": "utils_yt_util_usessinglemuxedsource"
     },
     {
       "relation": "contains",
@@ -3430,6 +3406,42 @@
       "confidence_score": 1.0,
       "source": "test_chat_analyzer_probe_mjs",
       "target": "test_chat_analyzer_probe_analyze"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L857",
+      "weight": 1.0,
+      "_src": "utils_yt_util_createmediarangeproxy",
+      "_tgt": "utils_yt_util_streamvidsegment",
+      "confidence_score": 1.0,
+      "source": "utils_yt_util_createmediarangeproxy",
+      "target": "utils_yt_util_streamvidsegment"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L859",
+      "weight": 1.0,
+      "_src": "utils_yt_util_buildffmpegargs",
+      "_tgt": "utils_yt_util_streamvidsegment",
+      "confidence_score": 1.0,
+      "source": "utils_yt_util_buildffmpegargs",
+      "target": "utils_yt_util_streamvidsegment"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "src\\utils\\yt-util.mjs",
+      "source_location": "L857",
+      "weight": 1.0,
+      "_src": "utils_yt_util_usessinglemuxedsource",
+      "_tgt": "utils_yt_util_streamvidsegment",
+      "confidence_score": 1.0,
+      "source": "utils_yt_util_usessinglemuxedsource",
+      "target": "utils_yt_util_streamvidsegment"
     },
     {
       "relation": "implements",

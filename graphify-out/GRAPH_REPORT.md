@@ -1,12 +1,12 @@
-# Graph Report - Backend  (2026-05-02)
+# Graph Report - Backend  (2026-05-03)
 
 ## Corpus Check
-- 20 files · ~7,692 words
+- 20 files · ~6,281 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 138 nodes · 203 edges · 11 communities detected
-- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 24 edges (avg confidence: 0.81)
+- 138 nodes · 204 edges · 11 communities detected
+- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 25 edges (avg confidence: 0.81)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -26,13 +26,13 @@
 1. `ChatAnalyzer` - 16 edges
 2. `YtController` - 9 edges
 3. `genClipFileWithMediaPlan()` - 9 edges
-4. `httpError()` - 7 edges
+4. `httpError()` - 8 edges
 5. `loadClipMediaPlan()` - 7 edges
 6. `streamVidSegment()` - 7 edges
 7. `fmtTimestamp()` - 5 edges
 8. `parseClipWindow()` - 5 edges
-9. `Redis` - 5 edges
-10. `Security and Configuration Tips` - 5 edges
+9. `generateAdaptiveClipWithYtDlp()` - 5 edges
+10. `Redis` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Express API` --semantically_similar_to--> `Expressjs`  [INFERRED] [semantically similar]
@@ -55,7 +55,7 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.17
-Nodes (17): httpError(), parseTimestamp(), buildFfmpegArgs(), createMediaRangeProxy(), decipherMediaUrl(), ffmpegTime(), genClipFile(), genClipFileWithMediaPlan() (+9 more)
+Nodes (16): httpError(), parseTimestamp(), buildFfmpegArgs(), createMediaRangeProxy(), decipherMediaUrl(), ffmpegTime(), genClipFileWithMediaPlan(), generateAdaptiveClipWithYtDlp() (+8 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.12
@@ -74,8 +74,8 @@ Cohesion: 0.2
 Nodes (5): cnvTimestampToMin(), fmtMin(), fmtTimestamp(), normTimestamp(), padTime()
 
 ### Community 5 - "Community 5"
-Cohesion: 0.27
-Nodes (7): clipResponse(), batchStatusCode(), buildBatchClipJobs(), errorResponse(), normalizeBatchClipOffset(), validateBatchClipInput(), validationError()
+Cohesion: 0.24
+Nodes (8): clipResponse(), batchStatusCode(), buildBatchClipJobs(), errorResponse(), normalizeBatchClipOffset(), validateBatchClipInput(), validationError(), genClipFile()
 
 ### Community 6 - "Community 6"
 Cohesion: 0.18
@@ -120,8 +120,8 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.055) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `genClipFileWithMediaPlan()` (e.g. with `.genClipBatch()` and `httpError()`) actually correct?**
   _`genClipFileWithMediaPlan()` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 5 inferred relationships involving `httpError()` (e.g. with `selectMediaFormats()` and `loadClipMediaPlan()`) actually correct?**
-  _`httpError()` has 5 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 6 inferred relationships involving `httpError()` (e.g. with `selectMediaFormats()` and `loadClipMediaPlan()`) actually correct?**
+  _`httpError()` has 6 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `loadClipMediaPlan()` (e.g. with `.genClipBatch()` and `httpError()`) actually correct?**
   _`loadClipMediaPlan()` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Chat`, `src Runtime Source Directory`, `Chat Analysis` to the rest of the system?**
