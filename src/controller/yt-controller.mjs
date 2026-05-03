@@ -216,8 +216,8 @@ export default class YtController {
    * timestamp. The batch is capped by validateBatchClipInput, and each segment
    * is capped by MAX_SEGMENT_SECONDS in the clip time utilities.
    *
-   * Valid items are generated even when other items fail validation or ffmpeg
-   * processing. The response includes generated clips and per-item errors:
+   * Valid items are generated even when other items fail validation or clip
+   * generation. The response includes generated clips and per-item errors:
    *   {
    *     "success": true,
    *     "id": "VIDEO_ID",

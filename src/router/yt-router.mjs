@@ -61,7 +61,7 @@ export default class YtRouter {
      *     "url": "/clip/...mp4",
      *     "format": "mp4",
      *     "quality": "720p",
-     *     "sourceType": "muxed",
+     *     "sourceType": "adaptive",
      *     "from": "01:20",
      *     "to": "01:35"
      *   }

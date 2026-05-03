@@ -17,12 +17,9 @@ Utils.Platform.shim.eval = async (data, _env) => {
 const yt = await Innertube.create();
 const info = await yt.getBasicInfo('dQw4w9WgXcQ');
 
-// Try to decipher all formats and note which ones work
-const allFmts = [
-  ...(info.streaming_data?.formats || []),
-  ...(info.streaming_data?.adaptive_formats || []),
-];
-console.log('Total formats:', allFmts.length);
+// Try to decipher adaptive formats and note which ones work.
+const allFmts = info.streaming_data?.adaptive_formats || [];
+console.log('Total adaptive formats:', allFmts.length);
 
 let ok = 0, blocked = 0, errors = 0;
 for (const f of allFmts) {
